@@ -1,0 +1,44 @@
+{
+  "name": "retroscope",
+  "displayName": "retroscope",
+  "description": "Retro theme for VS Code",
+  "type": "module",
+  "packageManager": "yarn@4.12.0",
+  "version": "0.0.1",
+  "author": "David Su",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "dev": "tsx watch src/build.ts --exclude ./node_modules/**/*",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Retroscope",
+        "uiTheme": "vs-dark",
+        "path": "./themes/retroscope-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.2",
+    "esbuild": "^0.27.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.0",
+    "vite-plugin-static-copy": "^2.0.0"
+  }
+}

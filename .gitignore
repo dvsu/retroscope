@@ -1,0 +1,20 @@
+node_modules
+*.vsix
+.env
+
+# Build output
+build.cjs
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Yarn
+.yarn/cache/
+.yarn/install-state.gz
+
+themes/*.json
