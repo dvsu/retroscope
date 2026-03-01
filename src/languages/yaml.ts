@@ -41,7 +41,6 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "keyword.control.property.anchor.yaml",
         "keyword.other.directive.tag.yaml",
         "keyword.other.directive.yaml.yaml",
-        "meta.block-mapping.yaml",
       ],
       settings: {
         foreground: colors.keyword,
@@ -63,6 +62,18 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       ],
       settings: {
         foreground: colors.punctuation,
+      },
+    },
+    {
+      name: "[yaml] Punctuation: map, array",
+      scope: [
+        "punctuation.definition.mapping.begin.yaml",
+        "punctuation.definition.mapping.end.yaml",
+        "punctuation.definition.sequence.begin.yaml",
+        "punctuation.definition.sequence.end.yaml",
+      ],
+      settings: {
+        foreground: colors.orange,
       },
     },
     {

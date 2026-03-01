@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Theme fixture: JSON",
+    "version": 1,
+    "enabled": true,
+    "count": 0,
+    "negative": -42,
+    "float": 3.14159,
+    "sci": 6.022e23,
+    "nullValue": null
+  },
+  "strings": {
+    "plain": "plain-string",
+    "empty": "",
+    "withQuotes": "He said: \"hello\"",
+    "withBackslash": "C:\\\\path\\\\to\\\\file",
+    "withControls": "line1\\nline2\\tTabbed\\rCarriage",
+    "withUnicodeBMP": "Smile: \\u263A",
+    "withUnicodeSurrogatePair": "G clef: \\uD834\\uDD1E",
+    "withSlash": "https:\\/\\/example.com\\/a\\/b?c=d&e=f",
+    "withPunctuation": "! @ # $ % ^ & * ( ) [ ] { } , . ? / | < >"
+  },
+  "booleans": {
+    "t": true,
+    "f": false
+  },
+  "arrays": {
+    "empty": [],
+    "mixed": [1, "two", true, false, null, {"nested": [3, 4]}],
+    "numbers": [0, -0, 1, -1, 1.5, -2.75, 1e3, -2E-2]
+  },
+  "objects": {
+    "empty": {},
+    "nested": {
+      "level1": {
+        "level2": {
+          "level3": {
+            "value": "deep"
+          }
+        }
+      }
+    }
+  },
+  "edgeCases": {
+    "bigIntLike": 9007199254740991,
+    "duplicateKeysExample_note": "RFC says names SHOULD be unique; keep this as a comment-like note instead of actual duplicates."
+  }
+}
