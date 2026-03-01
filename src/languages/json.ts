@@ -36,7 +36,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
-      name: "[json] Puctuations: object, array",
+      name: "[json] Punctuations: object, array",
       scope: [
         "punctuation.definition.array.begin.json",
         "punctuation.definition.array.end.json",
