@@ -1,4 +1,4 @@
-import { languageTokens } from "./languages";
+import { languages } from "./languages";
 import type { TokenColor } from "./types";
 import type { EditorColor } from "./themes/types";
 
@@ -11,7 +11,7 @@ export const generateTokenColors = ({
 }: ThemeGenerationParams): TokenColor[] => {
   const tokenColors: TokenColor[] = [];
 
-  for (const language of Object.values(languageTokens)) {
+  for (const language of languages) {
     tokenColors.push(...language.generate(colors));
   }
 

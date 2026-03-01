@@ -5,7 +5,9 @@ export type ColorPalette = {
   intermediate: string;
   black: string; // ANSI black
   blue: string; // ANSI blue
+  blueBright: string;
   green: string; // ANSI green
+  greenBright: string;
   orange: string;
   orangeBright: string; // ANSI orange
   purple: string; // ANSI magenta
