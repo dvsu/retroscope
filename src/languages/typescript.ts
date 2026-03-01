@@ -30,9 +30,13 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
-      name: "[TypeScript] Function and method",
+      name: "[TypeScript] Function, method, decorator",
       scope: [
-        "entity.name.function.ts",
+        "meta.decorator.ts",
+        "meta.definition.function.ts",
+        "meta.definition.method.ts",
+        "meta.definition.variable.ts",
+        "meta.function-call.ts",
         "support.function.math.ts",
         "support.function.ts",
       ],
@@ -50,6 +54,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     {
       name: "[TypeScript] Keywords",
       scope: [
+        "cast.expr.ts",
         "keyword.control.anchor.regexp",
         "keyword.control.as.ts",
         "keyword.control.conditional.ts",
@@ -81,6 +86,8 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "storage.type.class.ts",
         "storage.type.function.arrow.ts",
         "storage.type.interface.ts",
+        "storage.type.namespace.ts",
+        "storage.type.property.ts",
         "storage.type.type.ts",
         "variable.language.this.ts",
         "variable.language.super.ts",
@@ -111,10 +118,25 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
+      name: "[TypeScript] Label",
+      scope: ["entity.name.label.ts"],
+      settings: {
+        foreground: colors.yellow,
+      },
+    },
+    {
+      name: "[TypeScript] Misc",
+      scope: ["source.ts"],
+      settings: {
+        foreground: colors.variable,
+      },
+    },
+    {
       name: "[TypeScript] Punctuations",
       scope: [
         "punctuation.accessor.ts",
         "punctuation.accessor.optional.ts",
+        "punctuation.decorator.ts",
         "punctuation.definition.binding-pattern.object.ts",
         "punctuation.definition.block.ts",
         "punctuation.definition.group.regexp",
@@ -137,7 +159,10 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[TypeScript] Punctuations: colon",
-      scope: ["keyword.operator.type.annotation.ts"],
+      scope: [
+        "keyword.operator.type.annotation.ts",
+        "punctuation.separator.label.ts",
+      ],
       settings: {
         foreground: colors.typeAnnotation,
       },
@@ -187,6 +212,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     {
       name: "[TypeScript] Support variables",
       scope: [
+        "support.constant.property.math.ts",
         "support.variable.property.ts",
         "support.variable.property.importmeta.ts",
       ],
@@ -251,6 +277,10 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     {
       name: "[TypeScript] Variable names",
       scope: [
+        "meta.block.ts",
+        "meta.parameters.ts",
+        "meta.var.expr.ts",
+        "switch-expression.expr.ts",
         "variable.object.property.ts",
         "variable.other.constant.ts",
         "variable.other.constant.object.ts",
@@ -259,7 +289,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "variable.other.object.ts",
         "variable.other.object.property.ts",
         "variable.other.property.ts",
-        "variable.other.readwrite.ts",
+        // "variable.other.readwrite.ts",
         "variable.other.readwrite.alias.ts",
         "variable.parameter.ts",
       ],
