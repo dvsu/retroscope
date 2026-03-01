@@ -8,13 +8,13 @@
     "rules": {
       "recommended": true
     },
-    "ignore": ["themes/**", "build.cjs"]
+    "ignore": ["demo/**", "themes/**", "build.cjs"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 100,
-    "ignore": ["themes/**", "build.cjs"]
+    "ignore": ["demo/**", "themes/**", "build.cjs"]
   }
 }

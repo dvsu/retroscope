@@ -1,0 +1,120 @@
+%YAML 1.2
+%TAG !ex! tag:example.com,2026:
+---
+# YAML theme stress-test fixture (scalars, collections, anchors, aliases, tags, directives)
+
+meta:
+  title: "Theme fixture: YAML"
+  version: 1.0
+  enabled: true
+  count: 0
+  negative: -42
+  float: 3.14159
+  sci: 6.022e23
+  nan: .nan
+  inf: .inf
+  ninf: -.inf
+  null1: null
+  null2: ~
+  date_like: 2026-03-01
+  time_like: 16:38:00+08:00
+
+# Anchors & aliases (aliases must refer to a previous anchored node)
+defaults: &defaults
+  retries: 3
+  timeout: 2.5
+  headers:
+    Accept: "application/json"
+    User-Agent: "vscode-theme-fixture/1.0"
+  paths:
+    - /healthz
+    - /metrics
+
+use_defaults_by_alias:
+  from: *defaults
+
+# Merge key is widely used in YAML tooling (theme should highlight "<<")
+merged_map:
+  <<: *defaults
+  timeout: 10
+  headers:
+    <<: *defaults
+    X-Extra: "yes"
+
+# Sequence anchors / alias reuse
+servers: &servers
+  - host: localhost
+    port: 8080
+  - host: example.com
+    port: 443
+
+deployment:
+  region: "ap-southeast-1"
+  servers: *servers
+
+# Flow style collections
+flow:
+  flow_seq: [1, 2, 3, "four", true, false, null]
+  flow_map: {a: 1, b: "two", c: [3, 4], d: {nested: yes}}
+
+# Quoting and edge cases
+strings:
+  plain: plain-string
+  plain_with_colon: "needs quoting: yes"
+  single_quoted: 'single quotes keep \n as two chars; '' escapes single quote'
+  double_quoted: "double quotes allow escapes: \n \t \" \\ and unicode: \u263A"
+  empty: ""
+  whitespace: "  leading and trailing  "
+  special_chars: "! @ # $ % ^ & * ( ) [ ] { } , . ? / | < >"
+  maybe_bool_1: "yes"
+  maybe_bool_2: "on"
+  looks_like_int: "0123"
+
+# Block scalars: literal and folded (chomping indicators shown)
+block_scalars:
+  literal_keep: |+
+    Line 1 (literal, keep)
+    Line 2
+
+  literal_strip: |-
+    Line 1 (literal, strip)
+    Line 2
+
+  folded_clip: >
+    Folded style joins lines into spaces,
+    but preserves blank lines.
+
+    This starts a new paragraph.
+
+  folded_keep: >+
+    Folded with keep.
+
+    Keeps trailing newlines.
+
+  indented_literal: |2
+      Indentation indicator example.
+      This line is indented by 2 beyond the key indent.
+
+# Explicit tags (for theming/tag token tests)
+tagged:
+  explicit_str: !!str 123
+  explicit_int: !!int "42"
+  explicit_bool: !!bool "true"
+  custom_tag_scalar: !ex!color "magenta"
+  custom_tag_seq: !ex!seq [a, b, c]
+  custom_tag_map: !ex!map {k1: v1, k2: v2}
+
+# Complex keys / oddities
+complex:
+  ? [a, b, c]
+  : "sequence as a key"
+  ? {k: v}
+  : "map as a key"
+
+# Multidoc markers
+...
+---
+second_document:
+  note: "A second YAML document in the same file."
+  reference: *defaults
+...
