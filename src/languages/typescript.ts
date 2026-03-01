@@ -1,7 +1,7 @@
 import type { TokenColor } from "../types";
-import type { ColorPalette } from "../palettes/types";
+import type { EditorColor } from "../themes/types";
 
-export const generate = (colors: ColorPalette): TokenColor[] => {
+export const generate = (colors: EditorColor): TokenColor[] => {
   return [
     {
       name: "[TypeScript] Built-in classes: Object, Array",
@@ -18,7 +18,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
       name: "[TypeScript] Comment",
       scope: ["comment.block.documentation.ts", "comment.line.double-slash.ts"],
       settings: {
-        foreground: colors.intermediate,
+        foreground: colors.comment,
         fontStyle: "italic",
       },
     },
@@ -26,7 +26,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
       name: "[TypeScript] Comment punctuations",
       scope: ["punctuation.definition.comment.ts"],
       settings: {
-        foreground: colors.accentTertiary,
+        foreground: colors.punctuation,
       },
     },
     {
@@ -37,7 +37,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "support.function.ts",
       ],
       settings: {
-        foreground: colors.blue,
+        foreground: colors.function,
       },
     },
     {
@@ -86,14 +86,14 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "variable.language.super.ts",
       ],
       settings: {
-        foreground: colors.red,
+        foreground: colors.keyword,
       },
     },
     {
       name: "[TypeScript] Keywords: const",
       scope: ["storage.modifier.ts", "storage.type.ts", "storage.type.enum.ts"],
       settings: {
-        foreground: colors.red,
+        foreground: colors.keyword,
       },
     },
     {
@@ -107,7 +107,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
       name: "[TypeScript] Object key",
       scope: ["meta.object-literal.key.ts"],
       settings: {
-        foreground: colors.white,
+        foreground: colors.foreground,
       },
     },
     {
@@ -132,14 +132,14 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "punctuation.terminator.statement.ts",
       ],
       settings: {
-        foreground: colors.accentTertiary,
+        foreground: colors.punctuation,
       },
     },
     {
       name: "[TypeScript] Punctuations: colon",
       scope: ["keyword.operator.type.annotation.ts"],
       settings: {
-        foreground: colors.darkOrange,
+        foreground: colors.typeAnnotation,
       },
     },
     {
@@ -181,7 +181,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
       name: "[TypeScript] Square braces",
       scope: ["meta.brace.square.ts"],
       settings: {
-        foreground: colors.darkOrange,
+        foreground: colors.orange,
       },
     },
     {
@@ -191,7 +191,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "support.variable.property.importmeta.ts",
       ],
       settings: {
-        foreground: colors.darkPurple,
+        foreground: colors.purple,
       },
     },
     {
@@ -210,25 +210,31 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "support.type.primitive.ts",
       ],
       settings: {
-        foreground: colors.orange,
+        foreground: colors.type,
+      },
+    },
+    {
+      name: "[TypeScript] Value: boolean",
+      scope: [
+        "constant.language.boolean.false.ts",
+        "constant.language.boolean.true.ts",
+      ],
+      settings: {
+        foreground: colors.boolean,
       },
     },
     {
       name: "[TypeScript] Value: null, undefined",
       scope: ["constant.language.null.ts", "constant.language.undefined.ts"],
       settings: {
-        foreground: colors.redBright,
+        foreground: colors.nullable,
       },
     },
     {
-      name: "[TypeScript] Value: number, boolean",
-      scope: [
-        "constant.numeric.decimal.ts",
-        "constant.language.boolean.false.ts",
-        "constant.language.boolean.true.ts",
-      ],
+      name: "[TypeScript] Value: number",
+      scope: ["constant.numeric.decimal.ts"],
       settings: {
-        foreground: colors.purple,
+        foreground: colors.number,
       },
     },
     {
@@ -239,7 +245,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "string.template.ts",
       ],
       settings: {
-        foreground: colors.green,
+        foreground: colors.string,
       },
     },
     {
@@ -258,7 +264,7 @@ export const generate = (colors: ColorPalette): TokenColor[] => {
         "variable.parameter.ts",
       ],
       settings: {
-        foreground: colors.accentPrimary,
+        foreground: colors.variable,
       },
     },
   ];
