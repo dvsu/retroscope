@@ -1,6 +1,6 @@
-import type { ColorPalette } from "./types";
+import type { EditorColor } from "./themes/types";
 
-export function generateUIColors(colors: ColorPalette): Record<string, string> {
+export function generateUIColors(colors: EditorColor): Record<string, string> {
   return {
     "activityBar.background": colors.background,
     "activityBar.foreground": colors.foreground,

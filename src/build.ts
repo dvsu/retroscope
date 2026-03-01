@@ -2,10 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { generateUIColors } from "./ui-colors";
-
-import { darkColorPalette } from "./themes/dark/palette";
-import type { TokenColor } from "./types";
-
+import { themes } from "./themes";
+import type { TokenColor, VSCodeTheme } from "./types";
 import { generateTokenColors } from "./generator";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -18,20 +16,24 @@ if (!fs.existsSync(themesDir)) {
   fs.mkdirSync(themesDir, { recursive: true });
 }
 
-const uiColors = generateUIColors(darkColorPalette);
+for (const theme of themes) {
+  const { metadata, colors } = theme.create();
 
-const tokenColors: TokenColor[] = generateTokenColors({
-  colorPalette: darkColorPalette,
-});
+  const tokenColors: TokenColor[] = generateTokenColors({
+    colors,
+  });
 
-const theme = {
-  name: "Retroscope color theme",
-  type: "dark",
-  colors: uiColors,
-  tokenColors,
-};
+  const uiColors = generateUIColors(colors);
 
-const outputPath = path.join(themesDir, "retroscope-color-theme.json");
-fs.writeFileSync(outputPath, JSON.stringify(theme, null, 2));
+  const vsCodeTheme: VSCodeTheme = {
+    name: metadata.displayName,
+    type: metadata.type,
+    colors: uiColors,
+    tokenColors,
+  };
 
-console.log(`Theme generated at ${outputPath}`);
+  const outputPath = path.join(themesDir, `${metadata.id}-color-theme.json`);
+  fs.writeFileSync(outputPath, JSON.stringify(vsCodeTheme, null, 2));
+
+  console.log(`Theme generated at ${outputPath}`);
+}
