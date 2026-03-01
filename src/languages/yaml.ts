@@ -41,6 +41,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "keyword.control.property.anchor.yaml",
         "keyword.other.directive.tag.yaml",
         "keyword.other.directive.yaml.yaml",
+        "meta.block-mapping.yaml",
       ],
       settings: {
         foreground: colors.keyword,
