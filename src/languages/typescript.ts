@@ -48,7 +48,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[TypeScript] Function keywords",
       scope: ["storage.type.function.ts", "storage.modifier.async.ts"],
       settings: {
-        foreground: colors.orange,
+        foreground: colors.yellowBright,
       },
     },
     {
