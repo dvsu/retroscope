@@ -4,21 +4,28 @@
   "description": "Retro theme for VS Code",
   "type": "module",
   "packageManager": "yarn@4.12.0",
-  "version": "0.0.1",
+  "icon": "assets/retroscope_255x255.png",
+  "version": "0.1.0",
   "author": "David Su",
+  "publisher": "dvsu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvsu/retroscope"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.109.0"
   },
-  "scripts": {
-    "build": "tsx src/build.ts",
-    "dev": "tsx watch src/build.ts --exclude ./node_modules/**/*",
-    "lint": "biome check .",
-    "lint:fix": "biome check --write .",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-  },
   "categories": [
     "Themes"
+  ],
+  "keywords": [
+    "color-theme",
+    "dark",
+    "dark theme",
+    "retro",
+    "retroscope",
+    "themes"
   ],
   "contributes": {
     "themes": [
@@ -28,6 +35,13 @@
         "path": "./themes/retroscope-color-theme.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "tsx src/build.ts",
+    "dev": "tsx watch src/build.ts --exclude ./node_modules/**/*",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.0",
