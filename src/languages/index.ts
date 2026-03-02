@@ -1,4 +1,5 @@
 import * as docker from "./docker";
+import * as fallback from "./fallback";
 import * as go from "./go";
 import * as json from "./json";
 import * as markdown from "./markdown";
@@ -9,6 +10,7 @@ import * as yaml from "./yaml";
 
 export const languages = [
   docker,
+  fallback,
   go,
   json,
   markdown,
