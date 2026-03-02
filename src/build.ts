@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { generateUIColors } from "./ui-colors";
+import * as ui from "./ui-colors";
 import { themes } from "./themes";
-import type { TokenColor, VSCodeTheme } from "./types";
-import { generateTokenColors } from "./generator";
+import type { VSCodeTheme } from "./types";
+import * as tc from "./token-colors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,17 +19,13 @@ if (!fs.existsSync(themesDir)) {
 for (const theme of themes) {
   const { metadata, colors } = theme.create();
 
-  const tokenColors: TokenColor[] = generateTokenColors({
-    colors,
-  });
-
-  const uiColors = generateUIColors(colors);
-
   const vsCodeTheme: VSCodeTheme = {
     name: metadata.displayName,
     type: metadata.type,
-    colors: uiColors,
-    tokenColors,
+    colors: ui.generate({ colors }),
+    tokenColors: tc.generate({
+      colors,
+    }),
   };
 
   const outputPath = path.join(themesDir, `${metadata.id}-color-theme.json`);

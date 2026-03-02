@@ -5,18 +5,18 @@ export type ColorPalette = {
   intermediate: string;
   black: string; // ANSI black
   blue: string; // ANSI blue
-  blueBright: string;
+  brightBlue: string;
   green: string; // ANSI green
-  greenBright: string;
+  brightGreen: string;
   orange: string;
-  orangeBright: string; // ANSI orange
+  brightOrange: string; // ANSI orange
   purple: string; // ANSI magenta
-  purpleBright: string;
+  brightPurple: string;
   red: string; // ANSI red
-  redBright: string;
+  brightRed: string;
   white: string; // ANSI white
   yellow: string; // ANSI yellow
-  yellowBright: string;
+  brightYellow: string;
 };
 
 export type EditorColor = ColorPalette & {

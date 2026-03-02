@@ -53,7 +53,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "storage.type.function.async.python",
       ],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {

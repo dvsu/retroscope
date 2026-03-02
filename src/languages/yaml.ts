@@ -14,7 +14,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[yaml] Chomping indicators",
       scope: ["storage.modifier.chomping-indicator.yaml"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {

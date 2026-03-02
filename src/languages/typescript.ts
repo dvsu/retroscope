@@ -11,7 +11,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "support.constant.math.ts",
       ],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {
@@ -48,7 +48,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[TypeScript] Function keywords",
       scope: ["storage.type.function.ts", "storage.modifier.async.ts"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {
@@ -121,7 +121,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[TypeScript] Label",
       scope: ["entity.name.label.ts"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {

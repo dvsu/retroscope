@@ -11,7 +11,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "support.constant.math.tsx",
       ],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {
@@ -57,7 +57,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[tsx] Keywords: Function keywords",
       scope: ["storage.type.function.tsx", "storage.modifier.async.tsx"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {
@@ -134,7 +134,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[tsx] Label",
       scope: ["entity.name.label.tsx"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {
@@ -251,7 +251,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[tsx] Tags",
       scope: ["entity.name.tag.directive.tsx", "entity.name.tag.tsx"],
       settings: {
-        foreground: colors.orangeBright,
+        foreground: colors.brightOrange,
       },
     },
     {

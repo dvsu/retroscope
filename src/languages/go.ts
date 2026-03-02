@@ -56,7 +56,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[go] Keywords: function",
       scope: ["keyword.function.go"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {

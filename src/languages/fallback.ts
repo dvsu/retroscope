@@ -36,7 +36,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[default] Keywords: function, async, storage modifier",
       scope: ["storage.type.function", "keyword.other.fn", "storage.modifier"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {

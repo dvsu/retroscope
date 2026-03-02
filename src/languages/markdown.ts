@@ -46,7 +46,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Heading 2",
       scope: ["heading.2.markdown"],
       settings: {
-        foreground: colors.redBright,
+        foreground: colors.brightRed,
       },
     },
     {
@@ -60,14 +60,14 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Heading 4",
       scope: ["heading.4.markdown"],
       settings: {
-        foreground: colors.orangeBright,
+        foreground: colors.brightOrange,
       },
     },
     {
       name: "[markdown] Heading 5",
       scope: ["heading.5.markdown"],
       settings: {
-        foreground: colors.yellowBright,
+        foreground: colors.brightYellow,
       },
     },
     {
@@ -107,7 +107,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Math",
       scope: ["meta.embedded.math.markdown"],
       settings: {
-        foreground: colors.orangeBright,
+        foreground: colors.brightOrange,
       },
     },
     {
@@ -194,7 +194,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Text: bold",
       scope: ["markup.bold.markdown"],
       settings: {
-        foreground: colors.purpleBright,
+        foreground: colors.brightPurple,
         fontStyle: "bold",
       },
     },
@@ -202,7 +202,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Text: italic",
       scope: ["markup.italic.markdown"],
       settings: {
-        foreground: colors.purpleBright,
+        foreground: colors.brightPurple,
         fontStyle: "italic",
       },
     },
@@ -210,7 +210,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Text: strikethrough",
       scope: ["markup.strikethrough.markdown"],
       settings: {
-        foreground: colors.purpleBright,
+        foreground: colors.brightPurple,
         fontStyle: "bold",
       },
     },
