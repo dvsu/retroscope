@@ -11,7 +11,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "support.constant.math.ts",
       ],
       settings: {
-        foreground: colors.yellow,
+        foreground: colors.yellowBright,
       },
     },
     {
@@ -42,6 +42,13 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       ],
       settings: {
         foreground: colors.function,
+      },
+    },
+    {
+      name: "[TypeScript] Function keywords",
+      scope: ["storage.type.function.ts", "storage.modifier.async.ts"],
+      settings: {
+        foreground: colors.orange,
       },
     },
     {
@@ -104,13 +111,6 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
-      name: "[TypeScript] Keywords: function, async",
-      scope: ["storage.type.function.ts", "storage.modifier.async.ts"],
-      settings: {
-        foreground: colors.yellow,
-      },
-    },
-    {
       name: "[TypeScript] Object key",
       scope: ["meta.object-literal.key.ts"],
       settings: {
@@ -121,7 +121,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[TypeScript] Label",
       scope: ["entity.name.label.ts"],
       settings: {
-        foreground: colors.yellow,
+        foreground: colors.yellowBright,
       },
     },
     {
@@ -137,6 +137,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "punctuation.accessor.ts",
         "punctuation.accessor.optional.ts",
         "punctuation.decorator.ts",
+        "punctuation.definition.binding-pattern.array.ts",
         "punctuation.definition.binding-pattern.object.ts",
         "punctuation.definition.block.ts",
         "punctuation.definition.section.case-statement.ts",

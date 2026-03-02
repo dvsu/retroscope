@@ -10,14 +10,15 @@ export const colors: ColorPalette = {
   blueBright: "#87CBAB",
   green: "#ACB452",
   greenBright: "#D3DD62",
-  orange: "#e96005",
-  orangeBright: "#FE9553",
+  orange: "#D5712F",
+  orangeBright: "#F59D50",
   purple: "#AD74EE",
   purpleBright: "#C39BD3",
-  red: "#F7572B",
+  red: "#F75123",
   redBright: "#FF7979",
   white: "#C9B19F",
-  yellow: "#FFB027",
+  yellowBright: "#F5AF36",
+  yellow: "#D29834",
 };
 
 export const colorMapping: EditorColor = {

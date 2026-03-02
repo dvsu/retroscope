@@ -16,6 +16,7 @@ export type ColorPalette = {
   redBright: string;
   white: string; // ANSI white
   yellow: string; // ANSI yellow
+  yellowBright: string;
 };
 
 export type EditorColor = ColorPalette & {
