@@ -67,14 +67,14 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Heading 5",
       scope: ["heading.5.markdown"],
       settings: {
-        foreground: colors.yellow,
+        foreground: colors.yellowBright,
       },
     },
     {
       name: "[markdown] Heading 6",
       scope: ["heading.6.markdown"],
       settings: {
-        foreground: colors.primary,
+        foreground: colors.yellow,
       },
     },
     {
