@@ -2,13 +2,13 @@ import { languages } from "./languages";
 import type { TokenColor } from "./types";
 import type { EditorColor } from "./themes/types";
 
-type ThemeGenerationParams = {
+interface TokenColorGenerationParams {
   colors: EditorColor;
-};
+}
 
-export const generateTokenColors = ({
+export const generate = ({
   colors,
-}: ThemeGenerationParams): TokenColor[] => {
+}: TokenColorGenerationParams): TokenColor[] => {
   const tokenColors: TokenColor[] = [];
 
   for (const language of languages) {
