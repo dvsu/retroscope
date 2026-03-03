@@ -67,7 +67,6 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[Python] Punctuations",
       scope: [
         "constant.character.format.placeholder.other.python",
-        "meta.function.parameters.python",
         "punctuation.definition.arguments.begin.python",
         "punctuation.definition.arguments.end.python",
         "punctuation.definition.decorator.python",
@@ -118,6 +117,8 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       scope: [
         "entity.name.type.class.python",
         "entity.other.inherited-class.python",
+        "meta.attribute.python",
+        "meta.function.parameters.python",
         "meta.indexed-name.python",
         "support.type.python",
         "support.type.builtin.python",
