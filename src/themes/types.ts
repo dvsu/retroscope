@@ -6,6 +6,8 @@ export type ColorPalette = {
   black: string; // ANSI black
   blue: string; // ANSI blue
   brightBlue: string;
+  brightCyan: string; // ANSI cyan
+  cyan: string;
   green: string; // ANSI green
   brightGreen: string;
   orange: string;
