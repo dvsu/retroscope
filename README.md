@@ -9,3 +9,9 @@
 <p align="center">
   Retro theme for VS Code
 </p>
+
+<p align="center">
+  <img src="./assets/screenshot_ts.png"
+    alt="retroscope-logo"
+    style="width: 1920px; height: auto;">
+</p>
