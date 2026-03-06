@@ -25,6 +25,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[tsx] Comment",
       scope: [
         "comment.block.documentation.tsx",
+        "comment.block.tsx",
         "comment.line.double-slash.tsx",
       ],
       settings: {

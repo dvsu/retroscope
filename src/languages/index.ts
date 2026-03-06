@@ -1,3 +1,4 @@
+import * as dart from "./dart";
 import * as docker from "./docker";
 import * as fallback from "./fallback";
 import * as go from "./go";
@@ -9,6 +10,7 @@ import * as typescript from "./typescript";
 import * as yaml from "./yaml";
 
 export const languages = [
+  dart,
   docker,
   fallback,
   go,
