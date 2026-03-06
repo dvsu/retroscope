@@ -16,7 +16,11 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[TypeScript] Comment",
-      scope: ["comment.block.documentation.ts", "comment.line.double-slash.ts"],
+      scope: [
+        "comment.block.documentation.ts",
+        "comment.block.ts",
+        "comment.line.double-slash.ts",
+      ],
       settings: {
         foreground: colors.comment,
         fontStyle: "italic",
