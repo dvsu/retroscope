@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2
+
+- Ensure `.md` color consistency with `.tsx`
+- Fix UI colors
+
 ## 0.2.1
 
 - Update CHANGELOG

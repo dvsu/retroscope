@@ -88,8 +88,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] HTML tags",
       scope: ["entity.name.tag.html"],
       settings: {
-        foreground: colors.blue,
-        fontStyle: "bold",
+        foreground: colors.brightOrange,
       },
     },
     {
@@ -101,6 +100,17 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       ],
       settings: {
         foreground: colors.blue,
+      },
+    },
+    {
+      name: "[markdown] Link title",
+      scope: [
+        // "string.other.link.description.markdown",
+        // "string.other.link.description.title.markdown",
+        "string.other.link.title.markdown",
+      ],
+      settings: {
+        foreground: colors.yellow,
       },
     },
     {
@@ -194,7 +204,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       name: "[markdown] Text: bold",
       scope: ["markup.bold.markdown"],
       settings: {
-        foreground: colors.brightPurple,
+        foreground: colors.red,
         fontStyle: "bold",
       },
     },
@@ -227,7 +237,6 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "markup.inline.raw.string.markdown",
         "string.other.link.description.markdown",
         "string.other.link.description.title.markdown",
-        "string.other.link.title.markdown",
         "string.quoted.double.html",
       ],
       settings: {
