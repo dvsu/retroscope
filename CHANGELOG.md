@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+- Fix status bar color of debugging mode
+
 ## 0.2.2
 
 - Ensure `.md` color consistency with `.tsx`
