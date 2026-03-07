@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+- Ensure `.md` color consistency with `.tsx`
+
 ## 0.2.1
 
 - Update CHANGELOG
