@@ -165,7 +165,7 @@ export const generate = ({
     "sideBarSectionHeader.foreground": colors.accentSecondary,
     "statusBar.background": colors.black,
     "statusBar.debuggingBackground": `${colors.accentTertiary}30`,
-    "statusBar.debuggingForeground": colors.black,
+    "statusBar.debuggingForeground": colors.accentTertiary,
     "statusBar.foreground": colors.foreground,
     "statusBar.noFolderBackground": colors.background,
     "statusBar.noFolderForeground": colors.foreground,
