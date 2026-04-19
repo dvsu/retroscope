@@ -7,7 +7,7 @@ build.cjs
 dist/
 
 # IDE
-.vscode/
+# .vscode/
 .idea/
 
 # OS
