@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.5
+
+- Upgrade `yarn` to `v4.14.1`
+- Minor color fixes:
+  - Fix editor UI color to improve visibility
+
 ## 0.2.4
 
 - Downgrade `vscode` engine from `^1.109.0` -> `^1.107.0` to be compatible with Antigravity
