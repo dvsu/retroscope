@@ -8,3 +8,4 @@ biome.json
 demo
 src
 tsconfig.json
+node_modules/**
