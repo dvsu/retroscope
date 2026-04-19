@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.6
+
+- Ignore `node_modules` from bundled package
+
 ## 0.2.5
 
 - Upgrade `yarn` to `v4.14.1`
