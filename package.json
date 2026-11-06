@@ -3,7 +3,7 @@
   "displayName": "retroscope",
   "description": "Retro theme for VS Code and Antigravity",
   "type": "module",
-  "packageManager": "yarn@4.14.1",
+  "packageManager": "yarn@4.18.1+sha512.b2e1e7524f654f2749d32b4ebcb4622473cb5bcbc485df2007e12a154e50162a4d795526768bc5f5b8f81717bfd79deb2472813d86fb5ae2eb551fa9c872b08f",
   "icon": "assets/retroscope_255x255.png",
   "version": "0.2.6",
   "author": "David Su",
@@ -42,19 +42,18 @@
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "typecheck": "tsc --noEmit",
-    "check": "yarn lint && yarn typecheck && yarn build",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "check": "yarn lint && yarn typecheck && yarn build && yarn test",
+    "test": "node --import tsx --test \"src/**/*.test.ts\""
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.0",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^25.3.2",
-    "esbuild": "^0.27.3",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.4.6",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
-    "vite": "^5.4.0",
-    "vite-plugin-static-copy": "^2.0.0"
+    "@biomejs/biome": "2.6.2",
+    "@types/node": "24.19.2",
+    "@vscode/vsce": "4.0.0",
+    "ovsx": "1.3.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "resolutions": {
+    "@vscode/vsce": "4.0.0"
   }
 }

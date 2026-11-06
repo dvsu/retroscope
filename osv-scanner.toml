@@ -1,0 +1,13 @@
+# Reviewed osv-scanner findings. Each entry needs a reason and an ignoreUntil
+# date (at most about two months out); after that date the finding fails again.
+# Prefer upgrading. Ignore only what cannot affect this project.
+
+[[IgnoredVulns]]
+id = "GHSA-3g3m-2fjr-6pw4"
+ignoreUntil = 2026-12-31
+reason = "glob 13 via cacache (npm fetch internals of the packaging tools). Fixed only in glob 14, released 2026-10-27, which cacache does not accept yet. Needs attacker-controlled AbortSignal timing; dev tooling only, never shipped."
+
+[[IgnoredVulns]]
+id = "GHSA-g3hv-75wg-m249"
+ignoreUntil = 2026-12-31
+reason = "minimatch 10 via @vscode/vsce. Fixed only in minimatch 11, released 2026-10-28, which vsce 4.0 does not accept. DoS needs attacker-controlled glob patterns; ours are our own packaging patterns. Dev tooling only, never shipped."

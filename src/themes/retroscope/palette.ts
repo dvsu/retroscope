@@ -1,4 +1,4 @@
-import type { EditorColor, ColorPalette } from "../types";
+import type { ColorPalette, EditorColor } from "../types";
 
 export const colors: ColorPalette = {
   primary: "#FFCB93",
