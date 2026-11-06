@@ -4,9 +4,7 @@ interface UiColorGenerationParams {
   colors: EditorColor;
 }
 
-export const generate = ({
-  colors,
-}: UiColorGenerationParams): Record<string, string> => {
+export const generate = ({ colors }: UiColorGenerationParams): Record<string, string> => {
   return {
     "activityBar.background": colors.background,
     "activityBar.foreground": colors.foreground,

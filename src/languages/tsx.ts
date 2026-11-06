@@ -1,5 +1,5 @@
-import type { TokenColor } from "../types";
 import type { EditorColor } from "../themes/types";
+import type { TokenColor } from "../types";
 
 export const generate = (colors: EditorColor): TokenColor[] => {
   return [
@@ -115,11 +115,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[tsx] Keywords: const",
-      scope: [
-        "storage.modifier.tsx",
-        "storage.type.tsx",
-        "storage.type.enum.tsx",
-      ],
+      scope: ["storage.modifier.tsx", "storage.type.tsx", "storage.type.enum.tsx"],
       settings: {
         foreground: colors.keyword,
       },
@@ -180,10 +176,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[tsx] Punctuations: colon",
-      scope: [
-        "keyword.operator.type.annotation.tsx",
-        "punctuation.separator.label.tsx",
-      ],
+      scope: ["keyword.operator.type.annotation.tsx", "punctuation.separator.label.tsx"],
       settings: {
         foreground: colors.typeAnnotation,
       },
@@ -276,10 +269,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[tsx] Value: boolean",
-      scope: [
-        "constant.language.boolean.false.tsx",
-        "constant.language.boolean.true.tsx",
-      ],
+      scope: ["constant.language.boolean.false.tsx", "constant.language.boolean.true.tsx"],
       settings: {
         foreground: colors.boolean,
       },
@@ -300,11 +290,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[tsx] Value: string",
-      scope: [
-        "string.quoted.double.tsx",
-        "string.quoted.single.tsx",
-        "string.template.tsx",
-      ],
+      scope: ["string.quoted.double.tsx", "string.quoted.single.tsx", "string.template.tsx"],
       settings: {
         foreground: colors.string,
       },

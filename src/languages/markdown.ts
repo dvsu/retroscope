@@ -1,5 +1,5 @@
-import type { TokenColor } from "../types";
 import type { EditorColor } from "../themes/types";
+import type { TokenColor } from "../types";
 
 export const generate = (colors: EditorColor): TokenColor[] => {
   return [
@@ -27,10 +27,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[markdown] Fenced code language",
-      scope: [
-        "fenced_code.block.language",
-        "fenced_code.block.language.markdown",
-      ],
+      scope: ["fenced_code.block.language", "fenced_code.block.language.markdown"],
       settings: {
         foreground: colors.purple,
       },

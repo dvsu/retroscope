@@ -22,7 +22,6 @@ export type TokenColor = {
   settings: TokenStyling;
 };
 
-
 export type VSCodeTheme = {
   name: string;
   type: "dark" | "light";

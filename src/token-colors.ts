@@ -1,14 +1,12 @@
 import { languages } from "./languages";
-import type { TokenColor } from "./types";
 import type { EditorColor } from "./themes/types";
+import type { TokenColor } from "./types";
 
 interface TokenColorGenerationParams {
   colors: EditorColor;
 }
 
-export const generate = ({
-  colors,
-}: TokenColorGenerationParams): TokenColor[] => {
+export const generate = ({ colors }: TokenColorGenerationParams): TokenColor[] => {
   const tokenColors: TokenColor[] = [];
 
   for (const language of languages) {

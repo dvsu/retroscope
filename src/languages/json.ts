@@ -1,14 +1,11 @@
-import type { TokenColor } from "../types";
 import type { EditorColor } from "../themes/types";
+import type { TokenColor } from "../types";
 
 export const generate = (colors: EditorColor): TokenColor[] => {
   return [
     {
       name: "[json] Comment (for jsonc)",
-      scope: [
-        "comment.block.documentation.json",
-        "comment.line.double-slash.js",
-      ],
+      scope: ["comment.block.documentation.json", "comment.line.double-slash.js"],
       settings: {
         foreground: colors.comment,
         fontStyle: "italic",

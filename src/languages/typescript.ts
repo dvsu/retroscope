@@ -1,26 +1,18 @@
-import type { TokenColor } from "../types";
 import type { EditorColor } from "../themes/types";
+import type { TokenColor } from "../types";
 
 export const generate = (colors: EditorColor): TokenColor[] => {
   return [
     {
       name: "[TypeScript] Built-in classes: Object, Array",
-      scope: [
-        "support.class.builtin.ts",
-        "support.class.promise.ts",
-        "support.constant.math.ts",
-      ],
+      scope: ["support.class.builtin.ts", "support.class.promise.ts", "support.constant.math.ts"],
       settings: {
         foreground: colors.brightYellow,
       },
     },
     {
       name: "[TypeScript] Comment",
-      scope: [
-        "comment.block.documentation.ts",
-        "comment.block.ts",
-        "comment.line.double-slash.ts",
-      ],
+      scope: ["comment.block.documentation.ts", "comment.block.ts", "comment.line.double-slash.ts"],
       settings: {
         foreground: colors.comment,
         fontStyle: "italic",
@@ -165,10 +157,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[TypeScript] Punctuations: colon",
-      scope: [
-        "keyword.operator.type.annotation.ts",
-        "punctuation.separator.label.ts",
-      ],
+      scope: ["keyword.operator.type.annotation.ts", "punctuation.separator.label.ts"],
       settings: {
         foreground: colors.typeAnnotation,
       },
@@ -247,10 +236,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[TypeScript] Value: boolean",
-      scope: [
-        "constant.language.boolean.false.ts",
-        "constant.language.boolean.true.ts",
-      ],
+      scope: ["constant.language.boolean.false.ts", "constant.language.boolean.true.ts"],
       settings: {
         foreground: colors.boolean,
       },
@@ -271,11 +257,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[TypeScript] Value: string",
-      scope: [
-        "string.quoted.double.ts",
-        "string.quoted.single.ts",
-        "string.template.ts",
-      ],
+      scope: ["string.quoted.double.ts", "string.quoted.single.ts", "string.template.ts"],
       settings: {
         foreground: colors.string,
       },

@@ -1,5 +1,5 @@
-import type { TokenColor } from "../types";
 import type { EditorColor } from "../themes/types";
+import type { TokenColor } from "../types";
 
 export const generate = (colors: EditorColor): TokenColor[] => {
   return [
@@ -48,10 +48,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[Python] Keywords: function, async",
-      scope: [
-        "storage.type.function.python",
-        "storage.type.function.async.python",
-      ],
+      scope: ["storage.type.function.python", "storage.type.function.async.python"],
       settings: {
         foreground: colors.brightYellow,
       },
@@ -97,10 +94,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[Python] Punctuations: colon",
-      scope: [
-        "punctuation.separator.annotation.python",
-        "punctuation.separator.colon.python",
-      ],
+      scope: ["punctuation.separator.annotation.python", "punctuation.separator.colon.python"],
       settings: {
         foreground: colors.typeAnnotation,
       },

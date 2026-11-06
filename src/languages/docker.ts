@@ -1,5 +1,5 @@
-import type { TokenColor } from "../types";
 import type { EditorColor } from "../themes/types";
+import type { TokenColor } from "../types";
 
 export const generate = (colors: EditorColor): TokenColor[] => {
   return [
@@ -20,10 +20,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[dockerfile] Keywords",
-      scope: [
-        "keyword.control.dockerfile",
-        "keyword.other.special-method.dockerfile",
-      ],
+      scope: ["keyword.control.dockerfile", "keyword.other.special-method.dockerfile"],
       settings: {
         foreground: colors.keyword,
       },

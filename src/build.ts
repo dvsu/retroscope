@@ -1,10 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import * as ui from "./ui-colors";
 import { themes } from "./themes";
-import type { VSCodeTheme } from "./types";
 import * as tc from "./token-colors";
+import type { VSCodeTheme } from "./types";
+import * as ui from "./ui-colors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

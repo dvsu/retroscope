@@ -16,17 +16,8 @@
   "engines": {
     "vscode": "^1.107.0"
   },
-  "categories": [
-    "Themes"
-  ],
-  "keywords": [
-    "color-theme",
-    "dark",
-    "dark theme",
-    "retro",
-    "retroscope",
-    "themes"
-  ],
+  "categories": ["Themes"],
+  "keywords": ["color-theme", "dark", "dark theme", "retro", "retroscope", "themes"],
   "contributes": {
     "themes": [
       {
@@ -41,6 +32,8 @@
     "dev": "tsx watch src/build.ts --exclude ./node_modules/**/*",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "check": "yarn lint && yarn typecheck && yarn build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
