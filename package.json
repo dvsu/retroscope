@@ -16,8 +16,17 @@
   "engines": {
     "vscode": "^1.107.0"
   },
-  "categories": ["Themes"],
-  "keywords": ["color-theme", "dark", "dark theme", "retro", "retroscope", "themes"],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "color-theme",
+    "dark",
+    "dark theme",
+    "retro",
+    "retroscope",
+    "themes"
+  ],
   "contributes": {
     "themes": [
       {
