@@ -42,8 +42,9 @@
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "typecheck": "tsc --noEmit",
-    "check": "yarn lint && yarn typecheck && yarn build && yarn test",
-    "test": "node --import tsx --test \"src/**/*.test.ts\""
+    "check": "yarn lint && yarn typecheck && yarn build && yarn test && yarn check:package",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "check:package": "tsx src/check-package.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.2",
@@ -55,5 +56,11 @@
   },
   "resolutions": {
     "@vscode/vsce": "4.0.0"
-  }
+  },
+  "files": [
+    "themes/retroscope-color-theme.json",
+    "assets/retroscope_255x255.png",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }
