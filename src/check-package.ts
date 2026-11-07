@@ -10,6 +10,8 @@ const EXPECTED = [
   "assets/retroscope_255x255.png",
   "package.json",
   "themes/retroscope-color-theme.json",
+  "themes/retroscope-high-contrast-color-theme.json",
+  "themes/retroscope-soft-color-theme.json",
 ];
 
 const output = execFileSync("vsce", ["ls", "--no-dependencies"], { encoding: "utf8" });

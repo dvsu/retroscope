@@ -122,3 +122,26 @@ export const simulate = (hex: string, kind: ColourBlindness): string => {
 /** The smallest colour difference across the three types of colour blindness. */
 export const colourBlindDeltaE = (hexA: string, hexB: string): number =>
   Math.min(...COLOUR_BLINDNESS.map((k) => deltaE(simulate(hexA, k), simulate(hexB, k))));
+
+/** The hex colour of a CIELAB (D65) colour, or undefined when it is outside sRGB. */
+export const fromLab = ({ l, a, b }: Lab): string | undefined => {
+  const fy = (l + 16) / 116;
+  const inv = (t: number) => (t ** 3 > 0.008856 ? t ** 3 : (t - 16 / 116) / 7.787);
+  const x = inv(fy + a / 500) * 0.95047;
+  const y = inv(fy);
+  const z = inv(fy - b / 200) * 1.08883;
+  const linear = [
+    3.2406 * x - 1.5372 * y - 0.4986 * z,
+    -0.9689 * x + 1.8758 * y + 0.0415 * z,
+    0.0557 * x - 0.204 * y + 1.057 * z,
+  ];
+  if (linear.some((c) => c < -0.001 || c > 1.001)) return undefined;
+  return `#${linear
+    .map((c) =>
+      Math.round(toGamma(c) * 255)
+        .toString(16)
+        .padStart(2, "0"),
+    )
+    .join("")
+    .toUpperCase()}`;
+};
