@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+
+- Add **Retroscope High Contrast**: code text at 7:1 contrast or more (WCAG AAA) on a slightly deeper background, for bright rooms, glare or low vision
+- Add **Retroscope Soft**: a lighter, warmer dark theme with gentler contrast, for dim rooms and long evenings
+- Set colours for every remaining interface state, such as the highlighted item in the command palette and autocomplete, keyboard focus in lists, unfocused tabs, inlay hints and settings inputs, so they read the same in VS Code, Cursor and Antigravity
+- Make the outline of active toggles, such as Match Case in the find box, easier to see
+- Make the box behind a matching bracket fainter, so the bracket's own colour reads clearly; the bright outline still marks the match
+
 ## 0.3.0
 
 - Improve colour vision accessibility: code colours are rebalanced so each one stays easy to tell apart with typical colour vision as well as with protanopia, deuteranopia and tritanopia
