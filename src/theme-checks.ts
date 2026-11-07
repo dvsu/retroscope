@@ -27,12 +27,11 @@ export const MUTED_TOKENS: { pattern: RegExp; minContrast: number; reason: strin
 ];
 
 /**
- * Families where every documented background/foreground pair must be set
- * explicitly. Editors built on older VS Code (Antigravity, Cursor) fill unset
- * keys with their own defaults, which can put bright text on a bright
- * background. Add a family here when a fork shows such a default.
+ * Every documented background/foreground pair must be set explicitly. Editors
+ * built on older VS Code (Antigravity, Cursor) fill unset keys with their own
+ * defaults, which can put bright text on a bright background.
  */
-export const REQUIRED_PAIR_PREFIXES = ["statusBarItem.", "button."];
+export const REQUIRED_PAIR_PREFIXES = [""];
 
 /** Foregrounds that may stay unset although their background is set, and why. */
 export const OPTIONAL_FOREGROUNDS: Record<string, string> = {
@@ -57,6 +56,10 @@ export const STATE_TEXT: Record<string, string> = {
  * each may have. WCAG 2.2 sets no minimum for inactive interface components.
  */
 export const LOW_CONTRAST_PAIRS: Record<string, { minContrast: number; reason: string }> = {
+  "tab.unfocusedInactiveBackground": {
+    minContrast: FADED_CONTRAST,
+    reason: "Unselected tabs in an unfocused group recede by design.",
+  },
   "tab.inactiveBackground": {
     minContrast: FADED_CONTRAST,
     reason: "Unselected tabs recede by design.",
@@ -88,7 +91,11 @@ export const FADED_FOREGROUNDS: Record<string, string> = {
 export const DECORATIVE_FOREGROUNDS: Record<string, string> = {
   "editorRuler.foreground": "A guide line at a column, not text.",
   "editorWhitespace.foreground": "Dots and arrows that show spaces and tabs.",
+  "tab.border": "A thin divider; tabs are told apart by their labels and background.",
 };
+
+/** WCAG 2.2 AA minimum for interface parts that aren't text (1.4.11). */
+export const NON_TEXT_CONTRAST = 3;
 
 /** The opaque surface a translucent background is drawn on. */
 const SURFACES: [prefix: string, surface: string][] = [
@@ -107,7 +114,8 @@ const statePairs = (colors: Record<string, string>, problems: string[]): [string
     if (!vscodeColorIds.has(fg)) continue;
     const [hasBg, hasFg] = [bg in colors, fg in colors];
     if (REQUIRED_PAIR_PREFIXES.some((prefix) => bg.startsWith(prefix))) {
-      if (!hasBg || !hasFg) problems.push(`state: ${bg} and ${fg} must both be set`);
+      if (!hasBg || (!hasFg && !(fg in OPTIONAL_FOREGROUNDS)))
+        problems.push(`state: ${bg} and ${fg} must both be set`);
     } else if (hasBg && !hasFg && !(fg in OPTIONAL_FOREGROUNDS)) {
       problems.push(`state: ${bg} is set without ${fg}`);
     } else if (hasFg && !hasBg) {
@@ -197,6 +205,18 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
           `distinct: ${key} ${color} is too close to punctuation ${punctuation} on thin characters (${gap.toFixed(1)}, needs ${MIN_GLYPH_DIFFERENCE})`,
         );
       }
+    }
+  }
+
+  // Borders, focus outlines and the cursor show where a control is or which
+  // one has focus, so they need NON_TEXT_CONTRAST against their surface.
+  for (const [key, color] of Object.entries(theme.colors)) {
+    if (!/([bB]order|Outline)$|^editorCursor\.foreground$/.test(key)) continue;
+    if (key in DECORATIVE_FOREGROUNDS || !isHexColor(color)) continue;
+    const surface = theme.colors[`${key.split(".")[0]}.background`];
+    const ratio = contrastRatio(color, isHexColor(surface) ? surface : background, background);
+    if (ratio < NON_TEXT_CONTRAST) {
+      problems.push(`contrast: ${key} is ${ratio.toFixed(2)}:1, needs ${NON_TEXT_CONTRAST}`);
     }
   }
 

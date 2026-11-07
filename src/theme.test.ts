@@ -196,6 +196,24 @@ describe("self-test: the checks catch a broken palette", () => {
     );
   });
 
+  test("a focus outline too faint to see", () => {
+    const [theme] = generated;
+    const colors = { ...theme.theme.colors, focusBorder: `${colorMapping.accentPrimary}30` };
+    const problems = checkTheme({ ...theme, theme: { ...theme.theme, colors } });
+    assert.ok(
+      problems.some((p) => p.startsWith("contrast: focusBorder")),
+      problems.join("\n"),
+    );
+  });
+
+  test("a documented state left to the editor's default", () => {
+    const [theme] = generated;
+    const colors = { ...theme.theme.colors };
+    delete colors["quickInputList.focusForeground"];
+    const problems = checkTheme({ ...theme, theme: { ...theme.theme, colors } });
+    assert.ok(problems.some((p) => p.startsWith("state: quickInputList.focusBackground")));
+  });
+
   test("unreadable text", () => {
     assert.ok(broken({ string: colorMapping.background }).some((p) => p.startsWith("contrast:")));
   });
