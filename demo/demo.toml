@@ -1,0 +1,18 @@
+# Application settings
+title = "Retro Shop"
+version = "1.4.0"
+debug = false
+
+[server]
+host = "0.0.0.0"
+port = 8080
+timeout = 2.5
+started = 2026-11-07T08:00:00Z
+
+[database]
+url = 'postgres://localhost/shop'
+pool = { min = 1, max = 10 }
+
+[[workers]]
+name = "mailer"
+queues = ["email", "sms"]

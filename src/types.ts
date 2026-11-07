@@ -5,12 +5,14 @@ export type FontStyle =
   | "bold italic"
   | "bold italic underline"
   | "bold underline"
-  | "underline";
+  | "underline"
+  | "strikethrough";
 
 export type FontWeight = "normal" | "bold";
 
 export type TokenStyling = {
-  foreground: string;
+  /** Unset keeps the colour of the enclosing token, for a rule that only sets fontStyle. */
+  foreground?: string;
   background?: string;
   fontStyle?: FontStyle;
   fontWeight?: FontWeight;

@@ -420,7 +420,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Comment",
       "scope": [
-        "comment.line"
+        "comment"
       ],
       "settings": {
         "foreground": "#6B5B4F",
@@ -439,7 +439,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function"
+        "entity.name.function",
+        "entity.name.operator"
       ],
       "settings": {
         "foreground": "#89AEA3"
@@ -448,7 +449,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword"
+        "keyword",
+        "support.other.directive"
       ],
       "settings": {
         "foreground": "#F75123"
@@ -529,6 +531,266 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       ],
       "settings": {
         "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[default] Keywords: storage type",
+      "scope": [
+        "storage.type"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[default] Type definition: built-in and named types",
+      "scope": [
+        "storage.type.primitive",
+        "storage.type.built-in",
+        "storage.type.generic",
+        "storage.type.java",
+        "storage.type.sql",
+        "support.class",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "entity.name.package",
+        "support.other.namespace",
+        "entity.name.class",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "foreground": "#F59D50"
+      }
+    },
+    {
+      "name": "[default] Built-in functions",
+      "scope": [
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
+      "name": "[default] Built-in variables",
+      "scope": [
+        "support.variable"
+      ],
+      "settings": {
+        "foreground": "#AD74EE"
+      }
+    },
+    {
+      "name": "[default] Built-in constants",
+      "scope": [
+        "support.constant"
+      ],
+      "settings": {
+        "foreground": "#C79DD7"
+      }
+    },
+    {
+      "name": "[default] Attributes and selectors",
+      "scope": [
+        "entity.other.attribute-name",
+        "support.attribute",
+        "support.other.attribute"
+      ],
+      "settings": {
+        "foreground": "#D5712F"
+      }
+    },
+    {
+      "name": "[default] Tags and sections",
+      "scope": [
+        "entity.name.tag",
+        "entity.name.section"
+      ],
+      "settings": {
+        "foreground": "#F59D50"
+      }
+    },
+    {
+      "name": "[default] Variable names: declared, fields",
+      "scope": [
+        "entity.name.variable",
+        "entity.other.attribute"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[default] Object key",
+      "scope": [
+        "meta.object-literal.key"
+      ],
+      "settings": {
+        "foreground": "#C9B19F"
+      }
+    },
+    {
+      "name": "[default] Braces",
+      "scope": [
+        "meta.brace"
+      ],
+      "settings": {
+        "foreground": "#B58156"
+      }
+    },
+    {
+      "name": "[default] Value: escape and entity characters",
+      "scope": [
+        "constant.character",
+        "support.other.escape"
+      ],
+      "settings": {
+        "foreground": "#789BB9"
+      }
+    },
+    {
+      "name": "[default] Constants: enum cases, labels, macros",
+      "scope": [
+        "constant.enum",
+        "entity.name.label",
+        "entity.name.goto-label",
+        "entity.name.other.preprocessor"
+      ],
+      "settings": {
+        "foreground": "#C79DD7"
+      }
+    },
+    {
+      "name": "[default] Shell commands",
+      "scope": [
+        "entity.name.command"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
+      "name": "[default] Value: CSS keyframe offset",
+      "scope": [
+        "entity.other.keyframe-offset"
+      ],
+      "settings": {
+        "foreground": "#C79DD7"
+      }
+    },
+    {
+      "name": "[default] Regular expression: anchors and wildcards",
+      "scope": [
+        "support.other.match"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[default] Regular expression: groups",
+      "scope": [
+        "support.other.parenthesis"
+      ],
+      "settings": {
+        "foreground": "#B58156"
+      }
+    },
+    {
+      "name": "[default] Invalid code",
+      "scope": [
+        "invalid"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[default] Deprecated code",
+      "scope": [
+        "invalid.deprecated"
+      ],
+      "settings": {
+        "foreground": "#D5712F",
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "name": "[default] Markup: heading",
+      "scope": [
+        "markup.heading"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[default] Markup: heading level 2",
+      "scope": [
+        "markup.heading.setext.2"
+      ],
+      "settings": {
+        "foreground": "#FF7979"
+      }
+    },
+    {
+      "name": "[default] Markup: bold",
+      "scope": [
+        "markup.bold"
+      ],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "[default] Markup: italic",
+      "scope": [
+        "markup.italic"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "[default] Markup: underline",
+      "scope": [
+        "markup.underline"
+      ],
+      "settings": {
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "[default] Markup: quote",
+      "scope": [
+        "markup.quote"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "[default] Markup: lists and tables",
+      "scope": [
+        "markup.list",
+        "markup.table"
+      ],
+      "settings": {
+        "foreground": "#C9B19F"
+      }
+    },
+    {
+      "name": "[default] Markup: code",
+      "scope": [
+        "markup.raw",
+        "markup.inline.raw"
+      ],
+      "settings": {
+        "foreground": "#ADB26B"
       }
     },
     {

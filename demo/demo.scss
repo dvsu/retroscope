@@ -1,0 +1,19 @@
+// Buttons
+@use "sass:math";
+
+$accent: #d4a574;
+$sizes: (small: 0.75rem, large: 1.25rem);
+
+@mixin button($size: small) {
+  padding: map-get($sizes, $size) math.div(1rem, 2);
+  &:hover { filter: brightness(110%); }
+}
+
+.button {
+  @include button(large);
+  color: darken($accent, 10%);
+
+  @each $name, $value in $sizes {
+    &--#{$name} { font-size: $value; }
+  }
+}

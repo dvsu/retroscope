@@ -1,0 +1,23 @@
+/* Card component */
+:root {
+  --accent: #d4a574;
+  --radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: rgb(29 27 25 / 90%);
+  }
+}
+
+.card > .title::before,
+a[href^="https"]:hover {
+  content: "→ ";
+  color: var(--accent);
+  border-radius: calc(var(--radius) * 2);
+  transition: transform 150ms ease-in-out !important;
+}
+
+#hero {
+  font: 700 2rem/1.2 "Inter", sans-serif;
+}

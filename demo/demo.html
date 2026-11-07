@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Retro Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body { margin: 0; }
+    </style>
+  </head>
+  <body class="dark">
+    <!-- Main navigation -->
+    <nav id="top" aria-label="Main">
+      <a href="/" class="logo">Retro&nbsp;Shop</a>
+    </nav>
+    <main>
+      <form action="/search" method="get">
+        <input type="search" name="q" placeholder="Search…" required />
+        <button type="submit" disabled>Go</button>
+      </form>
+    </main>
+    <script type="module">
+      document.querySelector("#top").hidden = false;
+    </script>
+  </body>
+</html>
