@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.8
+
+- Fix unreadable hover states in Antigravity and Cursor, such as bright text on a bright remote indicator in the status bar
+- Make find matches readable: dark text on the current match, bright text on the other matches
+- Improve contrast of the status bar hover, pressed and debugging states
+- Add colours for secondary buttons and for the remote, offline, error and warning items in the status bar
+
 ## 0.2.7
 
 - Ship a much smaller package (19 KB instead of 1.1 MB): only the theme, icon, changelog and licence
