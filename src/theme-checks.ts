@@ -28,6 +28,8 @@ export const REQUIRED_PAIR_PREFIXES = ["statusBarItem.", "button."];
 /** Foregrounds that may stay unset although their background is set, and why. */
 export const OPTIONAL_FOREGROUNDS: Record<string, string> = {
   "editor.selectionForeground": "VS Code applies it only in high-contrast themes.",
+  "editorBracketMatch.foreground":
+    "Older VS Code forks ignore it, so brackets keep their own colour on the match box.",
   "terminal.selectionForeground":
     "Unset keeps the terminal's own text colours under the translucent selection.",
 };
@@ -108,6 +110,23 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
     const ratio = contrastRatio(fgColor, bgColor, isHexColor(surface) ? surface : background);
     if (ratio < needed) {
       problems.push(`contrast: ${fg} on ${bg} is ${ratio.toFixed(2)}:1, needs ${needed}`);
+    }
+  }
+
+  // Brackets keep their own colour on the match box: editors on older VS Code
+  // ignore editorBracketMatch.foreground, so it can't rescue them.
+  const matchBox = theme.colors["editorBracketMatch.background"];
+  if (isHexColor(matchBox)) {
+    for (const [key, color] of Object.entries(theme.colors)) {
+      if (key !== "editor.foreground" && !/^editorBracketHighlight\.foreground\d$/.test(key))
+        continue;
+      if (!isHexColor(color)) continue;
+      const ratio = contrastRatio(color, matchBox, background);
+      if (ratio < TEXT_CONTRAST) {
+        problems.push(
+          `contrast: ${key} on editorBracketMatch.background is ${ratio.toFixed(2)}:1, needs ${TEXT_CONTRAST}`,
+        );
+      }
     }
   }
 

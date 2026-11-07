@@ -114,6 +114,20 @@ describe("self-test: the checks catch a broken palette", () => {
     );
   });
 
+  test("a matching bracket hidden by its highlight box", () => {
+    const [theme] = generated;
+    const colors = {
+      ...theme.theme.colors,
+      "editorBracketMatch.background": colorMapping.accentTertiary,
+      "editorBracketMatch.foreground": colorMapping.background,
+    };
+    const problems = checkTheme({ ...theme, theme: { ...theme.theme, colors } });
+    assert.ok(
+      problems.some((p) => p.startsWith("contrast: editorBracketHighlight.foreground1 on")),
+      problems.join("\n"),
+    );
+  });
+
   test("unreadable text", () => {
     assert.ok(broken({ string: colorMapping.background }).some((p) => p.startsWith("contrast:")));
   });

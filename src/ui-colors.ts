@@ -51,9 +51,11 @@ export const generate = ({ colors }: UiColorGenerationParams): Record<string, st
     "editor.wordHighlightBackground": `${colors.red}40`,
     "editorCursor.foreground": colors.red,
     "editorError.foreground": colors.brightRed,
-    "editorBracketMatch.background": colors.accentTertiary,
+    // A faint box and a bright outline, so the bracket keeps its own colour.
+    // Editors on older VS Code (Antigravity) ignore editorBracketMatch.foreground,
+    // so an opaque box hid brackets of the same colour.
+    "editorBracketMatch.background": `${colors.accentTertiary}10`,
     "editorBracketMatch.border": colors.accentPrimary,
-    "editorBracketMatch.foreground": colors.black,
     "editorBracketHighlight.foreground1": colors.accentTertiary,
     "editorBracketHighlight.foreground2": colors.red,
     "editorBracketHighlight.foreground3": colors.yellow,
