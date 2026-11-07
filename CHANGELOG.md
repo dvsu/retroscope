@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.9
+
+- Fix the matching bracket disappearing in Antigravity: it now keeps its own colour inside a faint box with a bright outline
+- Colour every kind of token in 26 common languages, including C, C++, C#, Java, JavaScript, Kotlin, PHP, Ruby, Rust, Swift, SQL, shell, CSS and HTML, which partly fell back to a single colour
+- Show invalid code in red and deprecated code struck through
+- Style headings, bold, italic, quotes, lists and inline code in Markdown and doc comments
+- Make faded text easier to read: comments, line numbers, breadcrumbs, placeholders and unselected tabs are slightly lighter (3:1 contrast)
+- Unselected tabs no longer have a tint
+
 ## 0.2.8
 
 - Fix unreadable hover states in Antigravity and Cursor, such as bright text on a bright remote indicator in the status bar
