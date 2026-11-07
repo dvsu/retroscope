@@ -56,11 +56,14 @@ export const generate = ({ colors }: UiColorGenerationParams): Record<string, st
     // so an opaque box hid brackets of the same colour.
     "editorBracketMatch.background": `${colors.accentTertiary}10`,
     "editorBracketMatch.border": colors.accentPrimary,
-    "editorBracketHighlight.foreground1": colors.accentTertiary,
+    // Bracket pair colouring (on by default) draws brackets in these, over the
+    // token colours, so level 1 must stand apart from the quotes, commas and
+    // colons around it.
+    "editorBracketHighlight.foreground1": colors.orange,
     "editorBracketHighlight.foreground2": colors.red,
     "editorBracketHighlight.foreground3": colors.yellow,
     "editorBracketHighlight.foreground4": colors.purple,
-    "editorBracketHighlight.foreground5": colors.orange,
+    "editorBracketHighlight.foreground5": colors.brightOrange,
     "editorBracketHighlight.foreground6": colors.green,
     "editorGroup.border": colors.intermediate,
     "editorGroup.dropIntoPromptBackground": `${colors.black}90`,

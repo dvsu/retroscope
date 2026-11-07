@@ -24,8 +24,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "chat.slashCommandBackground": "#789BB900",
     "chat.slashCommandForeground": "#789BB9",
     "chat.thinkingShimmer": "#FFCB9370",
-    "debugConsole.errorForeground": "#FF7979",
-    "debugConsole.infoForeground": "#D5712F",
+    "debugConsole.errorForeground": "#E87C7D",
+    "debugConsole.infoForeground": "#C67640",
     "debugConsole.sourceForeground": "#C9B19F",
     "debugConsole.warningForeground": "#FFCB93",
     "debugExceptionWidget.background": "#1D1B19",
@@ -41,20 +41,20 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editor.findMatchHighlightForeground": "#FFCB93",
     "editor.foreground": "#C9B19F",
     "editor.inactiveSelectionBackground": "#1D1B1960",
-    "editorLightBulb.foreground": "#D5712F",
+    "editorLightBulb.foreground": "#C67640",
     "editor.lineHighlightBackground": "#1D1B19",
     "editor.selectionBackground": "#D4A57440",
-    "editor.selectionHighlightBackground": "#D5712F30",
+    "editor.selectionHighlightBackground": "#C6764030",
     "editor.wordHighlightBackground": "#F7512340",
     "editorCursor.foreground": "#F75123",
-    "editorError.foreground": "#FF7979",
+    "editorError.foreground": "#E87C7D",
     "editorBracketMatch.background": "#B5815610",
     "editorBracketMatch.border": "#FFCB93",
-    "editorBracketHighlight.foreground1": "#B58156",
+    "editorBracketHighlight.foreground1": "#C67640",
     "editorBracketHighlight.foreground2": "#F75123",
     "editorBracketHighlight.foreground3": "#D29834",
     "editorBracketHighlight.foreground4": "#AD74EE",
-    "editorBracketHighlight.foreground5": "#D5712F",
+    "editorBracketHighlight.foreground5": "#EF9B47",
     "editorBracketHighlight.foreground6": "#ADB26B",
     "editorGroup.border": "#756356",
     "editorGroup.dropIntoPromptBackground": "#1D1B1990",
@@ -73,7 +73,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editorOverviewRuler.deletedForeground": "#AD74EE",
     "editorOverviewRuler.errorForeground": "#F75123",
     "editorOverviewRuler.modifiedForeground": "#D29834",
-    "editorOverviewRuler.warningForeground": "#D5712F",
+    "editorOverviewRuler.warningForeground": "#C67640",
     "editorWarning.foreground": "#FFCB93",
     "editorWhitespace.foreground": "#756356",
     "editorWidget.background": "#1D1B19",
@@ -84,7 +84,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "focusBorder": "#FFCB93",
     "foreground": "#C9B19F",
     "gitDecoration.addedResourceForeground": "#ADB26B",
-    "gitDecoration.conflictingResourceForeground": "#FF7979",
+    "gitDecoration.conflictingResourceForeground": "#E87C7D",
     "gitDecoration.deletedResourceForeground": "#F75123",
     "gitDecoration.ignoredResourceForeground": "#756356",
     "gitDecoration.modifiedResourceForeground": "#FFCB93",
@@ -109,8 +109,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "keybindingLabel.foreground": "#FFCB93",
     "list.activeSelectionBackground": "#B5815660",
     "list.activeSelectionForeground": "#FFCB93",
-    "list.errorForeground": "#FF7979",
-    "list.warningForeground": "#F5AF36",
+    "list.errorForeground": "#E87C7D",
+    "list.warningForeground": "#F5BD3A",
     "list.hoverBackground": "#B5815650",
     "list.hoverForeground": "#FFCB93",
     "list.inactiveSelectionBackground": "#1D1B1940",
@@ -125,7 +125,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "merge.incomingContentBackground": "#789BB920",
     "minimap.background": "#1D1B19",
     "minimap.errorHighlight": "#F75123",
-    "minimap.warningHighlight": "#D5712F",
+    "minimap.warningHighlight": "#C67640",
     "minimapGutter.addedBackground": "#ADB26B",
     "minimapGutter.modifiedBackground": "#D29834",
     "minimapGutter.deletedBackground": "#AD74EE",
@@ -178,16 +178,16 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "statusBarItem.remoteHoverBackground": "#B5815660",
     "statusBarItem.remoteHoverForeground": "#FFCB93",
     "statusBarItem.offlineBackground": "#1D1B19",
-    "statusBarItem.offlineForeground": "#FF7979",
+    "statusBarItem.offlineForeground": "#E87C7D",
     "statusBarItem.offlineHoverBackground": "#B5815660",
     "statusBarItem.offlineHoverForeground": "#FFCB93",
     "statusBarItem.errorBackground": "#F75123",
     "statusBarItem.errorForeground": "#1D1B19",
-    "statusBarItem.errorHoverBackground": "#FF7979",
+    "statusBarItem.errorHoverBackground": "#E87C7D",
     "statusBarItem.errorHoverForeground": "#1D1B19",
     "statusBarItem.warningBackground": "#D29834",
     "statusBarItem.warningForeground": "#1D1B19",
-    "statusBarItem.warningHoverBackground": "#F5AF36",
+    "statusBarItem.warningHoverBackground": "#F5BD3A",
     "statusBarItem.warningHoverForeground": "#1D1B19",
     "statusBarItem.prominentHoverBackground": "#D4A574",
     "statusBarItem.prominentHoverForeground": "#1D1B19",
@@ -197,13 +197,13 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "symbolIcon.colorForeground": "#ADB26B",
     "symbolIcon.constantForeground": "#FFCB93",
     "symbolIcon.constructorForeground": "#789BB9",
-    "symbolIcon.enumeratorForeground": "#FF7979",
+    "symbolIcon.enumeratorForeground": "#E87C7D",
     "symbolIcon.eventForeground": "#F75123",
     "symbolIcon.fieldForeground": "#FFCB93",
     "symbolIcon.fileForeground": "#C9B19F",
     "symbolIcon.functionForeground": "#789BB9",
     "symbolIcon.interfaceForeground": "#ADB26B",
-    "symbolIcon.keyForeground": "#FF7979",
+    "symbolIcon.keyForeground": "#E87C7D",
     "symbolIcon.keywordForeground": "#F75123",
     "symbolIcon.methodForeground": "#789BB9",
     "symbolIcon.moduleForeground": "#FFCB93",
@@ -219,7 +219,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "symbolIcon.stringForeground": "#ADB26B",
     "symbolIcon.structForeground": "#ADB26B",
     "symbolIcon.textForeground": "#C9B19F",
-    "symbolIcon.typeParameterForeground": "#D5712F",
+    "symbolIcon.typeParameterForeground": "#C67640",
     "symbolIcon.unitForeground": "#AD74EE",
     "symbolIcon.variableForeground": "#FFCB93",
     "tab.activeBackground": "#B5815640",
@@ -236,9 +236,9 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "terminal.ansiBrightCyan": "#A5B6B1",
     "terminal.ansiBrightGreen": "#CFD779",
     "terminal.ansiBrightMagenta": "#C79DD7",
-    "terminal.ansiBrightRed": "#FF7979",
+    "terminal.ansiBrightRed": "#E87C7D",
     "terminal.ansiBrightWhite": "#FFCB93",
-    "terminal.ansiBrightYellow": "#F5AF36",
+    "terminal.ansiBrightYellow": "#F5BD3A",
     "terminal.ansiCyan": "#89AEA3",
     "terminal.ansiGreen": "#ADB26B",
     "terminal.ansiMagenta": "#AD74EE",
@@ -307,7 +307,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "keyword.control.dart"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -328,7 +328,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.terminator.dart"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -338,7 +338,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.class.dart"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -394,7 +394,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.dockerfile"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -432,7 +432,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -463,7 +463,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -481,7 +481,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -491,7 +491,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.type"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -562,7 +562,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.other.inherited-class"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -600,7 +600,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.other.attribute"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -610,7 +610,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.name.section"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -638,7 +638,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "meta.brace"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -696,7 +696,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.other.parenthesis"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -714,7 +714,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "invalid.deprecated"
       ],
       "settings": {
-        "foreground": "#D5712F",
+        "foreground": "#C67640",
         "fontStyle": "strikethrough"
       }
     },
@@ -733,7 +733,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "markup.heading.setext.2"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -809,7 +809,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.go"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -852,7 +852,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "keyword.function.go"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -874,7 +874,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.terminator.go"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -892,7 +892,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.type.string.go"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -919,7 +919,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "constant.language.null.go"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -980,7 +980,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.json"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -994,7 +994,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.string.end.json"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1006,7 +1006,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.dictionary.end.json"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1015,7 +1015,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "constant.language.json"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -1070,7 +1070,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.html"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1107,7 +1107,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "heading.2.markdown"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -1116,7 +1116,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "heading.3.markdown"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1125,7 +1125,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "heading.4.markdown"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -1134,7 +1134,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "heading.5.markdown"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -1161,7 +1161,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.name.tag.html"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -1190,7 +1190,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "meta.embedded.math.markdown"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -1271,7 +1271,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.table.markdown"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1280,7 +1280,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.key-value.markdown"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1359,7 +1359,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.python"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1397,7 +1397,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.type.function.async.python"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -1438,7 +1438,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.period.python"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1448,7 +1448,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.colon.python"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1474,7 +1474,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.type.exception.python"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -1533,7 +1533,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.constant.math.tsx"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -1563,7 +1563,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.tsx"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1587,7 +1587,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.modifier.async.tsx"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -1670,7 +1670,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.name.label.tsx"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -1712,7 +1712,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.terminator.statement.tsx"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1722,7 +1722,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.label.tsx"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1740,7 +1740,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "keyword.operator.negation.regexp"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1777,7 +1777,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "meta.brace.square.tsx"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1797,7 +1797,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.other.attribute-name.tsx"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -1807,7 +1807,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.name.tag.tsx"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -1826,7 +1826,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.type.primitive.tsx"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -1846,7 +1846,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "constant.language.undefined.tsx"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -1902,7 +1902,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.constant.math.ts"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -1923,7 +1923,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.ts"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -1947,7 +1947,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.modifier.async.ts"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -2030,7 +2030,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "entity.name.label.ts"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -2067,7 +2067,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.terminator.statement.ts"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -2077,7 +2077,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.label.ts"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -2095,7 +2095,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "keyword.operator.negation.regexp"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -2132,7 +2132,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "meta.brace.square.ts"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -2162,7 +2162,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "support.type.primitive.ts"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     },
     {
@@ -2182,7 +2182,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "constant.language.undefined.ts"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -2243,7 +2243,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.modifier.chomping-indicator.yaml"
       ],
       "settings": {
-        "foreground": "#F5AF36"
+        "foreground": "#F5BD3A"
       }
     },
     {
@@ -2262,7 +2262,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.comment.yaml"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -2295,7 +2295,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.separator.sequence.yaml"
       ],
       "settings": {
-        "foreground": "#B58156"
+        "foreground": "#9C7F60"
       }
     },
     {
@@ -2307,7 +2307,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "punctuation.definition.sequence.end.yaml"
       ],
       "settings": {
-        "foreground": "#D5712F"
+        "foreground": "#C67640"
       }
     },
     {
@@ -2334,7 +2334,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "constant.language.null.yaml"
       ],
       "settings": {
-        "foreground": "#FF7979"
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -2381,7 +2381,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.type.tag-handle.yaml"
       ],
       "settings": {
-        "foreground": "#F59D50"
+        "foreground": "#EF9B47"
       }
     }
   ]

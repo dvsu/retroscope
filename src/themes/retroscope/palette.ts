@@ -9,7 +9,7 @@ export const colors: ColorPalette = {
   blue: "#789BB9",
   cyan: "#89AEA3",
   green: "#ADB26B",
-  orange: "#D5712F",
+  orange: "#C67640",
   purple: "#AD74EE",
   red: "#F75123",
   white: "#C9B19F",
@@ -17,10 +17,10 @@ export const colors: ColorPalette = {
   brightBlue: "#8C9CAA",
   brightCyan: "#A5B6B1",
   brightGreen: "#CFD779",
-  brightOrange: "#F59D50",
+  brightOrange: "#EF9B47",
   brightPurple: "#C79DD7",
-  brightRed: "#FF7979",
-  brightYellow: "#F5AF36",
+  brightRed: "#E87C7D",
+  brightYellow: "#F5BD3A",
 };
 
 export const colorMapping: EditorColor = {
@@ -38,7 +38,9 @@ export const colorMapping: EditorColor = {
   string: colors.green,
   function: colors.cyan,
   comment: colors.intermediate,
-  punctuation: colors.tertiary,
+  // Dimmer than tertiary, so punctuation recedes but stays at 4.5:1, and
+  // clearly duller than the type-annotation orange used for JSON brackets.
+  punctuation: "#9C7F60",
   type: colors.brightOrange,
   typeAnnotation: colors.orange,
 };

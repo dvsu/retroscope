@@ -1,5 +1,7 @@
 import { contrastRatio, isHexColor } from "./contrast";
+import { colourBlindDeltaE, deltaE, glyphDifference } from "./distinct";
 import type { GeneratedTheme } from "./generate";
+import type { EditorColor } from "./themes/types";
 import { vscodeColorIds } from "./vscode-color-ids";
 
 /** WCAG 2.2 AA minimum for normal text. */
@@ -181,6 +183,23 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
     }
   }
 
+  // Bracket pair colouring draws brackets over the token colours, right next to
+  // quotes, commas and colons, so each level must differ from punctuation in
+  // lightness and saturation, which is what shows on thin characters.
+  const punctuation = theme.tokenColors.find((rule) => rule.scope.includes("punctuation"))?.settings
+    .foreground;
+  if (isHexColor(punctuation)) {
+    for (const [key, color] of Object.entries(theme.colors)) {
+      if (!/^editorBracketHighlight\.foreground\d$/.test(key) || !isHexColor(color)) continue;
+      const gap = glyphDifference(color, punctuation);
+      if (gap < MIN_GLYPH_DIFFERENCE) {
+        problems.push(
+          `distinct: ${key} ${color} is too close to punctuation ${punctuation} on thin characters (${gap.toFixed(1)}, needs ${MIN_GLYPH_DIFFERENCE})`,
+        );
+      }
+    }
+  }
+
   const editorText = contrastRatio(foreground, background);
   if (editorText < TEXT_CONTRAST) {
     problems.push(
@@ -212,5 +231,74 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
       problems.push(`contrast: ${where} is ${ratio.toFixed(2)}:1, needs ${needed}`);
   });
 
+  return problems;
+};
+
+/**
+ * The colours code is drawn in, by palette entry, with what each is used for.
+ * Interface-only colours are left out.
+ */
+export const CODE_COLOURS: Partial<Record<keyof EditorColor, string>> = {
+  keyword: "keywords",
+  brightYellow: "declaration keywords such as def and function",
+  variable: "variables",
+  foreground: "plain text and object keys",
+  string: "strings",
+  number: "numbers and booleans",
+  nullable: "None, null and nil",
+  function: "functions",
+  type: "types",
+  typeAnnotation: "type marks and JSON brackets",
+  punctuation: "punctuation",
+  comment: "comments",
+  purple: "built-in variables",
+};
+
+/** Lowest CIEDE2000 difference between two code colours, for normal vision. */
+export const MIN_DIFFERENCE = 12;
+/** Lowest difference for the worst of protanopia, deuteranopia and tritanopia. */
+export const MIN_COLOUR_BLIND_DIFFERENCE = 5;
+/** Lowest lightness and saturation gap between colours drawn on thin punctuation. */
+export const MIN_GLYPH_DIFFERENCE = 20;
+/** Colours that meet on thin characters, such as `{` next to `"` and `:` in JSON. */
+export const GLYPH_PAIRS: [keyof EditorColor, keyof EditorColor][] = [
+  ["typeAnnotation", "punctuation"],
+];
+
+/** Returns every pair of code colours too alike to tell apart; empty means it passes. */
+export const checkPalette = (colors: EditorColor): string[] => {
+  const problems: string[] = [];
+  const keys = Object.keys(CODE_COLOURS) as (keyof EditorColor)[];
+  const name = (k: keyof EditorColor) => `${k} ${colors[k]} (${CODE_COLOURS[k]})`;
+  for (const [i, a] of keys.entries()) {
+    for (const b of keys.slice(i + 1)) {
+      const [ca, cb] = [colors[a], colors[b]];
+      if (!isHexColor(ca) || !isHexColor(cb)) {
+        problems.push(`palette: ${a} or ${b} is not a hex colour`);
+        continue;
+      }
+      if (ca.toUpperCase() === cb.toUpperCase()) continue; // one colour on purpose
+      const normal = deltaE(ca, cb);
+      if (normal < MIN_DIFFERENCE) {
+        problems.push(
+          `distinct: ${name(a)} and ${name(b)} differ by ${normal.toFixed(1)}, needs ${MIN_DIFFERENCE}`,
+        );
+      }
+      const blind = colourBlindDeltaE(ca, cb);
+      if (blind < MIN_COLOUR_BLIND_DIFFERENCE) {
+        problems.push(
+          `distinct: ${name(a)} and ${name(b)} differ by ${blind.toFixed(1)} with colour blindness, needs ${MIN_COLOUR_BLIND_DIFFERENCE}`,
+        );
+      }
+    }
+  }
+  for (const [a, b] of GLYPH_PAIRS) {
+    const gap = glyphDifference(colors[a], colors[b]);
+    if (gap < MIN_GLYPH_DIFFERENCE) {
+      problems.push(
+        `distinct: ${name(a)} and ${name(b)} meet on thin punctuation but differ by ${gap.toFixed(1)} in lightness and saturation, needs ${MIN_GLYPH_DIFFERENCE}`,
+      );
+    }
+  }
   return problems;
 };

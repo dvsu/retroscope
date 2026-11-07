@@ -4,8 +4,9 @@ import path from "node:path";
 import { describe, test } from "node:test";
 import { fileURLToPath } from "node:url";
 import { contrastRatio, isHexColor, parseHex } from "./contrast";
+import { COLOUR_BLINDNESS, deltaE2000, simulate } from "./distinct";
 import { generateTheme } from "./generate";
-import { checkTheme } from "./theme-checks";
+import { checkPalette, checkTheme } from "./theme-checks";
 import { themes } from "./themes";
 import { colorMapping } from "./themes/retroscope/palette";
 import type { Theme } from "./themes/types";
@@ -32,6 +33,32 @@ describe("contrast maths", () => {
     }
   });
 });
+
+describe("colour difference maths", () => {
+  test("matches CIEDE2000 reference values (Sharma, Wu and Dalal 2005)", () => {
+    const pairs: [number[], number[], number][] = [
+      [[50, 2.6772, -79.7751], [50, 0, -82.7485], 2.0425],
+      [[50, 2.5, 0], [73, 25, -18], 27.1492],
+      [[50, 2.5, 0], [50, 0, -2.5], 4.3065],
+      [[60.2574, -34.0099, 36.2677], [60.4626, -34.1751, 39.4387], 1.2644],
+    ];
+    for (const [[l1, a1, b1], [l2, a2, b2], expected] of pairs) {
+      const got = deltaE2000({ l: l1, a: a1, b: b1 }, { l: l2, a: a2, b: b2 });
+      assert.equal(got.toFixed(4), expected.toFixed(4));
+    }
+  });
+
+  test("colour blindness leaves greys unchanged", () => {
+    for (const kind of COLOUR_BLINDNESS) assert.equal(simulate("#808080", kind), "#808080");
+  });
+});
+
+for (const module of themes) {
+  const { metadata } = module.create();
+  test(`palette ${metadata.id}: code colours are distinct, also with colour blindness`, () => {
+    assert.deepEqual(checkPalette(module.create().colors), []);
+  });
+}
 
 for (const { fileName, metadata, theme } of generated) {
   describe(`theme ${metadata.id}`, () => {
@@ -132,6 +159,39 @@ describe("self-test: the checks catch a broken palette", () => {
     const problems = broken({ intermediate: "#6B5B4F" });
     assert.ok(
       problems.some((p) => p.startsWith("contrast: editorLineNumber.foreground is 2.64:1")),
+      problems.join("\n"),
+    );
+  });
+
+  test("code colours too alike for colour-blind readers (strings and None in 0.2.9)", () => {
+    const problems = checkPalette({ ...colorMapping, string: "#ADB26B", nullable: "#FF7979" });
+    assert.ok(
+      problems.some((p) => p.includes("string #ADB26B") && p.includes("with colour blindness")),
+      problems.join("\n"),
+    );
+  });
+
+  test("brackets and quotes too alike on thin punctuation", () => {
+    const problems = checkPalette({
+      ...colorMapping,
+      typeAnnotation: "#B38F4C",
+      punctuation: "#B1775B",
+    });
+    assert.ok(
+      problems.some((p) => p.includes("thin punctuation")),
+      problems.join("\n"),
+    );
+  });
+
+  test("first-level brackets drawn like the punctuation beside them", () => {
+    const [theme] = generated;
+    const colors = {
+      ...theme.theme.colors,
+      "editorBracketHighlight.foreground1": colorMapping.punctuation,
+    };
+    const problems = checkTheme({ ...theme, theme: { ...theme.theme, colors } });
+    assert.ok(
+      problems.some((p) => p.startsWith("distinct: editorBracketHighlight.foreground1")),
       problems.join("\n"),
     );
   });
