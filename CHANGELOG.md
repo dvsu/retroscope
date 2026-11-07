@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.7
+
+- Ship a much smaller package (19 KB instead of 1.1 MB): only the theme, icon, changelog and licence
+- Each GitHub Release now carries the published `.vsix` and its SHA-256 checksum
+
 ## 0.2.6
 
 - Ignore `node_modules` from bundled package
