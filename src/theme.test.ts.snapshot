@@ -5,13 +5,13 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
   "colors": {
     "activityBar.background": "#1D1B19",
     "activityBar.foreground": "#C9B19F",
-    "activityBar.inactiveForeground": "#6B5B4F",
+    "activityBar.inactiveForeground": "#756356",
     "activityBarBadge.background": "#FFCB93",
     "activityBarBadge.foreground": "#1D1B19",
     "badge.background": "#FFCB93",
     "badge.foreground": "#1D1B19",
     "breadcrumb.background": "#1D1B19",
-    "breadcrumb.foreground": "#6B5B4F",
+    "breadcrumb.foreground": "#756356",
     "breadcrumb.focusForeground": "#FFCB93",
     "breadcrumb.activeSelectionForeground": "#FFCB93",
     "button.background": "#D4A574",
@@ -32,7 +32,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "debugExceptionWidget.border": "#F75123",
     "debugToolBar.background": "#1D1B19",
     "dropdown.background": "#1D1B19",
-    "dropdown.border": "#6B5B4F",
+    "dropdown.border": "#756356",
     "dropdown.foreground": "#C9B19F",
     "editor.background": "#1D1B19",
     "editor.findMatchBackground": "#FFCB93CC",
@@ -56,7 +56,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editorBracketHighlight.foreground4": "#AD74EE",
     "editorBracketHighlight.foreground5": "#D5712F",
     "editorBracketHighlight.foreground6": "#ADB26B",
-    "editorGroup.border": "#6B5B4F",
+    "editorGroup.border": "#756356",
     "editorGroup.dropIntoPromptBackground": "#1D1B1990",
     "editorGroup.dropIntoPromptForeground": "#FFCB93",
     "editorGroupHeader.tabsBackground": "#1D1B19",
@@ -65,7 +65,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editorGutter.modifiedBackground": "#D29834",
     "editorGutter.background": "#1D1B19",
     "editorIndentGuide.background1": "#FFCB9320",
-    "editorLineNumber.foreground": "#6B5B4F",
+    "editorLineNumber.foreground": "#756356",
     "editorLineNumber.activeForeground": "#C9B19F",
     "editorLink.activeForeground": "#ADB26B",
     "editorRuler.foreground": "#FFCB9320",
@@ -75,9 +75,9 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editorOverviewRuler.modifiedForeground": "#D29834",
     "editorOverviewRuler.warningForeground": "#D5712F",
     "editorWarning.foreground": "#FFCB93",
-    "editorWhitespace.foreground": "#6B5B4F",
+    "editorWhitespace.foreground": "#756356",
     "editorWidget.background": "#1D1B19",
-    "editorWidget.border": "#6B5B4F",
+    "editorWidget.border": "#756356",
     "extensionButton.prominentBackground": "#FFCB93",
     "extensionButton.prominentForeground": "#1D1B19",
     "extensionButton.prominentHoverBackground": "#D4A574",
@@ -86,13 +86,13 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "gitDecoration.addedResourceForeground": "#ADB26B",
     "gitDecoration.conflictingResourceForeground": "#FF7979",
     "gitDecoration.deletedResourceForeground": "#F75123",
-    "gitDecoration.ignoredResourceForeground": "#6B5B4F",
+    "gitDecoration.ignoredResourceForeground": "#756356",
     "gitDecoration.modifiedResourceForeground": "#FFCB93",
     "gitDecoration.untrackedResourceForeground": "#ADB26B",
     "input.background": "#1D1B19",
-    "input.border": "#6B5B4F",
+    "input.border": "#756356",
     "input.foreground": "#C9B19F",
-    "input.placeholderForeground": "#6B5B4F",
+    "input.placeholderForeground": "#756356",
     "inputOption.activeForeground": "#FFCB93",
     "inputOption.activeBackground": "#B5815670",
     "inputOption.activeBorder": "#FFCB9350",
@@ -129,17 +129,17 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "minimapGutter.addedBackground": "#ADB26B",
     "minimapGutter.modifiedBackground": "#D29834",
     "minimapGutter.deletedBackground": "#AD74EE",
-    "notificationCenter.border": "#6B5B4F",
+    "notificationCenter.border": "#756356",
     "notificationCenterHeader.background": "#1D1B19",
     "notificationLink.foreground": "#ADB26B",
     "notifications.background": "#1D1B19",
-    "notifications.border": "#6B5B4F",
+    "notifications.border": "#756356",
     "notifications.foreground": "#C9B19F",
     "panel.background": "#1D1B19",
-    "panel.border": "#6B5B4F",
+    "panel.border": "#756356",
     "panelTitle.activeBorder": "#FFCB93",
     "panelTitle.activeForeground": "#C9B19F",
-    "panelTitle.inactiveForeground": "#6B5B4F",
+    "panelTitle.inactiveForeground": "#756356",
     "peekView.border": "#FFCB93",
     "peekViewEditor.background": "#1D1B19",
     "peekViewEditor.matchHighlightBackground": "#D4A57440",
@@ -148,10 +148,10 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "peekViewResult.selectionBackground": "#D4A57430",
     "peekViewResult.selectionForeground": "#FFCB93",
     "peekViewTitle.background": "#1D1B19",
-    "peekViewTitleDescription.foreground": "#6B5B4F",
+    "peekViewTitleDescription.foreground": "#756356",
     "peekViewTitleLabel.foreground": "#C9B19F",
-    "pickerGroup.border": "#6B5B4F",
-    "pickerGroup.foreground": "#6B5B4F",
+    "pickerGroup.border": "#756356",
+    "pickerGroup.foreground": "#756356",
     "progressBar.background": "#FFCB93",
     "scrollbar.shadow": "#00000050",
     "scrollbarSlider.activeBackground": "#B5815670",
@@ -227,11 +227,11 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "tab.hoverBackground": "#B5815620",
     "tab.hoverForeground": "#FFCB93",
     "tab.border": "#FFCB9320",
-    "tab.inactiveBackground": "#B5815610",
-    "tab.inactiveForeground": "#6B5B4F",
+    "tab.inactiveBackground": "#1D1B19",
+    "tab.inactiveForeground": "#756356",
     "terminal.ansiBlack": "#1D1B19",
     "terminal.ansiBlue": "#789BB9",
-    "terminal.ansiBrightBlack": "#6B5B4F",
+    "terminal.ansiBrightBlack": "#756356",
     "terminal.ansiBrightBlue": "#8C9CAA",
     "terminal.ansiBrightCyan": "#A5B6B1",
     "terminal.ansiBrightGreen": "#CFD779",
@@ -253,7 +253,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "titleBar.activeBackground": "#1D1B19",
     "titleBar.activeForeground": "#C9B19F",
     "titleBar.inactiveBackground": "#1D1B19",
-    "titleBar.inactiveForeground": "#6B5B4F",
+    "titleBar.inactiveForeground": "#756356",
     "toolbar.hoverBackground": "#B5815650",
     "tree.inactiveIndentGuidesStroke": "#FFCB9320",
     "tree.indentGuidesStroke": "#FFCB9340",
@@ -266,7 +266,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.double-slash.dart"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -384,7 +384,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.number-sign.dockerfile"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -422,7 +422,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -799,7 +799,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.double-slash.go"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -970,7 +970,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.double-slash.js"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -1060,7 +1060,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.block.html"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -1349,7 +1349,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.number-sign.python"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -1553,7 +1553,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.double-slash.tsx"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -1913,7 +1913,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.double-slash.ts"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },
@@ -2252,7 +2252,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "comment.line.number-sign.yaml"
       ],
       "settings": {
-        "foreground": "#6B5B4F",
+        "foreground": "#756356",
         "fontStyle": "italic"
       }
     },

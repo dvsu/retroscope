@@ -128,6 +128,14 @@ describe("self-test: the checks catch a broken palette", () => {
     );
   });
 
+  test("faded interface text below the faded floor", () => {
+    const problems = broken({ intermediate: "#6B5B4F" });
+    assert.ok(
+      problems.some((p) => p.startsWith("contrast: editorLineNumber.foreground is 2.64:1")),
+      problems.join("\n"),
+    );
+  });
+
   test("unreadable text", () => {
     assert.ok(broken({ string: colorMapping.background }).some((p) => p.startsWith("contrast:")));
   });

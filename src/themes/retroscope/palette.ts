@@ -4,7 +4,7 @@ export const colors: ColorPalette = {
   primary: "#FFCB93",
   secondary: "#D4A574",
   tertiary: "#B58156",
-  intermediate: "#6B5B4F",
+  intermediate: "#756356",
   black: "#1D1B19",
   blue: "#789BB9",
   cyan: "#89AEA3",

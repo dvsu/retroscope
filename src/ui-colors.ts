@@ -236,7 +236,7 @@ export const generate = ({ colors }: UiColorGenerationParams): Record<string, st
     "tab.hoverBackground": `${colors.accentTertiary}20`,
     "tab.hoverForeground": colors.accentPrimary,
     "tab.border": `${colors.primary}20`,
-    "tab.inactiveBackground": `${colors.accentTertiary}10`,
+    "tab.inactiveBackground": colors.background,
     "tab.inactiveForeground": colors.intermediate,
     "terminal.ansiBlack": colors.background,
     "terminal.ansiBlue": colors.blue,

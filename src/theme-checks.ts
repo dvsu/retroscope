@@ -2,8 +2,15 @@ import { contrastRatio, isHexColor } from "./contrast";
 import type { GeneratedTheme } from "./generate";
 import { vscodeColorIds } from "./vscode-color-ids";
 
-/** WCAG 2.2 minimum for normal text. */
+/** WCAG 2.2 AA minimum for normal text. */
 export const TEXT_CONTRAST = 4.5;
+
+/**
+ * Lowest contrast for text faded on purpose, so the eye skips what matters
+ * less (comments, line numbers, unselected tabs). It is the WCAG 2.2 AA
+ * minimum for large text and interface graphics.
+ */
+export const FADED_CONTRAST = 3;
 
 /**
  * Reviewed exceptions: token colours that are muted on purpose, with the lowest
@@ -12,8 +19,8 @@ export const TEXT_CONTRAST = 4.5;
 export const MUTED_TOKENS: { pattern: RegExp; minContrast: number; reason: string }[] = [
   {
     pattern: /comment/i,
-    minContrast: 2.5,
-    reason: "Comments recede behind code by design. Raising this is tracked in the contrast work.",
+    minContrast: FADED_CONTRAST,
+    reason: "Comments recede behind code by design.",
   },
 ];
 
@@ -48,11 +55,37 @@ export const STATE_TEXT: Record<string, string> = {
  * each may have. WCAG 2.2 sets no minimum for inactive interface components.
  */
 export const LOW_CONTRAST_PAIRS: Record<string, { minContrast: number; reason: string }> = {
-  "tab.inactiveBackground": { minContrast: 2.4, reason: "Inactive tabs recede by design." },
+  "tab.inactiveBackground": {
+    minContrast: FADED_CONTRAST,
+    reason: "Unselected tabs recede by design.",
+  },
   "titleBar.inactiveBackground": {
-    minContrast: 2.4,
+    minContrast: FADED_CONTRAST,
     reason: "The title bar of an unfocused window recedes by design.",
   },
+};
+
+/**
+ * Interface text with no background of its own that is faded on purpose, so
+ * it needs only FADED_CONTRAST.
+ */
+export const FADED_FOREGROUNDS: Record<string, string> = {
+  "activityBar.inactiveForeground": "Icons of views that aren't open recede.",
+  "breadcrumb.foreground": "The path above the editor recedes until focused.",
+  "editorLineNumber.foreground": "Line numbers other than the current one recede.",
+  "gitDecoration.ignoredResourceForeground": "Fading is how ignored files are told apart.",
+  "input.placeholderForeground": "A placeholder must look unlike typed text.",
+  "panelTitle.inactiveForeground": "Titles of panels that aren't shown recede.",
+  "peekViewTitleDescription.foreground": "The file path beside the peek title recedes.",
+  "pickerGroup.foreground": "Group labels in the command palette recede behind the items.",
+  "tab.inactiveForeground": "Unselected tabs recede.",
+  "titleBar.inactiveForeground": "The title bar of an unfocused window recedes.",
+};
+
+/** Decorative colours that carry no information, so WCAG sets no minimum. */
+export const DECORATIVE_FOREGROUNDS: Record<string, string> = {
+  "editorRuler.foreground": "A guide line at a column, not text.",
+  "editorWhitespace.foreground": "Dots and arrows that show spaces and tabs.",
 };
 
 /** The opaque surface a translucent background is drawn on. */
@@ -127,6 +160,24 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
           `contrast: ${key} on editorBracketMatch.background is ${ratio.toFixed(2)}:1, needs ${TEXT_CONTRAST}`,
         );
       }
+    }
+  }
+
+  // Interface text with no background of its own, read on its part's surface,
+  // such as activityBar.background for activityBar.inactiveForeground.
+  for (const [key, color] of Object.entries(theme.colors)) {
+    if (!/foreground\d*$/i.test(key) || key in DECORATIVE_FOREGROUNDS) continue;
+    const own = key
+      .replace(/Foreground(\d*)$/, "Background$1")
+      .replace(/\.foreground$/, ".background");
+    if (own !== key && vscodeColorIds.has(own)) continue; // a pair, checked above
+    if (!isHexColor(color)) continue;
+    const part = key.split(".")[0];
+    const surface = theme.colors[`${part}.background`];
+    const ratio = contrastRatio(color, isHexColor(surface) ? surface : background, background);
+    const needed = key in FADED_FOREGROUNDS ? FADED_CONTRAST : TEXT_CONTRAST;
+    if (ratio < needed) {
+      problems.push(`contrast: ${key} is ${ratio.toFixed(2)}:1, needs ${needed}`);
     }
   }
 
