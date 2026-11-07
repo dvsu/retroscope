@@ -92,6 +92,28 @@ describe("self-test: the checks catch a broken palette", () => {
     assert.ok(broken({ keyword: "#12345" }).some((p) => p.includes("not a hex colour")));
   });
 
+  test("a required state colour left to the editor's default", () => {
+    const [theme] = generated;
+    const colors = { ...theme.theme.colors };
+    delete colors["statusBarItem.remoteForeground"];
+    const problems = checkTheme({ ...theme, theme: { ...theme.theme, colors } });
+    assert.ok(problems.some((p) => p.startsWith("state: statusBarItem.remoteBackground")));
+  });
+
+  test("bright text on a bright hover", () => {
+    const [theme] = generated;
+    const colors = {
+      ...theme.theme.colors,
+      "statusBarItem.remoteHoverBackground": colorMapping.accentPrimary,
+      "statusBarItem.remoteHoverForeground": colorMapping.accentPrimary,
+    };
+    const problems = checkTheme({ ...theme, theme: { ...theme.theme, colors } });
+    assert.ok(
+      problems.some((p) => p.includes("remoteHoverForeground on")),
+      problems.join("\n"),
+    );
+  });
+
   test("unreadable text", () => {
     assert.ok(broken({ string: colorMapping.background }).some((p) => p.startsWith("contrast:")));
   });
