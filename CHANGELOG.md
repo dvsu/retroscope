@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- Improve colour vision accessibility: code colours are rebalanced so each one stays easy to tell apart with typical colour vision as well as with protanopia, deuteranopia and tritanopia
+- Dim punctuation slightly, so brackets, commas and quotes recede behind the code
+- Draw first-level brackets in orange, so they stand apart from the quotes, commas and colons beside them
+- Adjust types, type annotations, declaration keywords such as `def` and `function`, and `None`/`null`/`nil` slightly; error and warning text and the terminal's bright red and yellow follow the same small shift
+
 ## 0.2.9
 
 - Fix the matching bracket disappearing in Antigravity: it now keeps its own colour inside a faint box with a bright outline
