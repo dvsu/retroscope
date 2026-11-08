@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { contrastRatio, isHexColor, parseHex } from "./contrast";
 import { COLOUR_BLINDNESS, deltaE2000, simulate } from "./distinct";
 import { generateTheme } from "./generate";
-import { checkPalette, checkTheme } from "./theme-checks";
+import { CODE_COLOURS, checkPalette, checkTheme } from "./theme-checks";
 import { themes } from "./themes";
 import { colorMapping } from "./themes/retroscope/palette";
 import type { Theme } from "./themes/types";
@@ -51,6 +51,20 @@ describe("colour difference maths", () => {
   test("colour blindness leaves greys unchanged", () => {
     for (const kind of COLOUR_BLINDNESS) assert.equal(simulate("#808080", kind), "#808080");
   });
+});
+
+test("High Contrast keeps code text at 7:1 (WCAG AAA), as the README says", () => {
+  const module = themes.find((m) => m.create().metadata.id === "retroscope-high-contrast");
+  assert.ok(module, "no retroscope-high-contrast theme");
+  const { colors } = module.create();
+  const fadedOrPunctuation = new Set(["comment", "punctuation", "typeAnnotation"]);
+  for (const key of Object.keys(CODE_COLOURS) as (keyof typeof colors)[]) {
+    if (fadedOrPunctuation.has(key)) {
+      assert.ok(contrastRatio(colors[key], colors.background) >= 4.5, key);
+    } else {
+      assert.ok(contrastRatio(colors[key], colors.background) >= 7, `${key} ${colors[key]}`);
+    }
+  }
 });
 
 for (const module of themes) {

@@ -1,16 +1,24 @@
 {
   "name": "retroscope",
-  "displayName": "retroscope",
-  "description": "Retro theme for VS Code and Antigravity",
+  "displayName": "Retroscope",
+  "description": "Warm, retro dark themes for VS Code, Cursor and Antigravity. Easy on the eyes for long sessions.",
   "type": "module",
   "packageManager": "yarn@4.18.1+sha512.b2e1e7524f654f2749d32b4ebcb4622473cb5bcbc485df2007e12a154e50162a4d795526768bc5f5b8f81717bfd79deb2472813d86fb5ae2eb551fa9c872b08f",
   "icon": "assets/retroscope_255x255.png",
+  "galleryBanner": {
+    "color": "#1D1B19",
+    "theme": "dark"
+  },
   "version": "0.4.0",
   "author": "David Su",
   "publisher": "dvsu",
   "repository": {
     "type": "git",
     "url": "https://github.com/dvsu/retroscope"
+  },
+  "homepage": "https://github.com/dvsu/retroscope#readme",
+  "bugs": {
+    "url": "https://github.com/dvsu/retroscope/issues"
   },
   "license": "MIT",
   "engines": {
@@ -24,6 +32,12 @@
     "dark",
     "dark theme",
     "retro",
+    "warm",
+    "high contrast",
+    "accessibility",
+    "color blind",
+    "cursor",
+    "antigravity",
     "retroscope",
     "themes"
   ],
@@ -56,7 +70,8 @@
     "test": "node --import tsx --test \"src/**/*.test.ts\"",
     "test:update": "node --import tsx --test --test-update-snapshots \"src/**/*.test.ts\"",
     "check:package": "tsx src/check-package.ts",
-    "coverage": "tsx src/coverage-report.ts"
+    "coverage": "tsx src/coverage-report.ts",
+    "screenshots": "tsx src/screenshots.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.2",

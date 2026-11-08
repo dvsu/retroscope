@@ -1,7 +1,17 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import path from "node:path";
 import { before, describe, test } from "node:test";
-import { type LanguageCoverage, measureCoverage, sampleFiles, unruledLabels } from "./coverage";
+import {
+  DEMO_DIR,
+  LANGUAGE_NAMES,
+  type LanguageCoverage,
+  measureCoverage,
+  sampleFiles,
+  unruledLabels,
+} from "./coverage";
 import { generateTheme } from "./generate";
+import { LANGUAGES_IMAGE_LIST, LOGOS } from "./language-logos";
 import { themes } from "./themes";
 
 // Every file in demo/ must be fully styled: no piece the grammar labels may
@@ -45,3 +55,24 @@ for (const module of themes) {
     }
   });
 }
+
+test("the README lists exactly the tested languages, alphabetically", () => {
+  const readme = fs.readFileSync(path.join(DEMO_DIR, "..", "README.md"), "utf8");
+  const section = /^## Languages\n([\s\S]*?)(?=^## )/m.exec(readme)?.[1];
+  assert.ok(section, "README.md has no '## Languages' section");
+  const listed = [...section.matchAll(/^- (.+)$/gm)].map((m) => m[1]);
+  const tested = [...new Set(sampleFiles().map(({ lang }) => LANGUAGE_NAMES[lang] ?? lang))].sort(
+    (a, b) => a.localeCompare(b),
+  );
+  assert.deepEqual(listed, tested, "update the list in README.md or LANGUAGE_NAMES");
+});
+
+test("every tested language has a logo entry, and the README image is current", () => {
+  const names = Object.values(LANGUAGE_NAMES).sort((a, b) => a.localeCompare(b));
+  for (const lang of Object.keys(LANGUAGE_NAMES)) {
+    assert.ok(lang in LOGOS, `add ${lang} to LOGOS in src/language-logos.ts`);
+  }
+  const listFile = path.join(DEMO_DIR, "..", LANGUAGES_IMAGE_LIST);
+  const shown = JSON.parse(fs.readFileSync(listFile, "utf8"));
+  assert.deepEqual(shown, names, "the language image is out of date: run yarn screenshots");
+});

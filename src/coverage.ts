@@ -51,6 +51,36 @@ const LANGUAGES: Record<string, string> = {
   yaml: "yaml",
 };
 
+/** Display name of each demo language, as the README lists it. */
+export const LANGUAGE_NAMES: Record<string, string> = {
+  c: "C",
+  cpp: "C++",
+  csharp: "C#",
+  css: "CSS",
+  dart: "Dart",
+  docker: "Dockerfile",
+  go: "Go",
+  html: "HTML",
+  java: "Java",
+  javascript: "JavaScript",
+  json: "JSON",
+  kotlin: "Kotlin",
+  lua: "Lua",
+  markdown: "Markdown",
+  php: "PHP",
+  python: "Python",
+  ruby: "Ruby",
+  rust: "Rust",
+  scss: "SCSS",
+  shellscript: "Shell",
+  sql: "SQL",
+  swift: "Swift",
+  toml: "TOML",
+  tsx: "TSX",
+  typescript: "TypeScript",
+  yaml: "YAML",
+};
+
 /**
  * Why a piece is uncovered:
  * - "unstyled": the grammar labels it (say `support.function.sql`) but no rule
