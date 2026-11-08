@@ -60,6 +60,24 @@
         "label": "Retroscope Soft",
         "uiTheme": "vs-dark",
         "path": "./themes/retroscope-soft-color-theme.json"
+      },
+      {
+        "id": "Retroscope Amber",
+        "label": "Retroscope Amber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/retroscope-amber-color-theme.json"
+      },
+      {
+        "id": "Retroscope Cassette",
+        "label": "Retroscope Cassette",
+        "uiTheme": "vs-dark",
+        "path": "./themes/retroscope-cassette-color-theme.json"
+      },
+      {
+        "id": "Retroscope Phosphor",
+        "label": "Retroscope Phosphor",
+        "uiTheme": "vs-dark",
+        "path": "./themes/retroscope-phosphor-color-theme.json"
       }
     ]
   },
@@ -90,8 +108,11 @@
     "@vscode/vsce": "4.0.0"
   },
   "files": [
+    "themes/retroscope-amber-color-theme.json",
+    "themes/retroscope-cassette-color-theme.json",
     "themes/retroscope-color-theme.json",
     "themes/retroscope-high-contrast-color-theme.json",
+    "themes/retroscope-phosphor-color-theme.json",
     "themes/retroscope-soft-color-theme.json",
     "assets/retroscope_255x255.png",
     "CHANGELOG.md",

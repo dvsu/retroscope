@@ -117,6 +117,19 @@ test("package.json contributes no theme the build doesn't produce", () => {
   for (const entry of pkg.contributes.themes) assert.ok(produced.has(entry.path), entry.path);
 });
 
+test("README.md showcases every theme with a screenshot", () => {
+  const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
+  for (const { metadata } of generated) {
+    assert.ok(
+      readme.includes(`### ${metadata.displayName}\n`),
+      `README.md has no heading for ${metadata.displayName}`,
+    );
+    const shot = `assets/screenshots/${metadata.id}-typescript.png`;
+    assert.ok(readme.includes(`./${shot}`), `README.md does not link ./${shot}`);
+    assert.ok(fs.existsSync(path.join(root, shot)), `${shot} is missing: run yarn screenshots`);
+  }
+});
+
 describe("self-test: the checks catch a broken palette", () => {
   const broken = (overrides: Partial<Theme["colors"]>) =>
     checkTheme(

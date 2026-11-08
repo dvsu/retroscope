@@ -32,6 +32,18 @@
 
 ![Retroscope Soft](./assets/screenshots/retroscope-soft-typescript.png)
 
+### Retroscope Amber
+
+![Retroscope Amber](./assets/screenshots/retroscope-amber-typescript.png)
+
+### Retroscope Cassette
+
+![Retroscope Cassette](./assets/screenshots/retroscope-cassette-typescript.png)
+
+### Retroscope Phosphor
+
+![Retroscope Phosphor](./assets/screenshots/retroscope-phosphor-typescript.png)
+
 ## Languages
 
 ![Logos of the supported languages](./assets/screenshots/languages.png)
@@ -74,7 +86,7 @@
 - **VS Code:** open the Extensions view, search for **Retroscope** and choose **Install**, or run `code --install-extension dvsu.retroscope`. Also on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dvsu.retroscope).
 - **Cursor, Antigravity and other editors that use Open VSX:** search for **Retroscope** in the Extensions view. Also on [Open VSX](https://open-vsx.org/extension/dvsu/retroscope).
 
-Then open the Command Palette, run **Preferences: Color Theme** and pick **Retroscope**, **Retroscope High Contrast** or **Retroscope Soft**.
+Then open the Command Palette, run **Preferences: Color Theme** and pick **Retroscope**, **Retroscope High Contrast**, **Retroscope Soft**, **Retroscope Amber**, **Retroscope Cassette** or **Retroscope Phosphor**.
 
 ## Feedback
 

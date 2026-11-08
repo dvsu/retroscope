@@ -138,12 +138,10 @@ pub fn parse_row(header: &[&str], line: &str) -> HashMap<String, Value> {
 
 /** Which shots to take: every theme in TypeScript, and more languages in Retroscope. */
 const SHOTS: [themeId: string, sample: string][] = [
-  ["retroscope", "typescript"],
+  ...themes.map((t): [string, string] => [t.create().metadata.id, "typescript"]),
   ["retroscope", "python"],
   ["retroscope", "go"],
   ["retroscope", "rust"],
-  ["retroscope-high-contrast", "typescript"],
-  ["retroscope-soft", "typescript"],
 ];
 
 const escapeHtml = (s: string) =>

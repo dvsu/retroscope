@@ -13,8 +13,11 @@ const EXPECTED = [
   "README.md",
   "assets/retroscope_255x255.png",
   "package.json",
+  "themes/retroscope-amber-color-theme.json",
+  "themes/retroscope-cassette-color-theme.json",
   "themes/retroscope-color-theme.json",
   "themes/retroscope-high-contrast-color-theme.json",
+  "themes/retroscope-phosphor-color-theme.json",
   "themes/retroscope-soft-color-theme.json",
 ];
 
