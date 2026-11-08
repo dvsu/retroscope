@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1
+
+- Refresh the extension page with screenshots of every theme, the supported languages and install steps for VS Code, Cursor and Antigravity
+
 ## 0.4.0
 
 - Add **Retroscope High Contrast**: code text at 7:1 contrast or more (WCAG AAA) on a slightly deeper background, for bright rooms, glare or low vision
