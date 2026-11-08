@@ -9,7 +9,7 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=dvsu.retroscope"><img src="https://img.shields.io/badge/VS%20Marketplace-install-B58156" alt="Install from the VS Marketplace"></a>
   <a href="https://open-vsx.org/extension/dvsu/retroscope"><img src="https://img.shields.io/open-vsx/v/dvsu/retroscope?label=Open%20VSX&color=B58156" alt="Open VSX version"></a>
   <a href="https://open-vsx.org/extension/dvsu/retroscope"><img src="https://img.shields.io/open-vsx/dt/dvsu/retroscope?label=downloads&color=B58156" alt="Open VSX downloads"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-B58156" alt="MIT licence"></a>
+  <a href="https://github.com/dvsu/retroscope/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-B58156" alt="MIT licence"></a>
 </p>
 
 - **Focused on your code.** A warm dark palette that keeps the visual weight on your code.

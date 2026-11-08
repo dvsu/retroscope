@@ -73,6 +73,7 @@
     "test": "node --import tsx --test \"src/**/*.test.ts\"",
     "test:update": "node --import tsx --test --test-update-snapshots \"src/**/*.test.ts\"",
     "check:package": "tsx src/check-package.ts",
+    "package:vsix": "vsce package --no-dependencies --githubBranch main --baseImagesUrl https://raw.githubusercontent.com/dvsu/retroscope/main",
     "coverage": "tsx src/coverage-report.ts",
     "screenshots": "tsx src/screenshots.ts"
   },
