@@ -7,6 +7,7 @@ export const create = (): Theme => {
       id: "retroscope",
       type: "dark",
       displayName: "Retroscope",
+      settingsId: "Retroscope",
     },
     colors: colorMapping,
   };

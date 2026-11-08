@@ -7,6 +7,7 @@ export const create = (): Theme => {
       id: "retroscope-soft",
       type: "dark",
       displayName: "Retroscope Soft",
+      settingsId: "Retroscope Soft",
     },
     colors: colorMapping,
   };

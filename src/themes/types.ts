@@ -44,6 +44,7 @@ export type ThemeMetadata = {
   id: string;
   type: "dark" | "light";
   displayName: string;
+  settingsId: string;
 };
 
 export type Theme = {

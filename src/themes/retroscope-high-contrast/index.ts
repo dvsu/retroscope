@@ -7,6 +7,7 @@ export const create = (): Theme => {
       id: "retroscope-high-contrast",
       type: "dark",
       displayName: "Retroscope High Contrast",
+      settingsId: "Retroscope HC",
     },
     colors: colorMapping,
   };

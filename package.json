@@ -44,16 +44,19 @@
   "contributes": {
     "themes": [
       {
+        "id": "Retroscope",
         "label": "Retroscope",
         "uiTheme": "vs-dark",
         "path": "./themes/retroscope-color-theme.json"
       },
       {
+        "id": "Retroscope HC",
         "label": "Retroscope High Contrast",
         "uiTheme": "vs-dark",
         "path": "./themes/retroscope-high-contrast-color-theme.json"
       },
       {
+        "id": "Retroscope Soft",
         "label": "Retroscope Soft",
         "uiTheme": "vs-dark",
         "path": "./themes/retroscope-soft-color-theme.json"

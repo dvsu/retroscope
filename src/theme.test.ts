@@ -85,7 +85,14 @@ for (const { fileName, metadata, theme } of generated) {
         (t: { path: string }) => t.path === `./themes/${fileName}`,
       );
       assert.ok(entry, `package.json contributes.themes has no ./themes/${fileName}`);
+      assert.equal(entry.id, metadata.settingsId);
       assert.equal(entry.label, metadata.displayName);
+      // VS Code's 320px Settings dropdown floats label and id on one 22px row
+      // without a max-width; past ~42 chars the second float wraps and is clipped.
+      assert.ok(
+        entry.label.length + entry.id.length <= 42,
+        `${entry.label} + ${entry.id} wraps in the 320px Settings dropdown; set a shorter id`,
+      );
       assert.equal(entry.uiTheme, metadata.type === "dark" ? "vs-dark" : "vs");
       assert.ok(
         pkg.files.includes(`themes/${fileName}`),
@@ -115,7 +122,7 @@ describe("self-test: the checks catch a broken palette", () => {
     checkTheme(
       generateTheme({
         create: () => ({
-          metadata: { id: "broken", type: "dark", displayName: "Broken" },
+          metadata: { id: "broken", type: "dark", displayName: "Broken", settingsId: "Broken" },
           colors: { ...colorMapping, ...overrides },
         }),
       }),
