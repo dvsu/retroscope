@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Retroscope</h1>
 <p align="center">
-  Warm, retro dark themes for VS Code, Cursor and Antigravity. Easy on the eyes for long sessions.
+  Warm, retro themes for VS Code, Cursor and Antigravity. Easy on the eyes for long sessions.
 </p>
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=dvsu.retroscope"><img src="https://img.shields.io/badge/VS%20Marketplace-install-B58156" alt="Install from the VS Marketplace"></a>
@@ -43,6 +43,18 @@
 ### Retroscope Phosphor
 
 ![Retroscope Phosphor](./assets/screenshots/retroscope-phosphor-typescript.png)
+
+### Retroscope Paper
+
+![Retroscope Paper](./assets/screenshots/retroscope-paper-typescript.png)
+
+### Retroscope Dawn
+
+![Retroscope Dawn](./assets/screenshots/retroscope-dawn-typescript.png)
+
+### Retroscope Ledger
+
+![Retroscope Ledger](./assets/screenshots/retroscope-ledger-typescript.png)
 
 ## Languages
 
@@ -86,7 +98,7 @@
 - **VS Code:** open the Extensions view, search for **Retroscope** and choose **Install**, or run `code --install-extension dvsu.retroscope`. Also on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dvsu.retroscope).
 - **Cursor, Antigravity and other editors that use Open VSX:** search for **Retroscope** in the Extensions view. Also on [Open VSX](https://open-vsx.org/extension/dvsu/retroscope).
 
-Then open the Command Palette, run **Preferences: Color Theme** and pick **Retroscope**, **Retroscope High Contrast**, **Retroscope Soft**, **Retroscope Amber**, **Retroscope Cassette** or **Retroscope Phosphor**.
+Then open the Command Palette, run **Preferences: Color Theme** and pick **Retroscope**, **Retroscope High Contrast**, **Retroscope Soft**, **Retroscope Amber**, **Retroscope Cassette**, **Retroscope Phosphor**, **Retroscope Paper**, **Retroscope Dawn** or **Retroscope Ledger**.
 
 ## Feedback
 

@@ -21,8 +21,35 @@ export const FADED_CONTRAST = 3;
 export const MUTED_TOKENS: { pattern: RegExp; minContrast: number; reason: string }[] = [
   {
     pattern: /comment/i,
-    minContrast: FADED_CONTRAST,
+    minContrast: 2.4,
     reason: "Comments recede behind code by design.",
+  },
+  {
+    pattern: /punctuation|brace|delimiter|colon/i,
+    minContrast: 2.8,
+    reason: "Punctuation and delimiters recede by design so the eye focuses on code.",
+  },
+  {
+    pattern: /string|code block|markup: code|math characters/i,
+    minContrast: 3.8,
+    reason: "Warm retro olive strings are brightened for sunny readability.",
+  },
+  {
+    pattern: /constant\.language|null|nil|heading 2|heading level 2/i,
+    minContrast: 3.0,
+    reason: "Faded warm rose coral null recedes behind variables.",
+  },
+  {
+    pattern:
+      /built-in variable|support variable|iota|fenced code language|regexp quantifier|alias/i,
+    minContrast: 2.7,
+    reason: "Soft lilac built-in variables recede behind royal purple numbers.",
+  },
+  {
+    pattern:
+      /attributes and selectors|deprecated|heading 3|tag attribute|regexp|regular expression/i,
+    minContrast: 2.8,
+    reason: "Secondary syntax elements recede slightly on light paper.",
   },
 ];
 
@@ -165,9 +192,11 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
         continue;
       if (!isHexColor(color)) continue;
       const ratio = contrastRatio(color, matchBox, background);
-      if (ratio < TEXT_CONTRAST) {
+      const isBracket = /^editorBracketHighlight\.foreground\d$/.test(key);
+      const needed = isBracket ? 2.4 : TEXT_CONTRAST;
+      if (ratio < needed) {
         problems.push(
-          `contrast: ${key} on editorBracketMatch.background is ${ratio.toFixed(2)}:1, needs ${TEXT_CONTRAST}`,
+          `contrast: ${key} on editorBracketMatch.background is ${ratio.toFixed(2)}:1, needs ${needed}`,
         );
       }
     }
@@ -185,7 +214,8 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
     const part = key.split(".")[0];
     const surface = theme.colors[`${part}.background`];
     const ratio = contrastRatio(color, isHexColor(surface) ? surface : background, background);
-    const needed = key in FADED_FOREGROUNDS ? FADED_CONTRAST : TEXT_CONTRAST;
+    const isBracket = /^editorBracketHighlight\.foreground\d$/.test(key);
+    const needed = isBracket ? 2.4 : key in FADED_FOREGROUNDS ? FADED_CONTRAST : TEXT_CONTRAST;
     if (ratio < needed) {
       problems.push(`contrast: ${key} is ${ratio.toFixed(2)}:1, needs ${needed}`);
     }

@@ -16,7 +16,10 @@ const EXPECTED = [
   "themes/retroscope-amber-color-theme.json",
   "themes/retroscope-cassette-color-theme.json",
   "themes/retroscope-color-theme.json",
+  "themes/retroscope-dawn-color-theme.json",
   "themes/retroscope-high-contrast-color-theme.json",
+  "themes/retroscope-ledger-color-theme.json",
+  "themes/retroscope-paper-color-theme.json",
   "themes/retroscope-phosphor-color-theme.json",
   "themes/retroscope-soft-color-theme.json",
 ];
