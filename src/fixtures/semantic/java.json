@@ -1,0 +1,1587 @@
+{
+  "source": "demo/demo.java",
+  "sourceSha256": "3e9833850f8c750e7d2faf973ea81fb0f9b44fa257a0e990ed8c3e29c884104b",
+  "extension": "redhat.java 1.58.0",
+  "textMate": "java-redhat",
+  "legend": {
+    "language": "java",
+    "superTypes": {
+      "annotation": "type",
+      "annotationMember": "method",
+      "modifier": "keyword",
+      "record": "class",
+      "recordComponent": "parameter"
+    },
+    "scopes": {
+      "annotation": ["storage.type.annotation.java"],
+      "decorator": ["storage.type.annotation.java"],
+      "annotationMember": ["entity.name.annotationMember.java", "constant.other.key.java"],
+      "modifier": ["storage.modifier.java"],
+      "keyword.documentation": ["keyword.other.documentation.javadoc.java"],
+      "*.constructor": ["entity.name.function.java"]
+    }
+  },
+  "tokens": [
+    {
+      "line": 0,
+      "character": 8,
+      "length": 3,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 0,
+      "character": 12,
+      "length": 7,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 0,
+      "character": 20,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 2,
+      "character": 7,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 2,
+      "character": 12,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 2,
+      "character": 17,
+      "length": 9,
+      "type": "class",
+      "modifiers": ["public", "generic", "importDeclaration"]
+    },
+    {
+      "line": 3,
+      "character": 7,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 3,
+      "character": 12,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 3,
+      "character": 17,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["public", "generic", "importDeclaration"]
+    },
+    {
+      "line": 4,
+      "character": 7,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 4,
+      "character": 12,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 4,
+      "character": 17,
+      "length": 3,
+      "type": "interface",
+      "modifiers": ["public", "generic", "importDeclaration"]
+    },
+    {
+      "line": 5,
+      "character": 7,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 5,
+      "character": 12,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 5,
+      "character": 17,
+      "length": 8,
+      "type": "class",
+      "modifiers": ["readonly", "public", "generic", "importDeclaration"]
+    },
+    {
+      "line": 6,
+      "character": 7,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 6,
+      "character": 12,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 6,
+      "character": 17,
+      "length": 8,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 6,
+      "character": 26,
+      "length": 8,
+      "type": "interface",
+      "modifiers": ["public", "generic", "importDeclaration"]
+    },
+    {
+      "line": 7,
+      "character": 7,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 7,
+      "character": 12,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 7,
+      "character": 17,
+      "length": 6,
+      "type": "namespace",
+      "modifiers": ["importDeclaration"]
+    },
+    {
+      "line": 7,
+      "character": 24,
+      "length": 10,
+      "type": "class",
+      "modifiers": ["readonly", "public", "importDeclaration"]
+    },
+    {
+      "line": 12,
+      "character": 3,
+      "length": 6,
+      "type": "keyword",
+      "modifiers": ["documentation"]
+    },
+    {
+      "line": 12,
+      "character": 11,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["documentation"]
+    },
+    {
+      "line": 14,
+      "character": 0,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 7,
+      "length": 5,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 13,
+      "length": 5,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 19,
+      "length": 9,
+      "type": "class",
+      "modifiers": ["readonly", "declaration", "public", "generic"]
+    },
+    {
+      "line": 14,
+      "character": 29,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 14,
+      "character": 39,
+      "length": 7,
+      "type": "record",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 14,
+      "character": 31,
+      "length": 7,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 48,
+      "length": 10,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 59,
+      "length": 8,
+      "type": "interface",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 14,
+      "character": 68,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["typeArgument"]
+    },
+    {
+      "line": 15,
+      "character": 4,
+      "length": 7,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "character": 12,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "character": 19,
+      "length": 5,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 15,
+      "character": 29,
+      "length": 9,
+      "type": "property",
+      "modifiers": ["static", "readonly", "declaration", "private"]
+    },
+    {
+      "line": 16,
+      "character": 4,
+      "length": 7,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "character": 12,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "character": 19,
+      "length": 5,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 16,
+      "character": 25,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 16,
+      "character": 32,
+      "length": 6,
+      "type": "property",
+      "modifiers": ["static", "readonly", "declaration", "private"]
+    },
+    {
+      "line": 17,
+      "character": 4,
+      "length": 7,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "character": 12,
+      "length": 5,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "character": 18,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 17,
+      "character": 23,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["typeArgument"]
+    },
+    {
+      "line": 17,
+      "character": 26,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "declaration", "private"]
+    },
+    {
+      "line": 18,
+      "character": 4,
+      "length": 7,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 18,
+      "character": 16,
+      "length": 7,
+      "type": "property",
+      "modifiers": ["declaration", "private"]
+    },
+    {
+      "line": 20,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 20,
+      "character": 11,
+      "length": 9,
+      "type": "class",
+      "modifiers": ["declaration", "public", "generic", "constructor"]
+    },
+    {
+      "line": 20,
+      "character": 21,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 20,
+      "character": 26,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["typeArgument"]
+    },
+    {
+      "line": 20,
+      "character": 29,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 21,
+      "character": 13,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 21,
+      "character": 25,
+      "length": 9,
+      "type": "class",
+      "modifiers": ["public", "generic", "constructor"]
+    },
+    {
+      "line": 21,
+      "character": 37,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 24,
+      "character": 5,
+      "length": 8,
+      "type": "decorator",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 25,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "character": 11,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "character": 16,
+      "length": 4,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 25,
+      "character": 21,
+      "length": 8,
+      "type": "interface",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 25,
+      "character": 30,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["typeArgument"]
+    },
+    {
+      "line": 25,
+      "character": 33,
+      "length": 8,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 26,
+      "character": 15,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 26,
+      "character": 21,
+      "length": 8,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 29,
+      "character": 5,
+      "length": 8,
+      "type": "decorator",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 30,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 30,
+      "character": 11,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 30,
+      "character": 18,
+      "length": 8,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 31,
+      "character": 30,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 31,
+      "character": 36,
+      "length": 4,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 34,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 34,
+      "character": 11,
+      "length": 8,
+      "type": "class",
+      "modifiers": ["readonly", "public", "generic"]
+    },
+    {
+      "line": 34,
+      "character": 20,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["typeArgument"]
+    },
+    {
+      "line": 34,
+      "character": 23,
+      "length": 4,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 34,
+      "character": 28,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 34,
+      "character": 35,
+      "length": 3,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 34,
+      "character": 47,
+      "length": 21,
+      "type": "class",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 35,
+      "character": 12,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 35,
+      "character": 18,
+      "length": 4,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 35,
+      "character": 27,
+      "length": 9,
+      "type": "property",
+      "modifiers": ["static", "readonly", "private"]
+    },
+    {
+      "line": 36,
+      "character": 22,
+      "length": 21,
+      "type": "class",
+      "modifiers": ["public", "constructor"]
+    },
+    {
+      "line": 38,
+      "character": 13,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 38,
+      "character": 15,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 38,
+      "character": 22,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 39,
+      "character": 16,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 39,
+      "character": 21,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 39,
+      "character": 27,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 39,
+      "character": 34,
+      "length": 3,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 39,
+      "character": 42,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 39,
+      "character": 47,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 39,
+      "character": 71,
+      "length": 8,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 39,
+      "character": 80,
+      "length": 2,
+      "type": "method",
+      "modifiers": ["static", "public", "generic"]
+    },
+    {
+      "line": 39,
+      "character": 83,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 41,
+      "character": 15,
+      "length": 8,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 41,
+      "character": 24,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["static", "public", "generic"]
+    },
+    {
+      "line": 44,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 44,
+      "character": 11,
+      "length": 12,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 44,
+      "character": 29,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 44,
+      "character": 33,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 44,
+      "character": 35,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 45,
+      "character": 12,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 45,
+      "character": 29,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 45,
+      "character": 34,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 46,
+      "character": 8,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 46,
+      "character": 14,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 46,
+      "character": 18,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 47,
+      "character": 8,
+      "length": 7,
+      "type": "property",
+      "modifiers": ["private"]
+    },
+    {
+      "line": 50,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 50,
+      "character": 11,
+      "length": 3,
+      "type": "interface",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 50,
+      "character": 15,
+      "length": 7,
+      "type": "class",
+      "modifiers": ["readonly", "public", "typeArgument"]
+    },
+    {
+      "line": 50,
+      "character": 24,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["public", "generic", "typeArgument"]
+    },
+    {
+      "line": 50,
+      "character": 29,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public", "typeArgument"]
+    },
+    {
+      "line": 50,
+      "character": 38,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 50,
+      "character": 44,
+      "length": 8,
+      "type": "interface",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 50,
+      "character": 53,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["typeArgument"]
+    },
+    {
+      "line": 50,
+      "character": 56,
+      "length": 7,
+      "type": "class",
+      "modifiers": ["readonly", "public", "typeArgument"]
+    },
+    {
+      "line": 50,
+      "character": 65,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 51,
+      "character": 15,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 51,
+      "character": 21,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 52,
+      "character": 17,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 52,
+      "character": 24,
+      "length": 1,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 52,
+      "character": 29,
+      "length": 1,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 52,
+      "character": 31,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 53,
+      "character": 17,
+      "length": 7,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 53,
+      "character": 25,
+      "length": 10,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 53,
+      "character": 36,
+      "length": 14,
+      "type": "method",
+      "modifiers": ["static", "public", "generic"]
+    },
+    {
+      "line": 53,
+      "character": 51,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 53,
+      "character": 57,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 53,
+      "character": 64,
+      "length": 10,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 53,
+      "character": 75,
+      "length": 7,
+      "type": "method",
+      "modifiers": ["static", "public", "generic"]
+    },
+    {
+      "line": 53,
+      "character": 83,
+      "length": 7,
+      "type": "record",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 53,
+      "character": 92,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 53,
+      "character": 97,
+      "length": 10,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 53,
+      "character": 108,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["static", "public", "generic"]
+    },
+    {
+      "line": 56,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 56,
+      "character": 11,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 56,
+      "character": 18,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 56,
+      "character": 24,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 56,
+      "character": 26,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 57,
+      "character": 8,
+      "length": 3,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 57,
+      "character": 12,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 57,
+      "character": 19,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 57,
+      "character": 24,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 57,
+      "character": 30,
+      "length": 10,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 57,
+      "character": 41,
+      "length": 6,
+      "type": "property",
+      "modifiers": ["static", "readonly", "private"]
+    },
+    {
+      "line": 57,
+      "character": 51,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 57,
+      "character": 56,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 57,
+      "character": 64,
+      "length": 6,
+      "type": "property",
+      "modifiers": ["static", "readonly", "private"]
+    },
+    {
+      "line": 57,
+      "character": 73,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 57,
+      "character": 78,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 58,
+      "character": 23,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 58,
+      "character": 28,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 59,
+      "character": 17,
+      "length": 8,
+      "type": "enumMember",
+      "modifiers": ["static", "readonly", "public"]
+    },
+    {
+      "line": 59,
+      "character": 29,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 60,
+      "character": 17,
+      "length": 8,
+      "type": "enumMember",
+      "modifiers": ["static", "readonly", "public"]
+    },
+    {
+      "line": 60,
+      "character": 29,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 61,
+      "character": 23,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 65,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 65,
+      "character": 11,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 65,
+      "character": 23,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["static", "declaration", "public", "generic"]
+    },
+    {
+      "line": 65,
+      "character": 29,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 65,
+      "character": 36,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 66,
+      "character": 12,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 66,
+      "character": 29,
+      "length": 9,
+      "type": "class",
+      "modifiers": ["readonly", "public", "generic"]
+    },
+    {
+      "line": 66,
+      "character": 42,
+      "length": 9,
+      "type": "variable",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 67,
+      "character": 19,
+      "length": 9,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 67,
+      "character": 29,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 67,
+      "character": 35,
+      "length": 4,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 69,
+      "character": 13,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 70,
+      "character": 13,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 71,
+      "character": 15,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 71,
+      "character": 29,
+      "length": 4,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 74,
+      "character": 4,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 74,
+      "character": 18,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["declaration", "public", "generic"]
+    },
+    {
+      "line": 76,
+      "character": 19,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly", "private"]
+    },
+    {
+      "line": 76,
+      "character": 25,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["public", "generic"]
+    },
+    {
+      "line": 76,
+      "character": 34,
+      "length": 11,
+      "type": "method",
+      "modifiers": ["abstract", "public", "generic"]
+    },
+    {
+      "line": 76,
+      "character": 46,
+      "length": 7,
+      "type": "record",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 76,
+      "character": 55,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 76,
+      "character": 62,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["abstract", "public"]
+    },
+    {
+      "line": 77,
+      "character": 17,
+      "length": 19,
+      "type": "class",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 77,
+      "character": 37,
+      "length": 1,
+      "type": "variable",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 78,
+      "character": 12,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 78,
+      "character": 19,
+      "length": 3,
+      "type": "property",
+      "modifiers": ["static", "readonly", "public"]
+    },
+    {
+      "line": 78,
+      "character": 23,
+      "length": 7,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 78,
+      "character": 47,
+      "length": 1,
+      "type": "variable",
+      "modifiers": []
+    },
+    {
+      "line": 78,
+      "character": 49,
+      "length": 10,
+      "type": "method",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 79,
+      "character": 19,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 79,
+      "character": 26,
+      "length": 3,
+      "type": "property",
+      "modifiers": ["static", "readonly", "public"]
+    },
+    {
+      "line": 81,
+      "character": 12,
+      "length": 7,
+      "type": "property",
+      "modifiers": ["private"]
+    },
+    {
+      "line": 86,
+      "character": 5,
+      "length": 6,
+      "type": "enum",
+      "modifiers": ["readonly", "declaration"]
+    },
+    {
+      "line": 86,
+      "character": 14,
+      "length": 8,
+      "type": "enumMember",
+      "modifiers": ["static", "readonly", "declaration", "public"]
+    },
+    {
+      "line": 86,
+      "character": 24,
+      "length": 8,
+      "type": "enumMember",
+      "modifiers": ["static", "readonly", "declaration", "public"]
+    },
+    {
+      "line": 86,
+      "character": 34,
+      "length": 7,
+      "type": "enumMember",
+      "modifiers": ["static", "readonly", "declaration", "public"]
+    },
+    {
+      "line": 88,
+      "character": 0,
+      "length": 9,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 88,
+      "character": 10,
+      "length": 6,
+      "type": "interface",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 89,
+      "character": 11,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["abstract", "declaration", "public"]
+    },
+    {
+      "line": 91,
+      "character": 4,
+      "length": 7,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 91,
+      "character": 20,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["declaration", "public"]
+    },
+    {
+      "line": 92,
+      "character": 15,
+      "length": 5,
+      "type": "method",
+      "modifiers": ["abstract", "public"]
+    },
+    {
+      "line": 96,
+      "character": 0,
+      "length": 6,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 96,
+      "character": 7,
+      "length": 7,
+      "type": "record",
+      "modifiers": ["readonly", "declaration"]
+    },
+    {
+      "line": 96,
+      "character": 15,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["readonly", "public"]
+    },
+    {
+      "line": 96,
+      "character": 22,
+      "length": 3,
+      "type": "recordComponent",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 96,
+      "character": 34,
+      "length": 5,
+      "type": "recordComponent",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 96,
+      "character": 49,
+      "length": 6,
+      "type": "recordComponent",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 96,
+      "character": 57,
+      "length": 6,
+      "type": "enum",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 96,
+      "character": 64,
+      "length": 6,
+      "type": "recordComponent",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 96,
+      "character": 83,
+      "length": 6,
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 97,
+      "character": 4,
+      "length": 7,
+      "type": "record",
+      "modifiers": ["declaration", "constructor"]
+    },
+    {
+      "line": 98,
+      "character": 12,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": []
+    },
+    {
+      "line": 98,
+      "character": 33,
+      "length": 24,
+      "type": "class",
+      "modifiers": ["public", "constructor"]
+    },
+    {
+      "line": 102,
+      "character": 1,
+      "length": 19,
+      "type": "decorator",
+      "modifiers": ["public"]
+    },
+    {
+      "line": 103,
+      "character": 0,
+      "length": 9,
+      "type": "modifier",
+      "modifiers": []
+    },
+    {
+      "line": 103,
+      "character": 10,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["declaration", "generic"]
+    },
+    {
+      "line": 103,
+      "character": 15,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 104,
+      "character": 12,
+      "length": 4,
+      "type": "method",
+      "modifiers": ["abstract", "declaration", "public", "generic"]
+    },
+    {
+      "line": 104,
+      "character": 17,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 104,
+      "character": 19,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration"]
+    }
+  ]
+}

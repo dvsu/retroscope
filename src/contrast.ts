@@ -25,6 +25,30 @@ export const blend = (top: Rgba, base: Rgba): Rgba => ({
   a: 1,
 });
 
+/** Draws a translucent hex (e.g. #RRGGBBAA) over an opaque base hex (#RRGGBB), returning an opaque #RRGGBB. */
+export const blendHex = (topHex: string, baseHex: string): string => {
+  const top = parseHex(topHex);
+  const base = parseHex(baseHex);
+  const res = blend(top, base);
+  const toHex = (n: number) =>
+    Math.round(n * 255)
+      .toString(16)
+      .padStart(2, "0")
+      .toUpperCase();
+  return `#${toHex(res.r)}${toHex(res.g)}${toHex(res.b)}`;
+};
+
+/** Multiplies an opaque base hex (#RRGGBB) by factor (0–1), returning an opaque #RRGGBB. */
+export const darkenHex = (baseHex: string, factor: number): string => {
+  const base = parseHex(baseHex);
+  const toHex = (n: number) =>
+    Math.round(Math.max(0, Math.min(255, n * 255)))
+      .toString(16)
+      .padStart(2, "0")
+      .toUpperCase();
+  return `#${toHex(base.r * factor)}${toHex(base.g * factor)}${toHex(base.b * factor)}`;
+};
+
 const linear = (v: number) => (v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
 
 export const relativeLuminance = ({ r, g, b }: Rgba): number =>
@@ -40,4 +64,29 @@ export const contrastRatio = (
   const text = blend(parseHex(foreground), ground);
   const [hi, lo] = [relativeLuminance(text), relativeLuminance(ground)].sort((x, y) => y - x);
   return (hi + 0.05) / (lo + 0.05);
+};
+
+/** Mixes two opaque hex colours: t = 0 gives `from`, 1 gives `to`. */
+export const mixHex = (from: string, to: string, t: number): string => {
+  const [a, b] = [parseHex(from), parseHex(to)];
+  const channel = (x: number, y: number) =>
+    Math.round((x + (y - x) * t) * 255)
+      .toString(16)
+      .padStart(2, "0")
+      .toUpperCase();
+  return `#${channel(a.r, b.r)}${channel(a.g, b.g)}${channel(a.b, b.b)}`;
+};
+
+/**
+ * The colour furthest from `from` towards `to` that `text` still reads on at
+ * `minContrast`; `from` itself if even that falls short.
+ */
+export const furthestReadable = (from: string, to: string, text: string, minContrast: number) => {
+  let best = from;
+  for (let step = 1; step <= 100; step++) {
+    const candidate = mixHex(from, to, step / 100);
+    if (contrastRatio(text, candidate) < minContrast) break;
+    best = candidate;
+  }
+  return best;
 };

@@ -1,3 +1,4 @@
+import * as semantic from "./semantic-colors";
 import type { Theme } from "./themes/types";
 import * as tc from "./token-colors";
 import type { VSCodeTheme } from "./types";
@@ -20,6 +21,8 @@ export const generateTheme = (module: ThemeModule): GeneratedTheme => {
     theme: {
       name: metadata.displayName,
       type: metadata.type,
+      semanticHighlighting: true,
+      semanticTokenColors: semantic.generate(colors),
       colors: ui.generate({ colors }),
       tokenColors: tc.generate({ colors }),
     },

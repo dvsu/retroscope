@@ -10,7 +10,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { type BundledLanguage, bundledLanguages, createHighlighter } from "shiki";
+import {
+  type BundledLanguage,
+  bundledLanguages,
+  createHighlighter,
+  type ThemeRegistrationRaw,
+} from "shiki";
 import type { VSCodeTheme } from "./types";
 
 /** Root scopes: a rule matching only these colours everything, so it says nothing about a piece. */
@@ -124,7 +129,7 @@ export const sampleFiles = (): { lang: string; file: string }[] =>
 export const measureCoverage = async (theme: VSCodeTheme): Promise<LanguageCoverage[]> => {
   const samples = sampleFiles();
   const highlighter = await createHighlighter({
-    themes: [{ ...theme, name: "under-test" }],
+    themes: [{ ...theme, name: "under-test" } as ThemeRegistrationRaw],
     langs: samples.map((s) => s.lang as BundledLanguage),
   });
   try {

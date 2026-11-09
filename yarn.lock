@@ -1111,7 +1111,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shikijs/vscode-textmate@npm:^10.0.2":
+"@shikijs/vscode-textmate@npm:10.1.0, @shikijs/vscode-textmate@npm:^10.0.2":
   version: 10.1.0
   resolution: "@shikijs/vscode-textmate@npm:10.1.0"
   checksum: 10c0/a8ae5abac1c675fdeeb6f699637e87fcf227d8d94b93a3ed6d6041b19aaa0b6851b6d5530a35742654de57eb8c2963d03532886f0a136da10c137992a7c2c27c
@@ -2823,6 +2823,7 @@ __metadata:
   resolution: "retroscope@workspace:."
   dependencies:
     "@biomejs/biome": "npm:2.6.2"
+    "@shikijs/vscode-textmate": "npm:10.1.0"
     "@types/node": "npm:24.19.2"
     "@vscode/vsce": "npm:4.0.0"
     ovsx: "npm:1.3.0"

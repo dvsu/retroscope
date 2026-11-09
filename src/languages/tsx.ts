@@ -85,7 +85,6 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",

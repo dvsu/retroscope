@@ -2,8 +2,16 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
 {
   "name": "Retroscope",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#89AEA3",
+    "method": "#89AEA3",
+    "delegate": "#EF9B47",
+    "*.constructor": "#89AEA3",
+    "*.importDeclaration": "#FFCB93"
+  },
   "colors": {
-    "activityBar.background": "#1D1B19",
+    "activityBar.background": "#171514",
     "activityBar.foreground": "#C9B19F",
     "activityBar.inactiveForeground": "#756356",
     "activityBarBadge.background": "#FFCB93",
@@ -35,10 +43,10 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "dropdown.border": "#756356",
     "dropdown.foreground": "#C9B19F",
     "editor.background": "#1D1B19",
-    "editor.findMatchBackground": "#FFCB93CC",
+    "editor.findMatchBackground": "#FFCB93",
     "editor.findMatchForeground": "#1D1B19",
-    "editor.findMatchHighlightBackground": "#B5815630",
-    "editor.findMatchHighlightForeground": "#FFCB93",
+    "editor.findMatchHighlightBackground": "#B58156",
+    "editor.findMatchHighlightForeground": "#1D1B19",
     "editor.foreground": "#C9B19F",
     "editor.inactiveSelectionBackground": "#1D1B1960",
     "editorLightBulb.foreground": "#C67640",
@@ -59,7 +67,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editorGroup.border": "#756356",
     "editorGroup.dropIntoPromptBackground": "#1D1B1990",
     "editorGroup.dropIntoPromptForeground": "#FFCB93",
-    "editorGroupHeader.tabsBackground": "#1D1B19",
+    "editorGroupHeader.tabsBackground": "#171514",
     "editorGutter.addedBackground": "#ADB26B",
     "editorGutter.deletedBackground": "#AD74EE",
     "editorGutter.modifiedBackground": "#D29834",
@@ -113,7 +121,7 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "list.warningForeground": "#F5BD3A",
     "list.hoverBackground": "#B5815650",
     "list.hoverForeground": "#FFCB93",
-    "list.inactiveSelectionBackground": "#1D1B1940",
+    "list.inactiveSelectionBackground": "#B5815630",
     "list.inactiveSelectionForeground": "#C9B19F",
     "menu.background": "#1D1B19",
     "menu.foreground": "#C9B19F",
@@ -163,21 +171,21 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "sideBar.foreground": "#C9B19F",
     "sideBarSectionHeader.background": "#1D1B19",
     "sideBarSectionHeader.foreground": "#D4A574",
-    "statusBar.background": "#1D1B19",
+    "statusBar.background": "#131210",
     "statusBar.debuggingBackground": "#B5815630",
     "statusBar.debuggingForeground": "#D4A574",
     "statusBar.foreground": "#C9B19F",
-    "statusBar.noFolderBackground": "#1D1B19",
+    "statusBar.noFolderBackground": "#131210",
     "statusBar.noFolderForeground": "#C9B19F",
     "statusBarItem.activeBackground": "#D4A57440",
     "statusBarItem.hoverBackground": "#B5815660",
     "statusBarItem.hoverForeground": "#FFCB93",
     "statusBarItem.compactHoverBackground": "#B5815660",
-    "statusBarItem.remoteBackground": "#1D1B19",
+    "statusBarItem.remoteBackground": "#131210",
     "statusBarItem.remoteForeground": "#C9B19F",
     "statusBarItem.remoteHoverBackground": "#B5815660",
     "statusBarItem.remoteHoverForeground": "#FFCB93",
-    "statusBarItem.offlineBackground": "#1D1B19",
+    "statusBarItem.offlineBackground": "#131210",
     "statusBarItem.offlineForeground": "#E87C7D",
     "statusBarItem.offlineHoverBackground": "#B5815660",
     "statusBarItem.offlineHoverForeground": "#FFCB93",
@@ -222,13 +230,15 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "symbolIcon.typeParameterForeground": "#C67640",
     "symbolIcon.unitForeground": "#AD74EE",
     "symbolIcon.variableForeground": "#FFCB93",
-    "tab.activeBackground": "#B5815640",
+    "tab.activeBackground": "#1D1B19",
+    "tab.activeBorderTop": "#D4A574",
     "tab.activeForeground": "#FFCB93",
     "tab.hoverBackground": "#B5815620",
     "tab.hoverForeground": "#FFCB93",
     "tab.border": "#FFCB9320",
-    "tab.inactiveBackground": "#1D1B19",
+    "tab.inactiveBackground": "#171514",
     "tab.inactiveForeground": "#756356",
+    "tab.selectedBorderTop": "#D4A574",
     "terminal.ansiBlack": "#1D1B19",
     "terminal.ansiBlue": "#789BB9",
     "terminal.ansiBrightBlack": "#756356",
@@ -250,9 +260,9 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "terminal.selectionBackground": "#D4A57440",
     "textLink.foreground": "#789BB9",
     "textLink.activeForeground": "#8C9CAA",
-    "titleBar.activeBackground": "#1D1B19",
+    "titleBar.activeBackground": "#131210",
     "titleBar.activeForeground": "#C9B19F",
-    "titleBar.inactiveBackground": "#1D1B19",
+    "titleBar.inactiveBackground": "#131210",
     "titleBar.inactiveForeground": "#756356",
     "toolbar.hoverBackground": "#B5815650",
     "tree.inactiveIndentGuidesStroke": "#FFCB9320",
@@ -298,14 +308,17 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "modernActivityBarItem.activeForeground": "#FFCB93",
     "modernActivityBarItem.hoverBackground": "#B5815620",
     "modernActivityBarItem.hoverForeground": "#FFCB93",
-    "modernEditorTab.activeBackground": "#B5815640",
+    "modernEditorTab.activeBackground": "#1D1B19",
     "modernEditorTab.activeForeground": "#FFCB93",
     "modernEditorTab.hoverBackground": "#B5815620",
     "modernEditorTab.hoverForeground": "#FFCB93",
-    "modernTab.activeBackground": "#B5815640",
+    "modernEditorTab.inactiveBackground": "#171514",
+    "modernTab.activeBackground": "#1D1B19",
     "modernTab.activeForeground": "#FFCB93",
     "modernTab.hoverBackground": "#B5815620",
     "modernTab.hoverForeground": "#FFCB93",
+    "modernUI.inactiveShellBackground": "#131210",
+    "modernUI.shellBackground": "#131210",
     "quickInputList.focusBackground": "#B5815660",
     "quickInputList.focusForeground": "#FFCB93",
     "radio.activeBackground": "#B5815670",
@@ -322,13 +335,14 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "settings.numberInputForeground": "#C9B19F",
     "settings.textInputBackground": "#1D1B19",
     "settings.textInputForeground": "#C9B19F",
-    "tab.selectedBackground": "#B5815640",
+    "tab.selectedBackground": "#1D1B19",
     "tab.selectedForeground": "#FFCB93",
-    "tab.unfocusedActiveBackground": "#B5815620",
+    "tab.unfocusedActiveBackground": "#1D1B19",
+    "tab.unfocusedActiveBorderTop": "#B58156",
     "tab.unfocusedActiveForeground": "#D4A574",
     "tab.unfocusedHoverBackground": "#B5815620",
     "tab.unfocusedHoverForeground": "#FFCB93",
-    "tab.unfocusedInactiveBackground": "#1D1B19",
+    "tab.unfocusedInactiveBackground": "#171514",
     "tab.unfocusedInactiveForeground": "#756356",
     "testing.coverCountBadgeBackground": "#B5815660",
     "testing.coverCountBadgeForeground": "#FFCB93",
@@ -336,6 +350,69 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "testing.message.error.badgeForeground": "#1D1B19"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#F5BD3A"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#EF9B47"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#E87C7D"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#9C7F60"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -495,7 +572,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#756356",
@@ -514,7 +592,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -524,7 +603,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -536,10 +616,43 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#F5BD3A"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
       }
     },
     {
@@ -554,7 +667,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#9C7F60"
@@ -592,7 +706,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#ADB26B"
@@ -602,7 +717,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#FFCB93"
@@ -626,14 +742,6 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -692,7 +800,8 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -1040,6 +1149,54 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -1128,6 +1285,123 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       ],
       "settings": {
         "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#C67640"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#9C7F60"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#756356"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#E87C7D"
       }
     },
     {
@@ -1692,7 +1966,6 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -2052,7 +2325,6 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -2414,9 +2686,18 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#F75123"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -2450,11 +2731,22 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#9C7F60"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#EF9B47"
@@ -2468,8 +2760,16 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
 {
   "name": "Retroscope Amber",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#7EB3A0",
+    "method": "#7EB3A0",
+    "delegate": "#F3A046",
+    "*.constructor": "#7EB3A0",
+    "*.importDeclaration": "#FFDCA5"
+  },
   "colors": {
-    "activityBar.background": "#221507",
+    "activityBar.background": "#1B1005",
     "activityBar.foreground": "#CAB294",
     "activityBar.inactiveForeground": "#7A614B",
     "activityBarBadge.background": "#FFDCA5",
@@ -2501,10 +2801,10 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "dropdown.border": "#7A614B",
     "dropdown.foreground": "#CAB294",
     "editor.background": "#221507",
-    "editor.findMatchBackground": "#FFDCA5CC",
+    "editor.findMatchBackground": "#FFDCA5",
     "editor.findMatchForeground": "#221507",
-    "editor.findMatchHighlightBackground": "#B97F4B30",
-    "editor.findMatchHighlightForeground": "#FFDCA5",
+    "editor.findMatchHighlightBackground": "#B97F4B",
+    "editor.findMatchHighlightForeground": "#221507",
     "editor.foreground": "#CAB294",
     "editor.inactiveSelectionBackground": "#22150760",
     "editorLightBulb.foreground": "#C77940",
@@ -2525,7 +2825,7 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "editorGroup.border": "#7A614B",
     "editorGroup.dropIntoPromptBackground": "#22150790",
     "editorGroup.dropIntoPromptForeground": "#FFDCA5",
-    "editorGroupHeader.tabsBackground": "#221507",
+    "editorGroupHeader.tabsBackground": "#1B1005",
     "editorGutter.addedBackground": "#B6BB6B",
     "editorGutter.deletedBackground": "#C36FD3",
     "editorGutter.modifiedBackground": "#D39A2F",
@@ -2579,7 +2879,7 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "list.warningForeground": "#F2BC23",
     "list.hoverBackground": "#B97F4B50",
     "list.hoverForeground": "#FFDCA5",
-    "list.inactiveSelectionBackground": "#22150740",
+    "list.inactiveSelectionBackground": "#B97F4B30",
     "list.inactiveSelectionForeground": "#CAB294",
     "menu.background": "#221507",
     "menu.foreground": "#CAB294",
@@ -2629,21 +2929,21 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "sideBar.foreground": "#CAB294",
     "sideBarSectionHeader.background": "#221507",
     "sideBarSectionHeader.foreground": "#DCA562",
-    "statusBar.background": "#221507",
+    "statusBar.background": "#160E05",
     "statusBar.debuggingBackground": "#B97F4B30",
     "statusBar.debuggingForeground": "#DCA562",
     "statusBar.foreground": "#CAB294",
-    "statusBar.noFolderBackground": "#221507",
+    "statusBar.noFolderBackground": "#160E05",
     "statusBar.noFolderForeground": "#CAB294",
     "statusBarItem.activeBackground": "#DCA56240",
     "statusBarItem.hoverBackground": "#B97F4B60",
     "statusBarItem.hoverForeground": "#FFDCA5",
     "statusBarItem.compactHoverBackground": "#B97F4B60",
-    "statusBarItem.remoteBackground": "#221507",
+    "statusBarItem.remoteBackground": "#160E05",
     "statusBarItem.remoteForeground": "#CAB294",
     "statusBarItem.remoteHoverBackground": "#B97F4B60",
     "statusBarItem.remoteHoverForeground": "#FFDCA5",
-    "statusBarItem.offlineBackground": "#221507",
+    "statusBarItem.offlineBackground": "#160E05",
     "statusBarItem.offlineForeground": "#E7777B",
     "statusBarItem.offlineHoverBackground": "#B97F4B60",
     "statusBarItem.offlineHoverForeground": "#FFDCA5",
@@ -2688,13 +2988,15 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "symbolIcon.typeParameterForeground": "#C77940",
     "symbolIcon.unitForeground": "#C36FD3",
     "symbolIcon.variableForeground": "#FFDCA5",
-    "tab.activeBackground": "#B97F4B40",
+    "tab.activeBackground": "#221507",
+    "tab.activeBorderTop": "#DCA562",
     "tab.activeForeground": "#FFDCA5",
     "tab.hoverBackground": "#B97F4B20",
     "tab.hoverForeground": "#FFDCA5",
     "tab.border": "#FFDCA520",
-    "tab.inactiveBackground": "#221507",
+    "tab.inactiveBackground": "#1B1005",
     "tab.inactiveForeground": "#7A614B",
+    "tab.selectedBorderTop": "#DCA562",
     "terminal.ansiBlack": "#221507",
     "terminal.ansiBlue": "#6CA1BC",
     "terminal.ansiBrightBlack": "#7A614B",
@@ -2716,9 +3018,9 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "terminal.selectionBackground": "#DCA56240",
     "textLink.foreground": "#6CA1BC",
     "textLink.activeForeground": "#88A2B0",
-    "titleBar.activeBackground": "#221507",
+    "titleBar.activeBackground": "#160E05",
     "titleBar.activeForeground": "#CAB294",
-    "titleBar.inactiveBackground": "#221507",
+    "titleBar.inactiveBackground": "#160E05",
     "titleBar.inactiveForeground": "#7A614B",
     "toolbar.hoverBackground": "#B97F4B50",
     "tree.inactiveIndentGuidesStroke": "#FFDCA520",
@@ -2764,14 +3066,17 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "modernActivityBarItem.activeForeground": "#FFDCA5",
     "modernActivityBarItem.hoverBackground": "#B97F4B20",
     "modernActivityBarItem.hoverForeground": "#FFDCA5",
-    "modernEditorTab.activeBackground": "#B97F4B40",
+    "modernEditorTab.activeBackground": "#221507",
     "modernEditorTab.activeForeground": "#FFDCA5",
     "modernEditorTab.hoverBackground": "#B97F4B20",
     "modernEditorTab.hoverForeground": "#FFDCA5",
-    "modernTab.activeBackground": "#B97F4B40",
+    "modernEditorTab.inactiveBackground": "#1B1005",
+    "modernTab.activeBackground": "#221507",
     "modernTab.activeForeground": "#FFDCA5",
     "modernTab.hoverBackground": "#B97F4B20",
     "modernTab.hoverForeground": "#FFDCA5",
+    "modernUI.inactiveShellBackground": "#160E05",
+    "modernUI.shellBackground": "#160E05",
     "quickInputList.focusBackground": "#B97F4B60",
     "quickInputList.focusForeground": "#FFDCA5",
     "radio.activeBackground": "#B97F4B70",
@@ -2788,13 +3093,14 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "settings.numberInputForeground": "#CAB294",
     "settings.textInputBackground": "#221507",
     "settings.textInputForeground": "#CAB294",
-    "tab.selectedBackground": "#B97F4B40",
+    "tab.selectedBackground": "#221507",
     "tab.selectedForeground": "#FFDCA5",
-    "tab.unfocusedActiveBackground": "#B97F4B20",
+    "tab.unfocusedActiveBackground": "#221507",
+    "tab.unfocusedActiveBorderTop": "#B97F4B",
     "tab.unfocusedActiveForeground": "#DCA562",
     "tab.unfocusedHoverBackground": "#B97F4B20",
     "tab.unfocusedHoverForeground": "#FFDCA5",
-    "tab.unfocusedInactiveBackground": "#221507",
+    "tab.unfocusedInactiveBackground": "#1B1005",
     "tab.unfocusedInactiveForeground": "#7A614B",
     "testing.coverCountBadgeBackground": "#B97F4B60",
     "testing.coverCountBadgeForeground": "#FFDCA5",
@@ -2802,6 +3108,69 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "testing.message.error.badgeForeground": "#221507"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#F64D20"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#F2BC23"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#F3A046"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#E7777B"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#9D8261"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -2961,7 +3330,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#7A614B",
@@ -2980,7 +3350,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -2990,7 +3361,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -3002,10 +3374,43 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#F2BC23"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
       }
     },
     {
@@ -3020,7 +3425,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#9D8261"
@@ -3058,7 +3464,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#B6BB6B"
@@ -3068,7 +3475,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#FFDCA5"
@@ -3092,14 +3500,6 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -3158,7 +3558,8 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -3506,6 +3907,54 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#F64D20"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#F64D20"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#7EB3A0"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -3594,6 +4043,123 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       ],
       "settings": {
         "foreground": "#FFDCA5"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#F64D20"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#C77940"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#9D8261"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#F64D20"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#7EB3A0"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#7EB3A0"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#7A614B"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#E7777B"
       }
     },
     {
@@ -4158,7 +4724,6 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -4518,7 +5083,6 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -4880,9 +5444,18 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#F64D20"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -4916,11 +5489,22 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#9D8261"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#F3A046"
@@ -4934,8 +5518,16 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
 {
   "name": "Retroscope Cassette",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#6DB8B5",
+    "method": "#6DB8B5",
+    "delegate": "#F3A149",
+    "*.constructor": "#6DB8B5",
+    "*.importDeclaration": "#FFD3BD"
+  },
   "colors": {
-    "activityBar.background": "#241720",
+    "activityBar.background": "#1C1219",
     "activityBar.foreground": "#C9AAA5",
     "activityBar.inactiveForeground": "#7D6070",
     "activityBarBadge.background": "#FFD3BD",
@@ -4967,10 +5559,10 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "dropdown.border": "#7D6070",
     "dropdown.foreground": "#C9AAA5",
     "editor.background": "#241720",
-    "editor.findMatchBackground": "#FFD3BDCC",
+    "editor.findMatchBackground": "#FFD3BD",
     "editor.findMatchForeground": "#241720",
-    "editor.findMatchHighlightBackground": "#C3786C30",
-    "editor.findMatchHighlightForeground": "#FFD3BD",
+    "editor.findMatchHighlightBackground": "#C3786C",
+    "editor.findMatchHighlightForeground": "#241720",
     "editor.foreground": "#C9AAA5",
     "editor.inactiveSelectionBackground": "#24172060",
     "editorLightBulb.foreground": "#C97B42",
@@ -4991,7 +5583,7 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "editorGroup.border": "#7D6070",
     "editorGroup.dropIntoPromptBackground": "#24172090",
     "editorGroup.dropIntoPromptForeground": "#FFD3BD",
-    "editorGroupHeader.tabsBackground": "#241720",
+    "editorGroupHeader.tabsBackground": "#1C1219",
     "editorGutter.addedBackground": "#9EC17D",
     "editorGutter.deletedBackground": "#B772EA",
     "editorGutter.modifiedBackground": "#D19B39",
@@ -5045,7 +5637,7 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "list.warningForeground": "#F3C03A",
     "list.hoverBackground": "#C3786C50",
     "list.hoverForeground": "#FFD3BD",
-    "list.inactiveSelectionBackground": "#24172040",
+    "list.inactiveSelectionBackground": "#C3786C30",
     "list.inactiveSelectionForeground": "#C9AAA5",
     "menu.background": "#241720",
     "menu.foreground": "#C9AAA5",
@@ -5095,21 +5687,21 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "sideBar.foreground": "#C9AAA5",
     "sideBarSectionHeader.background": "#241720",
     "sideBarSectionHeader.foreground": "#E89D83",
-    "statusBar.background": "#241720",
+    "statusBar.background": "#170F15",
     "statusBar.debuggingBackground": "#C3786C30",
     "statusBar.debuggingForeground": "#E89D83",
     "statusBar.foreground": "#C9AAA5",
-    "statusBar.noFolderBackground": "#241720",
+    "statusBar.noFolderBackground": "#170F15",
     "statusBar.noFolderForeground": "#C9AAA5",
     "statusBarItem.activeBackground": "#E89D8340",
     "statusBarItem.hoverBackground": "#C3786C60",
     "statusBarItem.hoverForeground": "#FFD3BD",
     "statusBarItem.compactHoverBackground": "#C3786C60",
-    "statusBarItem.remoteBackground": "#241720",
+    "statusBarItem.remoteBackground": "#170F15",
     "statusBarItem.remoteForeground": "#C9AAA5",
     "statusBarItem.remoteHoverBackground": "#C3786C60",
     "statusBarItem.remoteHoverForeground": "#FFD3BD",
-    "statusBarItem.offlineBackground": "#241720",
+    "statusBarItem.offlineBackground": "#170F15",
     "statusBarItem.offlineForeground": "#EF7A85",
     "statusBarItem.offlineHoverBackground": "#C3786C60",
     "statusBarItem.offlineHoverForeground": "#FFD3BD",
@@ -5154,13 +5746,15 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "symbolIcon.typeParameterForeground": "#C97B42",
     "symbolIcon.unitForeground": "#B772EA",
     "symbolIcon.variableForeground": "#FFD3BD",
-    "tab.activeBackground": "#C3786C40",
+    "tab.activeBackground": "#241720",
+    "tab.activeBorderTop": "#E89D83",
     "tab.activeForeground": "#FFD3BD",
     "tab.hoverBackground": "#C3786C20",
     "tab.hoverForeground": "#FFD3BD",
     "tab.border": "#FFD3BD20",
-    "tab.inactiveBackground": "#241720",
+    "tab.inactiveBackground": "#1C1219",
     "tab.inactiveForeground": "#7D6070",
+    "tab.selectedBorderTop": "#E89D83",
     "terminal.ansiBlack": "#241720",
     "terminal.ansiBlue": "#799FC5",
     "terminal.ansiBrightBlack": "#7D6070",
@@ -5182,9 +5776,9 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "terminal.selectionBackground": "#E89D8340",
     "textLink.foreground": "#799FC5",
     "textLink.activeForeground": "#8FA1B5",
-    "titleBar.activeBackground": "#241720",
+    "titleBar.activeBackground": "#170F15",
     "titleBar.activeForeground": "#C9AAA5",
-    "titleBar.inactiveBackground": "#241720",
+    "titleBar.inactiveBackground": "#170F15",
     "titleBar.inactiveForeground": "#7D6070",
     "toolbar.hoverBackground": "#C3786C50",
     "tree.inactiveIndentGuidesStroke": "#FFD3BD20",
@@ -5230,14 +5824,17 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "modernActivityBarItem.activeForeground": "#FFD3BD",
     "modernActivityBarItem.hoverBackground": "#C3786C20",
     "modernActivityBarItem.hoverForeground": "#FFD3BD",
-    "modernEditorTab.activeBackground": "#C3786C40",
+    "modernEditorTab.activeBackground": "#241720",
     "modernEditorTab.activeForeground": "#FFD3BD",
     "modernEditorTab.hoverBackground": "#C3786C20",
     "modernEditorTab.hoverForeground": "#FFD3BD",
-    "modernTab.activeBackground": "#C3786C40",
+    "modernEditorTab.inactiveBackground": "#1C1219",
+    "modernTab.activeBackground": "#241720",
     "modernTab.activeForeground": "#FFD3BD",
     "modernTab.hoverBackground": "#C3786C20",
     "modernTab.hoverForeground": "#FFD3BD",
+    "modernUI.inactiveShellBackground": "#170F15",
+    "modernUI.shellBackground": "#170F15",
     "quickInputList.focusBackground": "#C3786C60",
     "quickInputList.focusForeground": "#FFD3BD",
     "radio.activeBackground": "#C3786C70",
@@ -5254,13 +5851,14 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "settings.numberInputForeground": "#C9AAA5",
     "settings.textInputBackground": "#241720",
     "settings.textInputForeground": "#C9AAA5",
-    "tab.selectedBackground": "#C3786C40",
+    "tab.selectedBackground": "#241720",
     "tab.selectedForeground": "#FFD3BD",
-    "tab.unfocusedActiveBackground": "#C3786C20",
+    "tab.unfocusedActiveBackground": "#241720",
+    "tab.unfocusedActiveBorderTop": "#C3786C",
     "tab.unfocusedActiveForeground": "#E89D83",
     "tab.unfocusedHoverBackground": "#C3786C20",
     "tab.unfocusedHoverForeground": "#FFD3BD",
-    "tab.unfocusedInactiveBackground": "#241720",
+    "tab.unfocusedInactiveBackground": "#1C1219",
     "tab.unfocusedInactiveForeground": "#7D6070",
     "testing.coverCountBadgeBackground": "#C3786C60",
     "testing.coverCountBadgeForeground": "#FFD3BD",
@@ -5268,6 +5866,69 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "testing.message.error.badgeForeground": "#241720"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#FA4E26"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#F3C03A"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#F3A149"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#EF7A85"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#A37D70"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -5427,7 +6088,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#7D6070",
@@ -5446,7 +6108,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -5456,7 +6119,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -5468,10 +6132,43 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#F3C03A"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
       }
     },
     {
@@ -5486,7 +6183,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#A37D70"
@@ -5524,7 +6222,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#9EC17D"
@@ -5534,7 +6233,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#FFD3BD"
@@ -5558,14 +6258,6 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -5624,7 +6316,8 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -5972,6 +6665,54 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#FA4E26"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#FA4E26"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#6DB8B5"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -6060,6 +6801,123 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       ],
       "settings": {
         "foreground": "#FFD3BD"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#FA4E26"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#C97B42"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#A37D70"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#FA4E26"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#6DB8B5"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#6DB8B5"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#7D6070"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#EF7A85"
       }
     },
     {
@@ -6624,7 +7482,6 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -6984,7 +7841,6 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -7346,9 +8202,18 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#FA4E26"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -7382,11 +8247,22 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#A37D70"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#F3A149"
@@ -7400,8 +8276,16 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
 {
   "name": "Retroscope Dawn",
   "type": "light",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#007388",
+    "method": "#007388",
+    "delegate": "#AA4300",
+    "*.constructor": "#007388",
+    "*.importDeclaration": "#47282E"
+  },
   "colors": {
-    "activityBar.background": "#FBECEB",
+    "activityBar.background": "#EEE0DF",
     "activityBar.foreground": "#47282E",
     "activityBar.inactiveForeground": "#8C7765",
     "activityBarBadge.background": "#724249",
@@ -7433,10 +8317,10 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "dropdown.border": "#8C7765",
     "dropdown.foreground": "#47282E",
     "editor.background": "#FBECEB",
-    "editor.findMatchBackground": "#F5D4A0",
-    "editor.findMatchForeground": "#47282E",
-    "editor.findMatchHighlightBackground": "#98775735",
-    "editor.findMatchHighlightForeground": "#47282E",
+    "editor.findMatchBackground": "#47282E",
+    "editor.findMatchForeground": "#FBECEB",
+    "editor.findMatchHighlightBackground": "#896252",
+    "editor.findMatchHighlightForeground": "#FBECEB",
     "editor.foreground": "#47282E",
     "editor.inactiveSelectionBackground": "#98775720",
     "editorLightBulb.foreground": "#AA4300",
@@ -7457,7 +8341,7 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "editorGroup.border": "#8C7765",
     "editorGroup.dropIntoPromptBackground": "#47282EE0",
     "editorGroup.dropIntoPromptForeground": "#FBECEB",
-    "editorGroupHeader.tabsBackground": "#FBECEB",
+    "editorGroupHeader.tabsBackground": "#EEE0DF",
     "editorGutter.addedBackground": "#4D8343",
     "editorGutter.deletedBackground": "#A880D2",
     "editorGutter.modifiedBackground": "#8A5E00",
@@ -7505,13 +8389,13 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "inputValidation.warningBorder": "#8A5E00",
     "keybindingLabel.background": "#98775730",
     "keybindingLabel.foreground": "#47282E",
-    "list.activeSelectionBackground": "#98775740",
+    "list.activeSelectionBackground": "#98775755",
     "list.activeSelectionForeground": "#47282E",
     "list.errorForeground": "#CB1F34",
     "list.warningForeground": "#AA4300",
     "list.hoverBackground": "#98775725",
     "list.hoverForeground": "#47282E",
-    "list.inactiveSelectionBackground": "#98775720",
+    "list.inactiveSelectionBackground": "#98775735",
     "list.inactiveSelectionForeground": "#47282E",
     "menu.background": "#FBECEB",
     "menu.foreground": "#47282E",
@@ -7572,12 +8456,12 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "sideBarSectionHeader.border": "#8C7765",
     "sideBarSectionHeader.foreground": "#47282E",
     "sideBarTitle.foreground": "#47282E",
-    "statusBar.background": "#FBECEB",
+    "statusBar.background": "#E7D9D8",
     "statusBar.border": "#8C7765",
     "statusBar.debuggingBackground": "#724249",
     "statusBar.debuggingForeground": "#FBECEB",
     "statusBar.foreground": "#47282E",
-    "statusBar.noFolderBackground": "#FBECEB",
+    "statusBar.noFolderBackground": "#E7D9D8",
     "statusBar.noFolderForeground": "#47282E",
     "statusBarItem.activeBackground": "#98775740",
     "statusBarItem.compactHoverBackground": "#98775725",
@@ -7595,10 +8479,10 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "statusBarItem.prominentForeground": "#FBECEB",
     "statusBarItem.prominentHoverBackground": "#47282E",
     "statusBarItem.prominentHoverForeground": "#FBECEB",
-    "statusBarItem.remoteBackground": "#724249",
-    "statusBarItem.remoteForeground": "#FBECEB",
-    "statusBarItem.remoteHoverBackground": "#47282E",
-    "statusBarItem.remoteHoverForeground": "#FBECEB",
+    "statusBarItem.remoteBackground": "#E7D9D8",
+    "statusBarItem.remoteForeground": "#47282E",
+    "statusBarItem.remoteHoverBackground": "#98775725",
+    "statusBarItem.remoteHoverForeground": "#47282E",
     "statusBarItem.warningBackground": "#8A5E00",
     "statusBarItem.warningForeground": "#FFFFFF",
     "statusBarItem.warningHoverBackground": "#47282E",
@@ -7637,17 +8521,20 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "symbolIcon.unitForeground": "#4E2686",
     "symbolIcon.variableForeground": "#47282E",
     "tab.activeBackground": "#FBECEB",
+    "tab.activeBorderTop": "#724249",
     "tab.activeForeground": "#47282E",
     "tab.border": "#8C7765",
     "tab.hoverBackground": "#98775720",
     "tab.hoverForeground": "#47282E",
-    "tab.inactiveBackground": "#FBECEB",
+    "tab.inactiveBackground": "#EEE0DF",
     "tab.inactiveForeground": "#8C7765",
+    "tab.selectedBorderTop": "#724249",
     "tab.unfocusedActiveBackground": "#FBECEB",
+    "tab.unfocusedActiveBorderTop": "#987757",
     "tab.unfocusedActiveForeground": "#47282E",
     "tab.unfocusedHoverBackground": "#98775720",
     "tab.unfocusedHoverForeground": "#47282E",
-    "tab.unfocusedInactiveBackground": "#FBECEB",
+    "tab.unfocusedInactiveBackground": "#EEE0DF",
     "tab.unfocusedInactiveForeground": "#8C7765",
     "terminal.ansiBlack": "#47282E",
     "terminal.ansiBlue": "#00689E",
@@ -7670,9 +8557,9 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "terminal.selectionBackground": "#98775730",
     "textLink.foreground": "#00689E",
     "textLink.activeForeground": "#006EA8",
-    "titleBar.activeBackground": "#FBECEB",
+    "titleBar.activeBackground": "#E7D9D8",
     "titleBar.activeForeground": "#47282E",
-    "titleBar.inactiveBackground": "#FBECEB",
+    "titleBar.inactiveBackground": "#E7D9D8",
     "titleBar.inactiveForeground": "#8C7765",
     "toolbar.hoverBackground": "#98775730",
     "tree.inactiveIndentGuidesStroke": "#47282E20",
@@ -7718,14 +8605,17 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "modernActivityBarItem.activeForeground": "#47282E",
     "modernActivityBarItem.hoverBackground": "#98775720",
     "modernActivityBarItem.hoverForeground": "#47282E",
-    "modernEditorTab.activeBackground": "#98775730",
+    "modernEditorTab.activeBackground": "#FBECEB",
     "modernEditorTab.activeForeground": "#47282E",
     "modernEditorTab.hoverBackground": "#98775720",
     "modernEditorTab.hoverForeground": "#47282E",
-    "modernTab.activeBackground": "#98775730",
+    "modernEditorTab.inactiveBackground": "#EEE0DF",
+    "modernTab.activeBackground": "#FBECEB",
     "modernTab.activeForeground": "#47282E",
     "modernTab.hoverBackground": "#98775720",
     "modernTab.hoverForeground": "#47282E",
+    "modernUI.inactiveShellBackground": "#E7D9D8",
+    "modernUI.shellBackground": "#E7D9D8",
     "quickInputList.focusBackground": "#98775740",
     "quickInputList.focusForeground": "#47282E",
     "radio.activeBackground": "#724249",
@@ -7742,7 +8632,7 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "settings.numberInputForeground": "#47282E",
     "settings.textInputBackground": "#FBECEB",
     "settings.textInputForeground": "#47282E",
-    "tab.selectedBackground": "#98775730",
+    "tab.selectedBackground": "#FBECEB",
     "tab.selectedForeground": "#47282E",
     "testing.coverCountBadgeBackground": "#98775740",
     "testing.coverCountBadgeForeground": "#47282E",
@@ -7750,6 +8640,69 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "testing.message.error.badgeForeground": "#FFFFFF"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#82552A"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#AA4300"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#47282E"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#DA5F8C"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -7909,7 +8862,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#9E9A9A",
@@ -7928,7 +8882,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -7938,7 +8893,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -7950,10 +8906,43 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#82552A"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#47282E"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#47282E"
       }
     },
     {
@@ -7968,7 +8957,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#A68765"
@@ -8006,7 +8996,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#4D8343"
@@ -8016,7 +9007,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#47282E"
@@ -8040,14 +9032,6 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -8106,7 +9090,8 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -8454,6 +9439,54 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#47282E"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -8542,6 +9575,123 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       ],
       "settings": {
         "foreground": "#47282E"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#47282E"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#47282E"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#9E9A9A"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#DA5F8C"
       }
     },
     {
@@ -9106,7 +10256,6 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -9466,7 +10615,6 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -9828,9 +10976,18 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -9864,11 +11021,22 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#AA4300"
@@ -9882,8 +11050,16 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
 {
   "name": "Retroscope High Contrast",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#89AEA3",
+    "method": "#89AEA3",
+    "delegate": "#F19F25",
+    "*.constructor": "#89AEA3",
+    "*.importDeclaration": "#FFCC9E"
+  },
   "colors": {
-    "activityBar.background": "#12100E",
+    "activityBar.background": "#0E0C0B",
     "activityBar.foreground": "#C8B7A8",
     "activityBar.inactiveForeground": "#8D7A6D",
     "activityBarBadge.background": "#FFCC9E",
@@ -9915,10 +11091,10 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "dropdown.border": "#8D7A6D",
     "dropdown.foreground": "#C8B7A8",
     "editor.background": "#12100E",
-    "editor.findMatchBackground": "#FFCC9ECC",
+    "editor.findMatchBackground": "#FFCC9E",
     "editor.findMatchForeground": "#12100E",
-    "editor.findMatchHighlightBackground": "#CA946830",
-    "editor.findMatchHighlightForeground": "#FFCC9E",
+    "editor.findMatchHighlightBackground": "#CA9468",
+    "editor.findMatchHighlightForeground": "#12100E",
     "editor.foreground": "#C8B7A8",
     "editor.inactiveSelectionBackground": "#12100E60",
     "editorLightBulb.foreground": "#D3915E",
@@ -9939,7 +11115,7 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "editorGroup.border": "#8D7A6D",
     "editorGroup.dropIntoPromptBackground": "#12100E90",
     "editorGroup.dropIntoPromptForeground": "#FFCC9E",
-    "editorGroupHeader.tabsBackground": "#12100E",
+    "editorGroupHeader.tabsBackground": "#0E0C0B",
     "editorGutter.addedBackground": "#C1C673",
     "editorGutter.deletedBackground": "#BD83FF",
     "editorGutter.modifiedBackground": "#D29834",
@@ -9993,7 +11169,7 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "list.warningForeground": "#F1C13C",
     "list.hoverBackground": "#CA946850",
     "list.hoverForeground": "#FFCC9E",
-    "list.inactiveSelectionBackground": "#12100E40",
+    "list.inactiveSelectionBackground": "#CA946830",
     "list.inactiveSelectionForeground": "#C8B7A8",
     "menu.background": "#12100E",
     "menu.foreground": "#C8B7A8",
@@ -10043,21 +11219,21 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "sideBar.foreground": "#C8B7A8",
     "sideBarSectionHeader.background": "#12100E",
     "sideBarSectionHeader.foreground": "#D4A574",
-    "statusBar.background": "#12100E",
+    "statusBar.background": "#0C0A09",
     "statusBar.debuggingBackground": "#CA946830",
     "statusBar.debuggingForeground": "#D4A574",
     "statusBar.foreground": "#C8B7A8",
-    "statusBar.noFolderBackground": "#12100E",
+    "statusBar.noFolderBackground": "#0C0A09",
     "statusBar.noFolderForeground": "#C8B7A8",
     "statusBarItem.activeBackground": "#D4A57440",
     "statusBarItem.hoverBackground": "#CA946860",
     "statusBarItem.hoverForeground": "#FFCC9E",
     "statusBarItem.compactHoverBackground": "#CA946860",
-    "statusBarItem.remoteBackground": "#12100E",
+    "statusBarItem.remoteBackground": "#0C0A09",
     "statusBarItem.remoteForeground": "#C8B7A8",
     "statusBarItem.remoteHoverBackground": "#CA946860",
     "statusBarItem.remoteHoverForeground": "#FFCC9E",
-    "statusBarItem.offlineBackground": "#12100E",
+    "statusBarItem.offlineBackground": "#0C0A09",
     "statusBarItem.offlineForeground": "#F58288",
     "statusBarItem.offlineHoverBackground": "#CA946860",
     "statusBarItem.offlineHoverForeground": "#FFCC9E",
@@ -10102,13 +11278,15 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "symbolIcon.typeParameterForeground": "#D3915E",
     "symbolIcon.unitForeground": "#BD83FF",
     "symbolIcon.variableForeground": "#FFCC9E",
-    "tab.activeBackground": "#CA946840",
+    "tab.activeBackground": "#12100E",
+    "tab.activeBorderTop": "#D4A574",
     "tab.activeForeground": "#FFCC9E",
     "tab.hoverBackground": "#CA946820",
     "tab.hoverForeground": "#FFCC9E",
     "tab.border": "#FFCC9E20",
-    "tab.inactiveBackground": "#12100E",
+    "tab.inactiveBackground": "#0E0C0B",
     "tab.inactiveForeground": "#8D7A6D",
+    "tab.selectedBorderTop": "#D4A574",
     "terminal.ansiBlack": "#12100E",
     "terminal.ansiBlue": "#80A3C1",
     "terminal.ansiBrightBlack": "#8D7A6D",
@@ -10130,9 +11308,9 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "terminal.selectionBackground": "#D4A57440",
     "textLink.foreground": "#80A3C1",
     "textLink.activeForeground": "#91A1AF",
-    "titleBar.activeBackground": "#12100E",
+    "titleBar.activeBackground": "#0C0A09",
     "titleBar.activeForeground": "#C8B7A8",
-    "titleBar.inactiveBackground": "#12100E",
+    "titleBar.inactiveBackground": "#0C0A09",
     "titleBar.inactiveForeground": "#8D7A6D",
     "toolbar.hoverBackground": "#CA946850",
     "tree.inactiveIndentGuidesStroke": "#FFCC9E20",
@@ -10178,14 +11356,17 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "modernActivityBarItem.activeForeground": "#FFCC9E",
     "modernActivityBarItem.hoverBackground": "#CA946820",
     "modernActivityBarItem.hoverForeground": "#FFCC9E",
-    "modernEditorTab.activeBackground": "#CA946840",
+    "modernEditorTab.activeBackground": "#12100E",
     "modernEditorTab.activeForeground": "#FFCC9E",
     "modernEditorTab.hoverBackground": "#CA946820",
     "modernEditorTab.hoverForeground": "#FFCC9E",
-    "modernTab.activeBackground": "#CA946840",
+    "modernEditorTab.inactiveBackground": "#0E0C0B",
+    "modernTab.activeBackground": "#12100E",
     "modernTab.activeForeground": "#FFCC9E",
     "modernTab.hoverBackground": "#CA946820",
     "modernTab.hoverForeground": "#FFCC9E",
+    "modernUI.inactiveShellBackground": "#0C0A09",
+    "modernUI.shellBackground": "#0C0A09",
     "quickInputList.focusBackground": "#CA946860",
     "quickInputList.focusForeground": "#FFCC9E",
     "radio.activeBackground": "#CA946870",
@@ -10202,13 +11383,14 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "settings.numberInputForeground": "#C8B7A8",
     "settings.textInputBackground": "#12100E",
     "settings.textInputForeground": "#C8B7A8",
-    "tab.selectedBackground": "#CA946840",
+    "tab.selectedBackground": "#12100E",
     "tab.selectedForeground": "#FFCC9E",
-    "tab.unfocusedActiveBackground": "#CA946820",
+    "tab.unfocusedActiveBackground": "#12100E",
+    "tab.unfocusedActiveBorderTop": "#CA9468",
     "tab.unfocusedActiveForeground": "#D4A574",
     "tab.unfocusedHoverBackground": "#CA946820",
     "tab.unfocusedHoverForeground": "#FFCC9E",
-    "tab.unfocusedInactiveBackground": "#12100E",
+    "tab.unfocusedInactiveBackground": "#0E0C0B",
     "tab.unfocusedInactiveForeground": "#8D7A6D",
     "testing.coverCountBadgeBackground": "#CA946860",
     "testing.coverCountBadgeForeground": "#FFCC9E",
@@ -10216,6 +11398,69 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "testing.message.error.badgeForeground": "#12100E"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#FF7445"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#F1C13C"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#F19F25"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#F58288"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#A1946E"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -10375,7 +11620,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#8D7A6D",
@@ -10394,7 +11640,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -10404,7 +11651,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -10416,10 +11664,43 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#F1C13C"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
       }
     },
     {
@@ -10434,7 +11715,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#A1946E"
@@ -10472,7 +11754,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#C1C673"
@@ -10482,7 +11765,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#FFCC9E"
@@ -10506,14 +11790,6 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -10572,7 +11848,8 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -10920,6 +12197,54 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#FF7445"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#FF7445"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -11008,6 +12333,123 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       ],
       "settings": {
         "foreground": "#FFCC9E"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#FF7445"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#D3915E"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#A1946E"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#FF7445"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#89AEA3"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#8D7A6D"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#F58288"
       }
     },
     {
@@ -11572,7 +13014,6 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -11932,7 +13373,6 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -12294,9 +13734,18 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#FF7445"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -12330,11 +13779,22 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#A1946E"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#F19F25"
@@ -12348,8 +13808,16 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
 {
   "name": "Retroscope Ledger",
   "type": "light",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#007388",
+    "method": "#007388",
+    "delegate": "#AA4300",
+    "*.constructor": "#007388",
+    "*.importDeclaration": "#2E3428"
+  },
   "colors": {
-    "activityBar.background": "#ECF4E8",
+    "activityBar.background": "#E0E8DC",
     "activityBar.foreground": "#2E3428",
     "activityBar.inactiveForeground": "#8C7765",
     "activityBarBadge.background": "#47573E",
@@ -12381,10 +13849,10 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "dropdown.border": "#8C7765",
     "dropdown.foreground": "#2E3428",
     "editor.background": "#ECF4E8",
-    "editor.findMatchBackground": "#F5D4A0",
-    "editor.findMatchForeground": "#2E3428",
-    "editor.findMatchHighlightBackground": "#98775735",
-    "editor.findMatchHighlightForeground": "#2E3428",
+    "editor.findMatchBackground": "#2E3428",
+    "editor.findMatchForeground": "#ECF4E8",
+    "editor.findMatchHighlightBackground": "#7B6B4E",
+    "editor.findMatchHighlightForeground": "#ECF4E8",
     "editor.foreground": "#2E3428",
     "editor.inactiveSelectionBackground": "#98775720",
     "editorLightBulb.foreground": "#AA4300",
@@ -12405,7 +13873,7 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "editorGroup.border": "#8C7765",
     "editorGroup.dropIntoPromptBackground": "#2E3428E0",
     "editorGroup.dropIntoPromptForeground": "#ECF4E8",
-    "editorGroupHeader.tabsBackground": "#ECF4E8",
+    "editorGroupHeader.tabsBackground": "#E0E8DC",
     "editorGutter.addedBackground": "#4D8343",
     "editorGutter.deletedBackground": "#A880D2",
     "editorGutter.modifiedBackground": "#8A5E00",
@@ -12453,13 +13921,13 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "inputValidation.warningBorder": "#8A5E00",
     "keybindingLabel.background": "#98775730",
     "keybindingLabel.foreground": "#2E3428",
-    "list.activeSelectionBackground": "#98775740",
+    "list.activeSelectionBackground": "#98775755",
     "list.activeSelectionForeground": "#2E3428",
     "list.errorForeground": "#CB1F34",
     "list.warningForeground": "#AA4300",
     "list.hoverBackground": "#98775725",
     "list.hoverForeground": "#2E3428",
-    "list.inactiveSelectionBackground": "#98775720",
+    "list.inactiveSelectionBackground": "#98775735",
     "list.inactiveSelectionForeground": "#2E3428",
     "menu.background": "#ECF4E8",
     "menu.foreground": "#2E3428",
@@ -12520,12 +13988,12 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "sideBarSectionHeader.border": "#8C7765",
     "sideBarSectionHeader.foreground": "#2E3428",
     "sideBarTitle.foreground": "#2E3428",
-    "statusBar.background": "#ECF4E8",
+    "statusBar.background": "#D9E0D5",
     "statusBar.border": "#8C7765",
     "statusBar.debuggingBackground": "#47573E",
     "statusBar.debuggingForeground": "#ECF4E8",
     "statusBar.foreground": "#2E3428",
-    "statusBar.noFolderBackground": "#ECF4E8",
+    "statusBar.noFolderBackground": "#D9E0D5",
     "statusBar.noFolderForeground": "#2E3428",
     "statusBarItem.activeBackground": "#98775740",
     "statusBarItem.compactHoverBackground": "#98775725",
@@ -12543,10 +14011,10 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "statusBarItem.prominentForeground": "#ECF4E8",
     "statusBarItem.prominentHoverBackground": "#2E3428",
     "statusBarItem.prominentHoverForeground": "#ECF4E8",
-    "statusBarItem.remoteBackground": "#47573E",
-    "statusBarItem.remoteForeground": "#ECF4E8",
-    "statusBarItem.remoteHoverBackground": "#2E3428",
-    "statusBarItem.remoteHoverForeground": "#ECF4E8",
+    "statusBarItem.remoteBackground": "#D9E0D5",
+    "statusBarItem.remoteForeground": "#2E3428",
+    "statusBarItem.remoteHoverBackground": "#98775725",
+    "statusBarItem.remoteHoverForeground": "#2E3428",
     "statusBarItem.warningBackground": "#8A5E00",
     "statusBarItem.warningForeground": "#FFFFFF",
     "statusBarItem.warningHoverBackground": "#2E3428",
@@ -12585,17 +14053,20 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "symbolIcon.unitForeground": "#4E2686",
     "symbolIcon.variableForeground": "#2E3428",
     "tab.activeBackground": "#ECF4E8",
+    "tab.activeBorderTop": "#47573E",
     "tab.activeForeground": "#2E3428",
     "tab.border": "#8C7765",
     "tab.hoverBackground": "#98775720",
     "tab.hoverForeground": "#2E3428",
-    "tab.inactiveBackground": "#ECF4E8",
+    "tab.inactiveBackground": "#E0E8DC",
     "tab.inactiveForeground": "#8C7765",
+    "tab.selectedBorderTop": "#47573E",
     "tab.unfocusedActiveBackground": "#ECF4E8",
+    "tab.unfocusedActiveBorderTop": "#987757",
     "tab.unfocusedActiveForeground": "#2E3428",
     "tab.unfocusedHoverBackground": "#98775720",
     "tab.unfocusedHoverForeground": "#2E3428",
-    "tab.unfocusedInactiveBackground": "#ECF4E8",
+    "tab.unfocusedInactiveBackground": "#E0E8DC",
     "tab.unfocusedInactiveForeground": "#8C7765",
     "terminal.ansiBlack": "#2E3428",
     "terminal.ansiBlue": "#00689E",
@@ -12618,9 +14089,9 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "terminal.selectionBackground": "#98775730",
     "textLink.foreground": "#00689E",
     "textLink.activeForeground": "#006EA8",
-    "titleBar.activeBackground": "#ECF4E8",
+    "titleBar.activeBackground": "#D9E0D5",
     "titleBar.activeForeground": "#2E3428",
-    "titleBar.inactiveBackground": "#ECF4E8",
+    "titleBar.inactiveBackground": "#D9E0D5",
     "titleBar.inactiveForeground": "#8C7765",
     "toolbar.hoverBackground": "#98775730",
     "tree.inactiveIndentGuidesStroke": "#2E342820",
@@ -12666,14 +14137,17 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "modernActivityBarItem.activeForeground": "#2E3428",
     "modernActivityBarItem.hoverBackground": "#98775720",
     "modernActivityBarItem.hoverForeground": "#2E3428",
-    "modernEditorTab.activeBackground": "#98775730",
+    "modernEditorTab.activeBackground": "#ECF4E8",
     "modernEditorTab.activeForeground": "#2E3428",
     "modernEditorTab.hoverBackground": "#98775720",
     "modernEditorTab.hoverForeground": "#2E3428",
-    "modernTab.activeBackground": "#98775730",
+    "modernEditorTab.inactiveBackground": "#E0E8DC",
+    "modernTab.activeBackground": "#ECF4E8",
     "modernTab.activeForeground": "#2E3428",
     "modernTab.hoverBackground": "#98775720",
     "modernTab.hoverForeground": "#2E3428",
+    "modernUI.inactiveShellBackground": "#D9E0D5",
+    "modernUI.shellBackground": "#D9E0D5",
     "quickInputList.focusBackground": "#98775740",
     "quickInputList.focusForeground": "#2E3428",
     "radio.activeBackground": "#47573E",
@@ -12690,7 +14164,7 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "settings.numberInputForeground": "#2E3428",
     "settings.textInputBackground": "#ECF4E8",
     "settings.textInputForeground": "#2E3428",
-    "tab.selectedBackground": "#98775730",
+    "tab.selectedBackground": "#ECF4E8",
     "tab.selectedForeground": "#2E3428",
     "testing.coverCountBadgeBackground": "#98775740",
     "testing.coverCountBadgeForeground": "#2E3428",
@@ -12698,6 +14172,69 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "testing.message.error.badgeForeground": "#FFFFFF"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#82552A"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#AA4300"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#DA5F8C"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -12857,7 +14394,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#9E9A9A",
@@ -12876,7 +14414,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -12886,7 +14425,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -12898,10 +14438,43 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#82552A"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
       }
     },
     {
@@ -12916,7 +14489,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#A68765"
@@ -12954,7 +14528,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#4D8343"
@@ -12964,7 +14539,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#2E3428"
@@ -12988,14 +14564,6 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -13054,7 +14622,8 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -13402,6 +14971,54 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -13490,6 +15107,123 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       ],
       "settings": {
         "foreground": "#2E3428"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#9E9A9A"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#DA5F8C"
       }
     },
     {
@@ -14054,7 +15788,6 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -14414,7 +16147,6 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -14776,9 +16508,18 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -14812,11 +16553,22 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#AA4300"
@@ -14830,8 +16582,16 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
 {
   "name": "Retroscope Paper",
   "type": "light",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#007388",
+    "method": "#007388",
+    "delegate": "#AA4300",
+    "*.constructor": "#007388",
+    "*.importDeclaration": "#462B1F"
+  },
   "colors": {
-    "activityBar.background": "#F8EDDE",
+    "activityBar.background": "#ECE1D3",
     "activityBar.foreground": "#462B1F",
     "activityBar.inactiveForeground": "#8C7765",
     "activityBarBadge.background": "#72452F",
@@ -14863,10 +16623,10 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "dropdown.border": "#8C7765",
     "dropdown.foreground": "#462B1F",
     "editor.background": "#F8EDDE",
-    "editor.findMatchBackground": "#F5D4A0",
-    "editor.findMatchForeground": "#462B1F",
-    "editor.findMatchHighlightBackground": "#98775735",
-    "editor.findMatchHighlightForeground": "#462B1F",
+    "editor.findMatchBackground": "#462B1F",
+    "editor.findMatchForeground": "#F8EDDE",
+    "editor.findMatchHighlightBackground": "#896347",
+    "editor.findMatchHighlightForeground": "#F8EDDE",
     "editor.foreground": "#462B1F",
     "editor.inactiveSelectionBackground": "#98775720",
     "editorLightBulb.foreground": "#AA4300",
@@ -14887,7 +16647,7 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "editorGroup.border": "#8C7765",
     "editorGroup.dropIntoPromptBackground": "#462B1FE0",
     "editorGroup.dropIntoPromptForeground": "#F8EDDE",
-    "editorGroupHeader.tabsBackground": "#F8EDDE",
+    "editorGroupHeader.tabsBackground": "#ECE1D3",
     "editorGutter.addedBackground": "#4D8343",
     "editorGutter.deletedBackground": "#A880D2",
     "editorGutter.modifiedBackground": "#8A5E00",
@@ -14935,13 +16695,13 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "inputValidation.warningBorder": "#8A5E00",
     "keybindingLabel.background": "#98775730",
     "keybindingLabel.foreground": "#462B1F",
-    "list.activeSelectionBackground": "#98775740",
+    "list.activeSelectionBackground": "#98775755",
     "list.activeSelectionForeground": "#462B1F",
     "list.errorForeground": "#CB1F34",
     "list.warningForeground": "#AA4300",
     "list.hoverBackground": "#98775725",
     "list.hoverForeground": "#462B1F",
-    "list.inactiveSelectionBackground": "#98775720",
+    "list.inactiveSelectionBackground": "#98775735",
     "list.inactiveSelectionForeground": "#462B1F",
     "menu.background": "#F8EDDE",
     "menu.foreground": "#462B1F",
@@ -15002,12 +16762,12 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "sideBarSectionHeader.border": "#8C7765",
     "sideBarSectionHeader.foreground": "#462B1F",
     "sideBarTitle.foreground": "#462B1F",
-    "statusBar.background": "#F8EDDE",
+    "statusBar.background": "#E4DACC",
     "statusBar.border": "#8C7765",
     "statusBar.debuggingBackground": "#72452F",
     "statusBar.debuggingForeground": "#F8EDDE",
     "statusBar.foreground": "#462B1F",
-    "statusBar.noFolderBackground": "#F8EDDE",
+    "statusBar.noFolderBackground": "#E4DACC",
     "statusBar.noFolderForeground": "#462B1F",
     "statusBarItem.activeBackground": "#98775740",
     "statusBarItem.compactHoverBackground": "#98775725",
@@ -15025,10 +16785,10 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "statusBarItem.prominentForeground": "#F8EDDE",
     "statusBarItem.prominentHoverBackground": "#462B1F",
     "statusBarItem.prominentHoverForeground": "#F8EDDE",
-    "statusBarItem.remoteBackground": "#72452F",
-    "statusBarItem.remoteForeground": "#F8EDDE",
-    "statusBarItem.remoteHoverBackground": "#462B1F",
-    "statusBarItem.remoteHoverForeground": "#F8EDDE",
+    "statusBarItem.remoteBackground": "#E4DACC",
+    "statusBarItem.remoteForeground": "#462B1F",
+    "statusBarItem.remoteHoverBackground": "#98775725",
+    "statusBarItem.remoteHoverForeground": "#462B1F",
     "statusBarItem.warningBackground": "#8A5E00",
     "statusBarItem.warningForeground": "#FFFFFF",
     "statusBarItem.warningHoverBackground": "#462B1F",
@@ -15067,17 +16827,20 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "symbolIcon.unitForeground": "#4E2686",
     "symbolIcon.variableForeground": "#462B1F",
     "tab.activeBackground": "#F8EDDE",
+    "tab.activeBorderTop": "#72452F",
     "tab.activeForeground": "#462B1F",
     "tab.border": "#8C7765",
     "tab.hoverBackground": "#98775720",
     "tab.hoverForeground": "#462B1F",
-    "tab.inactiveBackground": "#F8EDDE",
+    "tab.inactiveBackground": "#ECE1D3",
     "tab.inactiveForeground": "#8C7765",
+    "tab.selectedBorderTop": "#72452F",
     "tab.unfocusedActiveBackground": "#F8EDDE",
+    "tab.unfocusedActiveBorderTop": "#987757",
     "tab.unfocusedActiveForeground": "#462B1F",
     "tab.unfocusedHoverBackground": "#98775720",
     "tab.unfocusedHoverForeground": "#462B1F",
-    "tab.unfocusedInactiveBackground": "#F8EDDE",
+    "tab.unfocusedInactiveBackground": "#ECE1D3",
     "tab.unfocusedInactiveForeground": "#8C7765",
     "terminal.ansiBlack": "#462B1F",
     "terminal.ansiBlue": "#00689E",
@@ -15100,9 +16863,9 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "terminal.selectionBackground": "#98775730",
     "textLink.foreground": "#00689E",
     "textLink.activeForeground": "#006EA8",
-    "titleBar.activeBackground": "#F8EDDE",
+    "titleBar.activeBackground": "#E4DACC",
     "titleBar.activeForeground": "#462B1F",
-    "titleBar.inactiveBackground": "#F8EDDE",
+    "titleBar.inactiveBackground": "#E4DACC",
     "titleBar.inactiveForeground": "#8C7765",
     "toolbar.hoverBackground": "#98775730",
     "tree.inactiveIndentGuidesStroke": "#462B1F20",
@@ -15148,14 +16911,17 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "modernActivityBarItem.activeForeground": "#462B1F",
     "modernActivityBarItem.hoverBackground": "#98775720",
     "modernActivityBarItem.hoverForeground": "#462B1F",
-    "modernEditorTab.activeBackground": "#98775730",
+    "modernEditorTab.activeBackground": "#F8EDDE",
     "modernEditorTab.activeForeground": "#462B1F",
     "modernEditorTab.hoverBackground": "#98775720",
     "modernEditorTab.hoverForeground": "#462B1F",
-    "modernTab.activeBackground": "#98775730",
+    "modernEditorTab.inactiveBackground": "#ECE1D3",
+    "modernTab.activeBackground": "#F8EDDE",
     "modernTab.activeForeground": "#462B1F",
     "modernTab.hoverBackground": "#98775720",
     "modernTab.hoverForeground": "#462B1F",
+    "modernUI.inactiveShellBackground": "#E4DACC",
+    "modernUI.shellBackground": "#E4DACC",
     "quickInputList.focusBackground": "#98775740",
     "quickInputList.focusForeground": "#462B1F",
     "radio.activeBackground": "#72452F",
@@ -15172,7 +16938,7 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "settings.numberInputForeground": "#462B1F",
     "settings.textInputBackground": "#F8EDDE",
     "settings.textInputForeground": "#462B1F",
-    "tab.selectedBackground": "#98775730",
+    "tab.selectedBackground": "#F8EDDE",
     "tab.selectedForeground": "#462B1F",
     "testing.coverCountBadgeBackground": "#98775740",
     "testing.coverCountBadgeForeground": "#462B1F",
@@ -15180,6 +16946,69 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "testing.message.error.badgeForeground": "#FFFFFF"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#82552A"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#AA4300"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#DA5F8C"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -15339,7 +17168,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#9E9A9A",
@@ -15358,7 +17188,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -15368,7 +17199,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -15380,10 +17212,43 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#82552A"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
       }
     },
     {
@@ -15398,7 +17263,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#A68765"
@@ -15436,7 +17302,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#4D8343"
@@ -15446,7 +17313,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#462B1F"
@@ -15470,14 +17338,6 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -15536,7 +17396,8 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -15884,6 +17745,54 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -15972,6 +17881,123 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       ],
       "settings": {
         "foreground": "#462B1F"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#007388"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#9E9A9A"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#DA5F8C"
       }
     },
     {
@@ -16536,7 +18562,6 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -16896,7 +18921,6 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -17258,9 +19282,18 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#CB1F34"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -17294,11 +19327,22 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#AA4300"
@@ -17312,8 +19356,16 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
 {
   "name": "Retroscope Phosphor",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#65BABE",
+    "method": "#65BABE",
+    "delegate": "#F0A14C",
+    "*.constructor": "#65BABE",
+    "*.importDeclaration": "#EEDEA1"
+  },
   "colors": {
-    "activityBar.background": "#141E17",
+    "activityBar.background": "#101712",
     "activityBar.foreground": "#BEB59D",
     "activityBar.inactiveForeground": "#596D5E",
     "activityBarBadge.background": "#EEDEA1",
@@ -17345,10 +19397,10 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "dropdown.border": "#596D5E",
     "dropdown.foreground": "#BEB59D",
     "editor.background": "#141E17",
-    "editor.findMatchBackground": "#EEDEA1CC",
+    "editor.findMatchBackground": "#EEDEA1",
     "editor.findMatchForeground": "#141E17",
-    "editor.findMatchHighlightBackground": "#A5885D30",
-    "editor.findMatchHighlightForeground": "#EEDEA1",
+    "editor.findMatchHighlightBackground": "#A5885D",
+    "editor.findMatchHighlightForeground": "#141E17",
     "editor.foreground": "#BEB59D",
     "editor.inactiveSelectionBackground": "#141E1760",
     "editorLightBulb.foreground": "#C87B41",
@@ -17369,7 +19421,7 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "editorGroup.border": "#596D5E",
     "editorGroup.dropIntoPromptBackground": "#141E1790",
     "editorGroup.dropIntoPromptForeground": "#EEDEA1",
-    "editorGroupHeader.tabsBackground": "#141E17",
+    "editorGroupHeader.tabsBackground": "#101712",
     "editorGutter.addedBackground": "#82CE86",
     "editorGutter.deletedBackground": "#A67BEA",
     "editorGutter.modifiedBackground": "#CE9C38",
@@ -17423,7 +19475,7 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "list.warningForeground": "#F4BD30",
     "list.hoverBackground": "#A5885D50",
     "list.hoverForeground": "#EEDEA1",
-    "list.inactiveSelectionBackground": "#141E1740",
+    "list.inactiveSelectionBackground": "#A5885D30",
     "list.inactiveSelectionForeground": "#BEB59D",
     "menu.background": "#141E17",
     "menu.foreground": "#BEB59D",
@@ -17473,21 +19525,21 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "sideBar.foreground": "#BEB59D",
     "sideBarSectionHeader.background": "#141E17",
     "sideBarSectionHeader.foreground": "#C8AD78",
-    "statusBar.background": "#141E17",
+    "statusBar.background": "#0D140F",
     "statusBar.debuggingBackground": "#A5885D30",
     "statusBar.debuggingForeground": "#C8AD78",
     "statusBar.foreground": "#BEB59D",
-    "statusBar.noFolderBackground": "#141E17",
+    "statusBar.noFolderBackground": "#0D140F",
     "statusBar.noFolderForeground": "#BEB59D",
     "statusBarItem.activeBackground": "#C8AD7840",
     "statusBarItem.hoverBackground": "#A5885D60",
     "statusBarItem.hoverForeground": "#EEDEA1",
     "statusBarItem.compactHoverBackground": "#A5885D60",
-    "statusBarItem.remoteBackground": "#141E17",
+    "statusBarItem.remoteBackground": "#0D140F",
     "statusBarItem.remoteForeground": "#BEB59D",
     "statusBarItem.remoteHoverBackground": "#A5885D60",
     "statusBarItem.remoteHoverForeground": "#EEDEA1",
-    "statusBarItem.offlineBackground": "#141E17",
+    "statusBarItem.offlineBackground": "#0D140F",
     "statusBarItem.offlineForeground": "#E77B7F",
     "statusBarItem.offlineHoverBackground": "#A5885D60",
     "statusBarItem.offlineHoverForeground": "#EEDEA1",
@@ -17532,13 +19584,15 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "symbolIcon.typeParameterForeground": "#C87B41",
     "symbolIcon.unitForeground": "#A67BEA",
     "symbolIcon.variableForeground": "#EEDEA1",
-    "tab.activeBackground": "#A5885D40",
+    "tab.activeBackground": "#141E17",
+    "tab.activeBorderTop": "#C8AD78",
     "tab.activeForeground": "#EEDEA1",
     "tab.hoverBackground": "#A5885D20",
     "tab.hoverForeground": "#EEDEA1",
     "tab.border": "#EEDEA120",
-    "tab.inactiveBackground": "#141E17",
+    "tab.inactiveBackground": "#101712",
     "tab.inactiveForeground": "#596D5E",
+    "tab.selectedBorderTop": "#C8AD78",
     "terminal.ansiBlack": "#141E17",
     "terminal.ansiBlue": "#74A0C2",
     "terminal.ansiBrightBlack": "#596D5E",
@@ -17560,9 +19614,9 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "terminal.selectionBackground": "#C8AD7840",
     "textLink.foreground": "#74A0C2",
     "textLink.activeForeground": "#8DA2B3",
-    "titleBar.activeBackground": "#141E17",
+    "titleBar.activeBackground": "#0D140F",
     "titleBar.activeForeground": "#BEB59D",
-    "titleBar.inactiveBackground": "#141E17",
+    "titleBar.inactiveBackground": "#0D140F",
     "titleBar.inactiveForeground": "#596D5E",
     "toolbar.hoverBackground": "#A5885D50",
     "tree.inactiveIndentGuidesStroke": "#EEDEA120",
@@ -17608,14 +19662,17 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "modernActivityBarItem.activeForeground": "#EEDEA1",
     "modernActivityBarItem.hoverBackground": "#A5885D20",
     "modernActivityBarItem.hoverForeground": "#EEDEA1",
-    "modernEditorTab.activeBackground": "#A5885D40",
+    "modernEditorTab.activeBackground": "#141E17",
     "modernEditorTab.activeForeground": "#EEDEA1",
     "modernEditorTab.hoverBackground": "#A5885D20",
     "modernEditorTab.hoverForeground": "#EEDEA1",
-    "modernTab.activeBackground": "#A5885D40",
+    "modernEditorTab.inactiveBackground": "#101712",
+    "modernTab.activeBackground": "#141E17",
     "modernTab.activeForeground": "#EEDEA1",
     "modernTab.hoverBackground": "#A5885D20",
     "modernTab.hoverForeground": "#EEDEA1",
+    "modernUI.inactiveShellBackground": "#0D140F",
+    "modernUI.shellBackground": "#0D140F",
     "quickInputList.focusBackground": "#A5885D60",
     "quickInputList.focusForeground": "#EEDEA1",
     "radio.activeBackground": "#A5885D70",
@@ -17632,13 +19689,14 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "settings.numberInputForeground": "#BEB59D",
     "settings.textInputBackground": "#141E17",
     "settings.textInputForeground": "#BEB59D",
-    "tab.selectedBackground": "#A5885D40",
+    "tab.selectedBackground": "#141E17",
     "tab.selectedForeground": "#EEDEA1",
-    "tab.unfocusedActiveBackground": "#A5885D20",
+    "tab.unfocusedActiveBackground": "#141E17",
+    "tab.unfocusedActiveBorderTop": "#A5885D",
     "tab.unfocusedActiveForeground": "#C8AD78",
     "tab.unfocusedHoverBackground": "#A5885D20",
     "tab.unfocusedHoverForeground": "#EEDEA1",
-    "tab.unfocusedInactiveBackground": "#141E17",
+    "tab.unfocusedInactiveBackground": "#101712",
     "tab.unfocusedInactiveForeground": "#596D5E",
     "testing.coverCountBadgeBackground": "#A5885D60",
     "testing.coverCountBadgeForeground": "#EEDEA1",
@@ -17646,6 +19704,69 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "testing.message.error.badgeForeground": "#141E17"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#F95023"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#F4BD30"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#F0A14C"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#E77B7F"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#8A876A"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -17805,7 +19926,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#596D5E",
@@ -17824,7 +19946,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -17834,7 +19957,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -17846,10 +19970,43 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#F4BD30"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
       }
     },
     {
@@ -17864,7 +20021,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#8A876A"
@@ -17902,7 +20060,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#82CE86"
@@ -17912,7 +20071,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#EEDEA1"
@@ -17936,14 +20096,6 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -18002,7 +20154,8 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -18350,6 +20503,54 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#F95023"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#F95023"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#65BABE"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -18438,6 +20639,123 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       ],
       "settings": {
         "foreground": "#EEDEA1"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#F95023"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#C87B41"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#8A876A"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#F95023"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#65BABE"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#65BABE"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#596D5E"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#E77B7F"
       }
     },
     {
@@ -19002,7 +21320,6 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -19362,7 +21679,6 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -19724,9 +22040,18 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#F95023"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -19760,11 +22085,22 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#8A876A"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#F0A14C"
@@ -19778,8 +22114,16 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
 {
   "name": "Retroscope Soft",
   "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function": "#8AAEA1",
+    "method": "#8AAEA1",
+    "delegate": "#E79D34",
+    "*.constructor": "#8AAEA1",
+    "*.importDeclaration": "#FFCB97"
+  },
   "colors": {
-    "activityBar.background": "#2A2622",
+    "activityBar.background": "#211E1B",
     "activityBar.foreground": "#CFBDB0",
     "activityBar.inactiveForeground": "#7F6E60",
     "activityBarBadge.background": "#FFCB97",
@@ -19811,10 +22155,10 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "dropdown.border": "#7F6E60",
     "dropdown.foreground": "#CFBDB0",
     "editor.background": "#2A2622",
-    "editor.findMatchBackground": "#FFCB97CC",
+    "editor.findMatchBackground": "#FFCB97",
     "editor.findMatchForeground": "#2A2622",
-    "editor.findMatchHighlightBackground": "#B5855730",
-    "editor.findMatchHighlightForeground": "#FFCB97",
+    "editor.findMatchHighlightBackground": "#B58557",
+    "editor.findMatchHighlightForeground": "#2A2622",
     "editor.foreground": "#CFBDB0",
     "editor.inactiveSelectionBackground": "#2A262260",
     "editorLightBulb.foreground": "#CA7F48",
@@ -19835,7 +22179,7 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "editorGroup.border": "#7F6E60",
     "editorGroup.dropIntoPromptBackground": "#2A262290",
     "editorGroup.dropIntoPromptForeground": "#FFCB97",
-    "editorGroupHeader.tabsBackground": "#2A2622",
+    "editorGroupHeader.tabsBackground": "#211E1B",
     "editorGutter.addedBackground": "#B2B16A",
     "editorGutter.deletedBackground": "#CB75EC",
     "editorGutter.modifiedBackground": "#D89537",
@@ -19889,7 +22233,7 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "list.warningForeground": "#ECBD23",
     "list.hoverBackground": "#B5855750",
     "list.hoverForeground": "#FFCB97",
-    "list.inactiveSelectionBackground": "#2A262240",
+    "list.inactiveSelectionBackground": "#B5855730",
     "list.inactiveSelectionForeground": "#CFBDB0",
     "menu.background": "#2A2622",
     "menu.foreground": "#CFBDB0",
@@ -19939,21 +22283,21 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "sideBar.foreground": "#CFBDB0",
     "sideBarSectionHeader.background": "#2A2622",
     "sideBarSectionHeader.foreground": "#CB9F75",
-    "statusBar.background": "#2A2622",
+    "statusBar.background": "#1B1916",
     "statusBar.debuggingBackground": "#B5855730",
     "statusBar.debuggingForeground": "#CB9F75",
     "statusBar.foreground": "#CFBDB0",
-    "statusBar.noFolderBackground": "#2A2622",
+    "statusBar.noFolderBackground": "#1B1916",
     "statusBar.noFolderForeground": "#CFBDB0",
     "statusBarItem.activeBackground": "#CB9F7540",
     "statusBarItem.hoverBackground": "#B5855760",
     "statusBarItem.hoverForeground": "#FFCB97",
     "statusBarItem.compactHoverBackground": "#B5855760",
-    "statusBarItem.remoteBackground": "#2A2622",
+    "statusBarItem.remoteBackground": "#1B1916",
     "statusBarItem.remoteForeground": "#CFBDB0",
     "statusBarItem.remoteHoverBackground": "#B5855760",
     "statusBarItem.remoteHoverForeground": "#FFCB97",
-    "statusBarItem.offlineBackground": "#2A2622",
+    "statusBarItem.offlineBackground": "#1B1916",
     "statusBarItem.offlineForeground": "#FC858A",
     "statusBarItem.offlineHoverBackground": "#B5855760",
     "statusBarItem.offlineHoverForeground": "#FFCB97",
@@ -19998,13 +22342,15 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "symbolIcon.typeParameterForeground": "#CA7F48",
     "symbolIcon.unitForeground": "#CB75EC",
     "symbolIcon.variableForeground": "#FFCB97",
-    "tab.activeBackground": "#B5855740",
+    "tab.activeBackground": "#2A2622",
+    "tab.activeBorderTop": "#CB9F75",
     "tab.activeForeground": "#FFCB97",
     "tab.hoverBackground": "#B5855720",
     "tab.hoverForeground": "#FFCB97",
     "tab.border": "#FFCB9720",
-    "tab.inactiveBackground": "#2A2622",
+    "tab.inactiveBackground": "#211E1B",
     "tab.inactiveForeground": "#7F6E60",
+    "tab.selectedBorderTop": "#CB9F75",
     "terminal.ansiBlack": "#2A2622",
     "terminal.ansiBlue": "#7B9ABA",
     "terminal.ansiBrightBlack": "#7F6E60",
@@ -20026,9 +22372,9 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "terminal.selectionBackground": "#CB9F7540",
     "textLink.foreground": "#7B9ABA",
     "textLink.activeForeground": "#8D9CAA",
-    "titleBar.activeBackground": "#2A2622",
+    "titleBar.activeBackground": "#1B1916",
     "titleBar.activeForeground": "#CFBDB0",
-    "titleBar.inactiveBackground": "#2A2622",
+    "titleBar.inactiveBackground": "#1B1916",
     "titleBar.inactiveForeground": "#7F6E60",
     "toolbar.hoverBackground": "#B5855750",
     "tree.inactiveIndentGuidesStroke": "#FFCB9720",
@@ -20074,14 +22420,17 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "modernActivityBarItem.activeForeground": "#FFCB97",
     "modernActivityBarItem.hoverBackground": "#B5855720",
     "modernActivityBarItem.hoverForeground": "#FFCB97",
-    "modernEditorTab.activeBackground": "#B5855740",
+    "modernEditorTab.activeBackground": "#2A2622",
     "modernEditorTab.activeForeground": "#FFCB97",
     "modernEditorTab.hoverBackground": "#B5855720",
     "modernEditorTab.hoverForeground": "#FFCB97",
-    "modernTab.activeBackground": "#B5855740",
+    "modernEditorTab.inactiveBackground": "#211E1B",
+    "modernTab.activeBackground": "#2A2622",
     "modernTab.activeForeground": "#FFCB97",
     "modernTab.hoverBackground": "#B5855720",
     "modernTab.hoverForeground": "#FFCB97",
+    "modernUI.inactiveShellBackground": "#1B1916",
+    "modernUI.shellBackground": "#1B1916",
     "quickInputList.focusBackground": "#B5855760",
     "quickInputList.focusForeground": "#FFCB97",
     "radio.activeBackground": "#B5855770",
@@ -20098,13 +22447,14 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "settings.numberInputForeground": "#CFBDB0",
     "settings.textInputBackground": "#2A2622",
     "settings.textInputForeground": "#CFBDB0",
-    "tab.selectedBackground": "#B5855740",
+    "tab.selectedBackground": "#2A2622",
     "tab.selectedForeground": "#FFCB97",
-    "tab.unfocusedActiveBackground": "#B5855720",
+    "tab.unfocusedActiveBackground": "#2A2622",
+    "tab.unfocusedActiveBorderTop": "#B58557",
     "tab.unfocusedActiveForeground": "#CB9F75",
     "tab.unfocusedHoverBackground": "#B5855720",
     "tab.unfocusedHoverForeground": "#FFCB97",
-    "tab.unfocusedInactiveBackground": "#2A2622",
+    "tab.unfocusedInactiveBackground": "#211E1B",
     "tab.unfocusedInactiveForeground": "#7F6E60",
     "testing.coverCountBadgeBackground": "#B5855760",
     "testing.coverCountBadgeForeground": "#FFCB97",
@@ -20112,6 +22462,69 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "testing.message.error.badgeForeground": "#2A2622"
   },
   "tokenColors": [
+    {
+      "name": "[csharp] Keywords, modifiers and operators",
+      "scope": [
+        "source.cs storage.modifier",
+        "source.cs storage.type",
+        "source.cs keyword.control",
+        "source.cs keyword.other",
+        "source.cs keyword.operator",
+        "source.cs keyword.preprocessor",
+        "source.cs variable.language.this",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#FA601E"
+      }
+    },
+    {
+      "name": "[csharp] Function keywords",
+      "scope": [
+        "source.cs storage.modifier.async"
+      ],
+      "settings": {
+        "foreground": "#ECBD23"
+      }
+    },
+    {
+      "name": "[csharp] Built-in and named types",
+      "scope": [
+        "source.cs keyword.type",
+        "source.cs entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#E79D34"
+      }
+    },
+    {
+      "name": "[csharp] Namespaces",
+      "scope": [
+        "source.cs entity.name.type.namespace"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
+      }
+    },
+    {
+      "name": "[csharp] Null",
+      "scope": [
+        "source.cs constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#FC858A"
+      }
+    },
+    {
+      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "scope": [
+        "source.cs keyword.operator.null-conditional",
+        "source.cs punctuation.accessor"
+      ],
+      "settings": {
+        "foreground": "#A78B6F"
+      }
+    },
     {
       "name": "[dart] Comment",
       "scope": [
@@ -20271,7 +22684,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Comment",
       "scope": [
-        "comment"
+        "source comment",
+        "text comment"
       ],
       "settings": {
         "foreground": "#7F6E60",
@@ -20290,7 +22704,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Function, method, decorator",
       "scope": [
-        "entity.name.function",
+        "source entity.name.function",
+        "text entity.name.function",
         "entity.name.operator"
       ],
       "settings": {
@@ -20300,7 +22715,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Keywords",
       "scope": [
-        "keyword",
+        "source keyword",
+        "text keyword",
         "support.other.directive"
       ],
       "settings": {
@@ -20312,10 +22728,43 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       "scope": [
         "storage.type.function",
         "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
         "storage.modifier"
       ],
       "settings": {
         "foreground": "#ECBD23"
+      }
+    },
+    {
+      "name": "[default] Import paths and package names",
+      "scope": [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
+      }
+    },
+    {
+      "name": "[default] Template expression interpolation",
+      "scope": [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
       }
     },
     {
@@ -20330,7 +22779,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Punctuations",
       "scope": [
-        "punctuation"
+        "source punctuation",
+        "text punctuation"
       ],
       "settings": {
         "foreground": "#A78B6F"
@@ -20368,7 +22818,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Value: string",
       "scope": [
-        "string"
+        "source string",
+        "text string"
       ],
       "settings": {
         "foreground": "#B2B16A"
@@ -20378,7 +22829,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       "name": "[default] Variable names",
       "scope": [
         "constant.other",
-        "variable"
+        "source variable",
+        "text variable"
       ],
       "settings": {
         "foreground": "#FFCB97"
@@ -20402,14 +22854,6 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class"
       ],
@@ -20468,7 +22912,8 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     {
       "name": "[default] Variable names: declared, fields",
       "scope": [
-        "entity.name.variable",
+        "source entity.name.variable",
+        "text entity.name.variable",
         "entity.other.attribute"
       ],
       "settings": {
@@ -20816,6 +23261,54 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
+      "name": "[java] Package and import paths",
+      "scope": [
+        "storage.modifier.package.java",
+        "storage.modifier.import.java",
+        "meta.import.java storage.modifier.import.java",
+        "meta.import.java entity.name.type",
+        "meta.import.java entity.name.class",
+        "meta.import.java storage.type",
+        "meta.import.java"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
+      }
+    },
+    {
+      "name": "[java] Storage modifiers and keywords",
+      "scope": [
+        "storage.modifier.java",
+        "storage.modifier.extends.java",
+        "storage.modifier.implements.java"
+      ],
+      "settings": {
+        "foreground": "#FA601E"
+      }
+    },
+    {
+      "name": "[java] this, super, new, lambda arrows and var",
+      "scope": [
+        "source.java variable.language",
+        "source.java keyword.control.new",
+        "source.java storage.type.function.arrow",
+        "source.java storage.type.local",
+        "source.java storage.type.variable"
+      ],
+      "settings": {
+        "foreground": "#FA601E"
+      }
+    },
+    {
+      "name": "[java] Annotations",
+      "scope": [
+        "storage.type.annotation.java"
+      ],
+      "settings": {
+        "foreground": "#8AAEA1"
+      }
+    },
+    {
       "name": "[json] Comment (for jsonc)",
       "scope": [
         "comment.block.documentation.json",
@@ -20904,6 +23397,123 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       ],
       "settings": {
         "foreground": "#FFCB97"
+      }
+    },
+    {
+      "name": "[kotlin] Package and import paths",
+      "scope": [
+        "source.kotlin meta.package",
+        "source.kotlin meta.import",
+        "source.kotlin entity.name.package",
+        "source.kotlin storage.modifier.import"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
+      }
+    },
+    {
+      "name": "[kotlin] Keywords, modifiers and operators",
+      "scope": [
+        "source.kotlin storage.type",
+        "source.kotlin storage.modifier",
+        "source.kotlin keyword.control",
+        "source.kotlin keyword.hard",
+        "source.kotlin keyword.soft",
+        "source.kotlin keyword.operator",
+        "source.kotlin variable.language.this",
+        "source.kotlin variable.language",
+        "source.kotlin keyword.hard.fun",
+        "source.kotlin keyword.other.kotlin",
+        "source.kotlin storage.modifier.coroutine"
+      ],
+      "settings": {
+        "foreground": "#FA601E"
+      }
+    },
+    {
+      "name": "[kotlin] Type annotation colons",
+      "scope": [
+        "source.kotlin keyword.operator.declaration"
+      ],
+      "settings": {
+        "foreground": "#CA7F48"
+      }
+    },
+    {
+      "name": "[kotlin] Punctuation: symbols in JetBrains' grammar, accessors",
+      "scope": [
+        "source.kotlin keyword.operator.kotlin",
+        "source.kotlin keyword.operator.comparison",
+        "source.kotlin punctuation.accessor",
+        "source.kotlin punctuation.seperator",
+        "source.kotlin punctuation.separator",
+        "source.kotlin punctuation.terminator",
+        "source.kotlin punctuation.section",
+        "source.kotlin punctuation.definition.template-expression",
+        "source.kotlin keyword.operator.dereference"
+      ],
+      "settings": {
+        "foreground": "#A78B6F"
+      }
+    },
+    {
+      "name": "[kotlin] Keyword operators in blocks: in, is",
+      "scope": [
+        "source.kotlin meta.block.kotlin keyword.operator.kotlin",
+        "source.kotlin meta.group.kotlin keyword.operator.kotlin"
+      ],
+      "settings": {
+        "foreground": "#FA601E"
+      }
+    },
+    {
+      "name": "[kotlin] Annotations",
+      "scope": [
+        "source.kotlin storage.type.annotation",
+        "source.kotlin meta.annotation entity.name",
+        "source.kotlin meta.annotation"
+      ],
+      "settings": {
+        "foreground": "#8AAEA1"
+      }
+    },
+    {
+      "name": "[kotlin] Template expressions",
+      "scope": [
+        "source.kotlin entity.string.template.element",
+        "source.kotlin meta.template.expression",
+        "source.kotlin variable.other.interpolated"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
+      }
+    },
+    {
+      "name": "[kotlin] Functions and calls",
+      "scope": [
+        "source.kotlin entity.name.function",
+        "source.kotlin support.function"
+      ],
+      "settings": {
+        "foreground": "#8AAEA1"
+      }
+    },
+    {
+      "name": "[kotlin] Comment marks",
+      "scope": [
+        "source.kotlin punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#7F6E60"
+      }
+    },
+    {
+      "name": "[kotlin] Null",
+      "scope": [
+        "source.kotlin constant.language.null"
+      ],
+      "settings": {
+        "foreground": "#FC858A"
       }
     },
     {
@@ -21468,7 +24078,6 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
         "keyword.control.switch.tsx",
         "keyword.control.trycatch.tsx",
         "keyword.control.type.tsx",
-        "keyword.operator",
         "keyword.operator.arithmetic.tsx",
         "keyword.operator.assignment.tsx",
         "keyword.operator.comparison.tsx",
@@ -21828,7 +24437,6 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
         "keyword.control.switch.ts",
         "keyword.control.trycatch.ts",
         "keyword.control.type.ts",
-        "keyword.operator",
         "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.ts",
         "keyword.operator.comparison.ts",
@@ -22190,9 +24798,18 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
-      "name": "[yaml] Value: number",
+      "name": "[yaml] Merge key",
       "scope": [
         "constant.language.merge.yaml",
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#FA601E"
+      }
+    },
+    {
+      "name": "[yaml] Value: number",
+      "scope": [
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -22226,11 +24843,22 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
+      "name": "[yaml] Tag handle / punctuation",
+      "scope": [
+        "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml"
+      ],
+      "settings": {
+        "foreground": "#A78B6F"
+      }
+    },
+    {
       "name": "[yaml] Version and tags",
       "scope": [
         "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
-        "storage.type.tag-handle.yaml"
+        "support.type.tag-prefix.yaml"
       ],
       "settings": {
         "foreground": "#E79D34"

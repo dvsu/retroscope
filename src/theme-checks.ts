@@ -76,6 +76,10 @@ export const STATE_TEXT: Record<string, string> = {
   "extensionButton.prominentHoverBackground": "extensionButton.prominentForeground",
   "statusBarItem.activeBackground": "statusBar.foreground",
   "statusBarItem.compactHoverBackground": "statusBarItem.hoverForeground",
+  // Antigravity (older VS Code) draws each search match kind with the other
+  // kind's text colour, so each text colour must also read on the other background.
+  "editor.findMatchBackground": "editor.findMatchHighlightForeground",
+  "editor.findMatchHighlightBackground": "editor.findMatchForeground",
 };
 
 /**
@@ -123,6 +127,9 @@ export const DECORATIVE_FOREGROUNDS: Record<string, string> = {
 
 /** WCAG 2.2 AA minimum for interface parts that aren't text (1.4.11). */
 export const NON_TEXT_CONTRAST = 3;
+
+/** How far apart the current search match and the other matches must be. */
+export const MIN_MATCH_SEPARATION = 1.8;
 
 /** The opaque surface a translucent background is drawn on. */
 const SURFACES: [prefix: string, surface: string][] = [
@@ -224,8 +231,9 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
   // Bracket pair colouring draws brackets over the token colours, right next to
   // quotes, commas and colons, so each level must differ from punctuation in
   // lightness and saturation, which is what shows on thin characters.
-  const punctuation = theme.tokenColors.find((rule) => rule.scope.includes("punctuation"))?.settings
-    .foreground;
+  const punctuation = theme.tokenColors.find((rule) =>
+    rule.scope.some((s) => s.trim().split(/\s+/).pop() === "punctuation"),
+  )?.settings.foreground;
   if (isHexColor(punctuation)) {
     for (const [key, color] of Object.entries(theme.colors)) {
       if (!/^editorBracketHighlight\.foreground\d$/.test(key) || !isHexColor(color)) continue;
@@ -238,10 +246,21 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
     }
   }
 
+  // The current search match must stand apart from the other matches.
+  const current = theme.colors["editor.findMatchBackground"];
+  const others = theme.colors["editor.findMatchHighlightBackground"];
+  if (isHexColor(current) && isHexColor(others)) {
+    const gap = contrastRatio(current, others, background);
+    if (gap < MIN_MATCH_SEPARATION)
+      problems.push(
+        `distinct: the current search match and the other matches differ by ${gap.toFixed(2)}:1, needs ${MIN_MATCH_SEPARATION}`,
+      );
+  }
+
   // Borders, focus outlines and the cursor show where a control is or which
   // one has focus, so they need NON_TEXT_CONTRAST against their surface.
   for (const [key, color] of Object.entries(theme.colors)) {
-    if (!/([bB]order|Outline)$|^editorCursor\.foreground$/.test(key)) continue;
+    if (!/([bB]order(Top)?|Outline)$|^editorCursor\.foreground$/.test(key)) continue;
     if (key in DECORATIVE_FOREGROUNDS || !isHexColor(color)) continue;
     const surface = theme.colors[`${key.split(".")[0]}.background`];
     const ratio = contrastRatio(color, isHexColor(surface) ? surface : background, background);

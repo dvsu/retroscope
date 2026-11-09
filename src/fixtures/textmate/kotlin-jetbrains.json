@@ -1,0 +1,2103 @@
+{
+  "extension": "JetBrains.kotlin-server 0.0.86",
+  "language": "kotlin",
+  "source": "demo/demo.kt",
+  "sourceSha256": "ca15666a9a6b700c9a3ab881d774201e9c9ba90d6312b5e590e1db20a3581c46",
+  "pieces": [
+    {
+      "line": 0,
+      "character": 0,
+      "text": "package",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 0, "character": 7, "text": " com", "scopes": ["source.kotlin"] },
+    {
+      "line": 0,
+      "character": 11,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 0, "character": 12, "text": "example", "scopes": ["source.kotlin"] },
+    {
+      "line": 0,
+      "character": 19,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 0, "character": 20, "text": "notes", "scopes": ["source.kotlin"] },
+    {
+      "line": 2,
+      "character": 0,
+      "text": "import",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 2, "character": 6, "text": " kotlinx", "scopes": ["source.kotlin"] },
+    {
+      "line": 2,
+      "character": 14,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 2, "character": 15, "text": "coroutines", "scopes": ["source.kotlin"] },
+    {
+      "line": 2,
+      "character": 25,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 2, "character": 26, "text": "delay", "scopes": ["source.kotlin"] },
+    {
+      "line": 3,
+      "character": 0,
+      "text": "import",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 3, "character": 6, "text": " kotlin", "scopes": ["source.kotlin"] },
+    {
+      "line": 3,
+      "character": 13,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 3, "character": 14, "text": "math", "scopes": ["source.kotlin"] },
+    {
+      "line": 3,
+      "character": 18,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 3, "character": 19, "text": "max", "scopes": ["source.kotlin"] },
+    {
+      "line": 5,
+      "character": 0,
+      "text": "/**",
+      "scopes": ["source.kotlin", "comment.block.documentation.kotlin"]
+    },
+    {
+      "line": 6,
+      "character": 0,
+      "text": " * A note with optional tags.",
+      "scopes": ["source.kotlin", "comment.block.documentation.kotlin"]
+    },
+    {
+      "line": 7,
+      "character": 0,
+      "text": " *",
+      "scopes": ["source.kotlin", "comment.block.documentation.kotlin"]
+    },
+    {
+      "line": 8,
+      "character": 0,
+      "text": " * @property title shown in lists",
+      "scopes": ["source.kotlin", "comment.block.documentation.kotlin"]
+    },
+    {
+      "line": 9,
+      "character": 0,
+      "text": " ",
+      "scopes": ["source.kotlin", "comment.block.documentation.kotlin"]
+    },
+    {
+      "line": 9,
+      "character": 1,
+      "text": "*/",
+      "scopes": ["source.kotlin", "comment.block.documentation.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 0,
+      "text": "data",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 10, "character": 4, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 5,
+      "text": "class",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 10, "character": 10, "text": " Note(", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 16,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 10, "character": 19, "text": " id", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 22,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 10, "character": 23, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 24,
+      "text": "Long",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 10, "character": 28, "text": ", ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 30,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 10, "character": 33, "text": " title", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 39,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 10, "character": 40, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 41,
+      "text": "String",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 10, "character": 47, "text": ", ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 49,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 10, "character": 52, "text": " tags", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 57,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 10, "character": 58, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 59,
+      "text": "List",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 63,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 64,
+      "text": "String",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 70,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 10, "character": 71, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 72,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 10, "character": 73, "text": " emptyList())", "scopes": ["source.kotlin"] },
+    {
+      "line": 12,
+      "character": 0,
+      "text": "sealed",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 12, "character": 6, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 12,
+      "character": 7,
+      "text": "interface",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 12, "character": 16, "text": " Result", "scopes": ["source.kotlin"] },
+    {
+      "line": 12,
+      "character": 23,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 12, "character": 24, "text": "out T", "scopes": ["source.kotlin"] },
+    {
+      "line": 12,
+      "character": 29,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 12, "character": 30, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 13, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 4,
+      "text": "data",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 13, "character": 8, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 9,
+      "text": "class",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 13, "character": 14, "text": " Ok", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 17,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 13, "character": 18, "text": "T", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 19,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 13, "character": 20, "text": "(", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 21,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 13, "character": 24, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 25,
+      "text": "value",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 30,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 13, "character": 31, "text": " T) ", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 35,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 13, "character": 36, "text": " Result", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 43,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 13, "character": 44, "text": "T", "scopes": ["source.kotlin"] },
+    {
+      "line": 13,
+      "character": 45,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 14, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 14,
+      "character": 4,
+      "text": "data",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 14, "character": 8, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 14,
+      "character": 9,
+      "text": "object",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 14, "character": 15, "text": " Missing ", "scopes": ["source.kotlin"] },
+    {
+      "line": 14,
+      "character": 24,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 14, "character": 25, "text": " Result", "scopes": ["source.kotlin"] },
+    {
+      "line": 14,
+      "character": 32,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 33,
+      "text": "Nothing",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 40,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 15, "character": 0, "text": "}", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 0,
+      "text": "enum",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 17, "character": 4, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 5,
+      "text": "class",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 17, "character": 10, "text": " Priority(", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 20,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 17, "character": 23, "text": " weight", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 30,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 17, "character": 31, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 32,
+      "text": "Int",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 17, "character": 35, "text": ") { LOW(", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 43,
+      "text": "1",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 17, "character": 44, "text": "), HIGH(", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 52,
+      "text": "10",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 17, "character": 54, "text": ") }", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 0,
+      "text": "typealias",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 19, "character": 9, "text": " Notes ", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 16,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 19, "character": 17, "text": " MutableMap", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 28,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 19,
+      "character": 29,
+      "text": "Long",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 19, "character": 33, "text": ", Note", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 39,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 0,
+      "text": "class",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 21, "character": 5, "text": " NoteRepository(", "scopes": ["source.kotlin"] },
+    {
+      "line": 21,
+      "character": 21,
+      "text": "private",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 21, "character": 28, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 21,
+      "character": 29,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 21, "character": 32, "text": " notes", "scopes": ["source.kotlin"] },
+    {
+      "line": 21,
+      "character": 38,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 21, "character": 39, "text": " Notes ", "scopes": ["source.kotlin"] },
+    {
+      "line": 21,
+      "character": 46,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 21, "character": 47, "text": " mutableMapOf()) {", "scopes": ["source.kotlin"] },
+    { "line": 22, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 22,
+      "character": 4,
+      "text": "companion",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 22, "character": 13, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 22,
+      "character": 14,
+      "text": "object",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 22, "character": 20, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 23, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 23,
+      "character": 8,
+      "text": "const",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 23, "character": 13, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 23,
+      "character": 14,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 23, "character": 17, "text": " LIMIT ", "scopes": ["source.kotlin"] },
+    {
+      "line": 23,
+      "character": 24,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 23, "character": 25, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 23,
+      "character": 26,
+      "text": "100",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 24, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 24,
+      "character": 8,
+      "text": "private",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 24, "character": 15, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 24,
+      "character": 16,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 24, "character": 19, "text": " EMPTY_TITLE ", "scopes": ["source.kotlin"] },
+    {
+      "line": 24,
+      "character": 32,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 24, "character": 33, "text": " Regex(", "scopes": ["source.kotlin"] },
+    {
+      "line": 24,
+      "character": 40,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 41,
+      "text": "^",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 42,
+      "text": "\\\\",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin", "constant.character.escape.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 44,
+      "text": "s*$",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 47,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 24, "character": 48, "text": ")", "scopes": ["source.kotlin"] },
+    { "line": 25, "character": 0, "text": "    }", "scopes": ["source.kotlin"] },
+    { "line": 27, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 27,
+      "character": 4,
+      "text": "var",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 27, "character": 7, "text": " version", "scopes": ["source.kotlin"] },
+    {
+      "line": 27,
+      "character": 15,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 27, "character": 16, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 27,
+      "character": 17,
+      "text": "Int",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 27, "character": 20, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 27,
+      "character": 21,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 27, "character": 22, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 27,
+      "character": 23,
+      "text": "0",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 28, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 28,
+      "character": 8,
+      "text": "private",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 28, "character": 15, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 28,
+      "character": 16,
+      "text": "set",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 30, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 4,
+      "text": "suspend",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 30, "character": 11, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 12,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 30, "character": 15, "text": " find(id", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 23,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 30, "character": 24, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 25,
+      "text": "Long",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 30, "character": 29, "text": ")", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 30,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 30, "character": 31, "text": " Result", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 38,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 30, "character": 39, "text": "Note", "scopes": ["source.kotlin"] },
+    {
+      "line": 30,
+      "character": 43,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 30, "character": 44, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 31, "character": 0, "text": "        delay(10L)", "scopes": ["source.kotlin"] },
+    { "line": 32, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 32,
+      "character": 8,
+      "text": "return",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 32, "character": 14, "text": " notes[id]", "scopes": ["source.kotlin"] },
+    {
+      "line": 32,
+      "character": 24,
+      "text": "?",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 25,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 32, "character": 26, "text": "let { Result", "scopes": ["source.kotlin"] },
+    {
+      "line": 32,
+      "character": 38,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 32, "character": 39, "text": "Ok(it) } ", "scopes": ["source.kotlin"] },
+    {
+      "line": 32,
+      "character": 48,
+      "text": "?",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 49,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 32, "character": 50, "text": " Result", "scopes": ["source.kotlin"] },
+    {
+      "line": 32,
+      "character": 57,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 32, "character": 58, "text": "Missing", "scopes": ["source.kotlin"] },
+    { "line": 33, "character": 0, "text": "    }", "scopes": ["source.kotlin"] },
+    { "line": 35, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 35,
+      "character": 4,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 35, "character": 7, "text": " add(note", "scopes": ["source.kotlin"] },
+    {
+      "line": 35,
+      "character": 16,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 35, "character": 17, "text": " Note)", "scopes": ["source.kotlin"] },
+    {
+      "line": 35,
+      "character": 23,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 35, "character": 24, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 35,
+      "character": 25,
+      "text": "Boolean",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 35, "character": 32, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 35,
+      "character": 33,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 35, "character": 34, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 35,
+      "character": 35,
+      "text": "when",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 35, "character": 39, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 36, "character": 0, "text": "        notes", "scopes": ["source.kotlin"] },
+    {
+      "line": 36,
+      "character": 13,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 36, "character": 14, "text": "size ", "scopes": ["source.kotlin"] },
+    {
+      "line": 36,
+      "character": 19,
+      "text": ">=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 36, "character": 21, "text": " LIMIT ", "scopes": ["source.kotlin"] },
+    {
+      "line": 36,
+      "character": 28,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 36, "character": 30, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 36,
+      "character": 31,
+      "text": "false",
+      "scopes": ["source.kotlin", "constant.language.kotlin"]
+    },
+    { "line": 37, "character": 0, "text": "        EMPTY_TITLE", "scopes": ["source.kotlin"] },
+    {
+      "line": 37,
+      "character": 19,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 37, "character": 20, "text": "matches(note", "scopes": ["source.kotlin"] },
+    {
+      "line": 37,
+      "character": 32,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 37, "character": 33, "text": "title) ", "scopes": ["source.kotlin"] },
+    {
+      "line": 37,
+      "character": 40,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 37, "character": 42, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 37,
+      "character": 43,
+      "text": "false",
+      "scopes": ["source.kotlin", "constant.language.kotlin"]
+    },
+    { "line": 38, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 38,
+      "character": 8,
+      "text": "else",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 38, "character": 12, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 38,
+      "character": 13,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 38, "character": 15, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 39, "character": 0, "text": "            notes[note", "scopes": ["source.kotlin"] },
+    {
+      "line": 39,
+      "character": 22,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 39, "character": 23, "text": "id] ", "scopes": ["source.kotlin"] },
+    {
+      "line": 39,
+      "character": 27,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 39, "character": 28, "text": " note", "scopes": ["source.kotlin"] },
+    { "line": 40, "character": 0, "text": "            ", "scopes": ["source.kotlin"] },
+    {
+      "line": 40,
+      "character": 12,
+      "text": "this",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 40,
+      "character": 16,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 40, "character": 17, "text": "version ", "scopes": ["source.kotlin"] },
+    {
+      "line": 40,
+      "character": 25,
+      "text": "+=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 40, "character": 27, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 40,
+      "character": 28,
+      "text": "1",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 41, "character": 0, "text": "            ", "scopes": ["source.kotlin"] },
+    {
+      "line": 41,
+      "character": 12,
+      "text": "true",
+      "scopes": ["source.kotlin", "constant.language.kotlin"]
+    },
+    { "line": 42, "character": 0, "text": "        }", "scopes": ["source.kotlin"] },
+    { "line": 43, "character": 0, "text": "    }", "scopes": ["source.kotlin"] },
+    { "line": 45, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 4,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 45, "character": 7, "text": " titles(priority", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 23,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 45, "character": 24, "text": " Priority", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 33,
+      "text": "?",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 45, "character": 34, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 35,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 45, "character": 36, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 37,
+      "text": "null",
+      "scopes": ["source.kotlin", "constant.language.kotlin"]
+    },
+    { "line": 45, "character": 41, "text": ")", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 42,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 45, "character": 43, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 44,
+      "text": "List",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 48,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 49,
+      "text": "String",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 55,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 45, "character": 56, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 45,
+      "character": 57,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 46, "character": 0, "text": "        notes", "scopes": ["source.kotlin"] },
+    {
+      "line": 46,
+      "character": 13,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 46, "character": 14, "text": "values", "scopes": ["source.kotlin"] },
+    { "line": 47, "character": 0, "text": "            ", "scopes": ["source.kotlin"] },
+    {
+      "line": 47,
+      "character": 12,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 47, "character": 13, "text": "filter { it", "scopes": ["source.kotlin"] },
+    {
+      "line": 47,
+      "character": 24,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 47, "character": 25, "text": "tags", "scopes": ["source.kotlin"] },
+    {
+      "line": 47,
+      "character": 29,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 47, "character": 30, "text": "isNotEmpty() ", "scopes": ["source.kotlin"] },
+    {
+      "line": 47,
+      "character": 43,
+      "text": "&&",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 47, "character": 45, "text": " priority ", "scopes": ["source.kotlin"] },
+    {
+      "line": 47,
+      "character": 55,
+      "text": "!=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 47, "character": 57, "text": " Priority", "scopes": ["source.kotlin"] },
+    {
+      "line": 47,
+      "character": 66,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 47, "character": 67, "text": "LOW }", "scopes": ["source.kotlin"] },
+    { "line": 48, "character": 0, "text": "            ", "scopes": ["source.kotlin"] },
+    {
+      "line": 48,
+      "character": 12,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 48, "character": 13, "text": "sortedBy(Note", "scopes": ["source.kotlin"] },
+    {
+      "line": 48,
+      "character": 26,
+      "text": "::",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 48, "character": 28, "text": "id)", "scopes": ["source.kotlin"] },
+    { "line": 49, "character": 0, "text": "            ", "scopes": ["source.kotlin"] },
+    {
+      "line": 49,
+      "character": 12,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 49, "character": 13, "text": "map { note ", "scopes": ["source.kotlin"] },
+    {
+      "line": 49,
+      "character": 24,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 49, "character": 26, "text": " note", "scopes": ["source.kotlin"] },
+    {
+      "line": 49,
+      "character": 31,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 49, "character": 32, "text": "title", "scopes": ["source.kotlin"] },
+    {
+      "line": 49,
+      "character": 37,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 49, "character": 38, "text": "uppercase() }", "scopes": ["source.kotlin"] },
+    { "line": 51, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 4,
+      "text": "inline",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 51, "character": 10, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 11,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 51, "character": 14, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 15,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 16,
+      "text": "reified",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 51, "character": 23, "text": " T ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 26,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 51, "character": 27, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 28,
+      "text": "Any",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 31,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 51, "character": 32, "text": " describe(", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 42,
+      "text": "value",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 47,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 51, "character": 48, "text": " T)", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 51,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 51, "character": 52, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 53,
+      "text": "String",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 51, "character": 59, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 60,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 51, "character": 61, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 62,
+      "text": "when",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 51, "character": 66, "text": " (", "scopes": ["source.kotlin"] },
+    {
+      "line": 51,
+      "character": 68,
+      "text": "value",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 51, "character": 73, "text": ") {", "scopes": ["source.kotlin"] },
+    { "line": 52, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 52,
+      "character": 8,
+      "text": "is",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 52, "character": 10, "text": " Note ", "scopes": ["source.kotlin"] },
+    {
+      "line": 52,
+      "character": 16,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 52, "character": 18, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 52,
+      "character": 19,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 20,
+      "text": "note ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 52,
+      "character": 25,
+      "text": "${",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 27,
+      "text": "value",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 32,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 33,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 35,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 36,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 53, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 53,
+      "character": 8,
+      "text": "!",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 53,
+      "character": 9,
+      "text": "is",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 53, "character": 11, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 53,
+      "character": 12,
+      "text": "String",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 53, "character": 18, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 53,
+      "character": 19,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 53, "character": 21, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 53,
+      "character": 22,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 23,
+      "text": "other ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 53,
+      "character": 29,
+      "text": "${",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 31,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 32,
+      "text": "::",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 34,
+      "text": "class",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 39,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 40,
+      "text": "simpleName",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 50,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 51,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 54, "character": 0, "text": "        ", "scopes": ["source.kotlin"] },
+    {
+      "line": 54,
+      "character": 8,
+      "text": "else",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 54, "character": 12, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 54,
+      "character": 13,
+      "text": "->",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 54, "character": 15, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 54,
+      "character": 16,
+      "text": "value",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 55, "character": 0, "text": "    }", "scopes": ["source.kotlin"] },
+    { "line": 57, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 4,
+      "text": "operator",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 57, "character": 12, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 13,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 57, "character": 16, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 17,
+      "text": "get",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 57, "character": 20, "text": "(id", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 23,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 57, "character": 24, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 25,
+      "text": "Long",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 57, "character": 29, "text": ")", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 30,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 57, "character": 31, "text": " Note", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 36,
+      "text": "?",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 57, "character": 37, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 57,
+      "character": 38,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 57, "character": 39, "text": " notes[id]", "scopes": ["source.kotlin"] },
+    { "line": 58, "character": 0, "text": "}", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 0,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 60, "character": 3, "text": " Note", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 8,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 60, "character": 9, "text": "isTagged(tag", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 21,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 60, "character": 22, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 23,
+      "text": "String",
+      "scopes": ["source.kotlin", "support.type.kotlin"]
+    },
+    { "line": 60, "character": 29, "text": ") ", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 31,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 60, "character": 32, "text": " tag ", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 37,
+      "text": "in",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 60, "character": 39, "text": " tags", "scopes": ["source.kotlin"] },
+    {
+      "line": 62,
+      "character": 0,
+      "text": "@",
+      "scopes": [
+        "source.kotlin",
+        "meta.annotation.kotlin",
+        "punctuation.definition.annotation.kotlin"
+      ]
+    },
+    { "line": 62, "character": 1, "text": "Suppress(", "scopes": ["source.kotlin"] },
+    {
+      "line": 62,
+      "character": 10,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 62,
+      "character": 11,
+      "text": "MagicNumber",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 62,
+      "character": 22,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 62, "character": 23, "text": ")", "scopes": ["source.kotlin"] },
+    {
+      "line": 63,
+      "character": 0,
+      "text": "fun",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 63, "character": 3, "text": " main() {", "scopes": ["source.kotlin"] },
+    { "line": 64, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 64,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 64, "character": 7, "text": " repo ", "scopes": ["source.kotlin"] },
+    {
+      "line": 64,
+      "character": 13,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 64, "character": 14, "text": " NoteRepository()", "scopes": ["source.kotlin"] },
+    { "line": 65, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 65,
+      "character": 4,
+      "text": "var",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 65, "character": 7, "text": " count ", "scopes": ["source.kotlin"] },
+    {
+      "line": 65,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 65, "character": 15, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 65,
+      "character": 16,
+      "text": "0",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 66, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 66,
+      "character": 4,
+      "text": "for",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 66, "character": 7, "text": " (i ", "scopes": ["source.kotlin"] },
+    {
+      "line": 66,
+      "character": 11,
+      "text": "in",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 66, "character": 13, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 66,
+      "character": 14,
+      "text": "1",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 15,
+      "text": "..",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 17,
+      "text": "3",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 66, "character": 18, "text": ") count ", "scopes": ["source.kotlin"] },
+    {
+      "line": 66,
+      "character": 26,
+      "text": "+=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 66, "character": 28, "text": " i", "scopes": ["source.kotlin"] },
+    { "line": 67, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 67,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 67, "character": 7, "text": " hex ", "scopes": ["source.kotlin"] },
+    {
+      "line": 67,
+      "character": 12,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 67, "character": 13, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 67,
+      "character": 14,
+      "text": "0xFF",
+      "scopes": ["source.kotlin", "constant.numeric.hex.kotlin"]
+    },
+    { "line": 67, "character": 18, "text": " and ", "scopes": ["source.kotlin"] },
+    {
+      "line": 67,
+      "character": 23,
+      "text": "0b1010",
+      "scopes": ["source.kotlin", "constant.numeric.binary.kotlin"]
+    },
+    { "line": 68, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 68,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 68, "character": 7, "text": " ratio ", "scopes": ["source.kotlin"] },
+    {
+      "line": 68,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 68, "character": 15, "text": " max(", "scopes": ["source.kotlin"] },
+    {
+      "line": 68,
+      "character": 20,
+      "text": "1.5",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 68, "character": 23, "text": ", ", "scopes": ["source.kotlin"] },
+    {
+      "line": 68,
+      "character": 25,
+      "text": "2e3",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 68, "character": 28, "text": ")", "scopes": ["source.kotlin"] },
+    { "line": 69, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 69,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 69, "character": 7, "text": " first ", "scopes": ["source.kotlin"] },
+    {
+      "line": 69,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 69, "character": 15, "text": " repo[1L]", "scopes": ["source.kotlin"] },
+    {
+      "line": 69,
+      "character": 24,
+      "text": "?",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 25,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 69, "character": 26, "text": "title ", "scopes": ["source.kotlin"] },
+    {
+      "line": 69,
+      "character": 32,
+      "text": "?",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 33,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 69, "character": 34, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 69,
+      "character": 35,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 69,
+      "character": 36,
+      "text": "none",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 40,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 70, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 70,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 70, "character": 7, "text": " quote ", "scopes": ["source.kotlin"] },
+    {
+      "line": 70,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 70, "character": 15, "text": " 'q'", "scopes": ["source.kotlin"] },
+    { "line": 71, "character": 0, "text": "    ", "scopes": ["source.kotlin"] },
+    {
+      "line": 71,
+      "character": 4,
+      "text": "try",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 71, "character": 7, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 72, "character": 0, "text": "        check(count ", "scopes": ["source.kotlin"] },
+    {
+      "line": 72,
+      "character": 20,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 72, "character": 21, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 72,
+      "character": 22,
+      "text": "0",
+      "scopes": ["source.kotlin", "constant.numeric.decimal.kotlin"]
+    },
+    { "line": 72, "character": 23, "text": ") { ", "scopes": ["source.kotlin"] },
+    {
+      "line": 72,
+      "character": 27,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 28,
+      "text": "count must be positive",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 50,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 72, "character": 51, "text": " }", "scopes": ["source.kotlin"] },
+    { "line": 73, "character": 0, "text": "    } ", "scopes": ["source.kotlin"] },
+    {
+      "line": 73,
+      "character": 6,
+      "text": "catch",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 73, "character": 11, "text": " (e", "scopes": ["source.kotlin"] },
+    {
+      "line": 73,
+      "character": 14,
+      "text": ":",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    {
+      "line": 73,
+      "character": 15,
+      "text": " IllegalStateException) {",
+      "scopes": ["source.kotlin"]
+    },
+    { "line": 74, "character": 0, "text": "        println(e", "scopes": ["source.kotlin"] },
+    {
+      "line": 74,
+      "character": 17,
+      "text": ".",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 74, "character": 18, "text": "message)", "scopes": ["source.kotlin"] },
+    { "line": 75, "character": 0, "text": "    } ", "scopes": ["source.kotlin"] },
+    {
+      "line": 75,
+      "character": 6,
+      "text": "finally",
+      "scopes": ["source.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 75, "character": 13, "text": " {", "scopes": ["source.kotlin"] },
+    { "line": 76, "character": 0, "text": "        println(", "scopes": ["source.kotlin"] },
+    {
+      "line": 76,
+      "character": 16,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 17,
+      "text": "Added: ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 24,
+      "text": "${",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 26,
+      "text": "repo",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 30,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 31,
+      "text": "add(Note(",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 40,
+      "text": "1",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "constant.numeric.decimal.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 41,
+      "text": ", ",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 43,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 44,
+      "text": "Hello",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 49,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 50,
+      "text": ", listOf(",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 59,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 60,
+      "text": "x",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 61,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 62,
+      "text": ")))",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 65,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.expression.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 66,
+      "text": " ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 67,
+      "text": "$first",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 73,
+      "text": " ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 74,
+      "text": "$hex",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 78,
+      "text": " ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 79,
+      "text": "$ratio",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 85,
+      "text": " ",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 86,
+      "text": "$quote",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "variable.other.interpolated.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 92,
+      "text": "\\t",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin", "constant.character.escape.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 94,
+      "text": "…",
+      "scopes": ["source.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 95,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    { "line": 76, "character": 96, "text": ")", "scopes": ["source.kotlin"] },
+    { "line": 77, "character": 0, "text": "    }", "scopes": ["source.kotlin"] },
+    { "line": 78, "character": 0, "text": "}", "scopes": ["source.kotlin"] }
+  ]
+}

@@ -1,0 +1,6164 @@
+{
+  "extension": "mathiasfrohlich.Kotlin 1.7.1",
+  "language": "kotlin",
+  "source": "demo/demo.kt",
+  "sourceSha256": "ca15666a9a6b700c9a3ab881d774201e9c9ba90d6312b5e590e1db20a3581c46",
+  "pieces": [
+    {
+      "line": 0,
+      "character": 0,
+      "text": "package",
+      "scopes": ["source.kotlin", "keyword.other.kotlin"]
+    },
+    { "line": 0, "character": 7, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 0,
+      "character": 8,
+      "text": "com.example.notes",
+      "scopes": ["source.kotlin", "entity.name.package.kotlin"]
+    },
+    {
+      "line": 2,
+      "character": 0,
+      "text": "import",
+      "scopes": ["source.kotlin", "meta.import.kotlin", "keyword.other.import.kotlin"]
+    },
+    { "line": 2, "character": 6, "text": " ", "scopes": ["source.kotlin", "meta.import.kotlin"] },
+    {
+      "line": 2,
+      "character": 7,
+      "text": "kotlinx.coroutines.delay",
+      "scopes": ["source.kotlin", "meta.import.kotlin", "storage.modifier.import.java"]
+    },
+    {
+      "line": 3,
+      "character": 0,
+      "text": "import",
+      "scopes": ["source.kotlin", "meta.import.kotlin", "keyword.other.import.kotlin"]
+    },
+    { "line": 3, "character": 6, "text": " ", "scopes": ["source.kotlin", "meta.import.kotlin"] },
+    {
+      "line": 3,
+      "character": 7,
+      "text": "kotlin.math.max",
+      "scopes": ["source.kotlin", "meta.import.kotlin", "storage.modifier.import.java"]
+    },
+    {
+      "line": 5,
+      "character": 0,
+      "text": "/*",
+      "scopes": ["source.kotlin", "comment.block.kotlin", "punctuation.definition.comment.kotlin"]
+    },
+    { "line": 5, "character": 2, "text": "*", "scopes": ["source.kotlin", "comment.block.kotlin"] },
+    {
+      "line": 6,
+      "character": 0,
+      "text": " * A note with optional tags.",
+      "scopes": ["source.kotlin", "comment.block.kotlin"]
+    },
+    {
+      "line": 7,
+      "character": 0,
+      "text": " *",
+      "scopes": ["source.kotlin", "comment.block.kotlin"]
+    },
+    {
+      "line": 8,
+      "character": 0,
+      "text": " * @property title shown in lists",
+      "scopes": ["source.kotlin", "comment.block.kotlin"]
+    },
+    { "line": 9, "character": 0, "text": " ", "scopes": ["source.kotlin", "comment.block.kotlin"] },
+    {
+      "line": 9,
+      "character": 1,
+      "text": "*/",
+      "scopes": ["source.kotlin", "comment.block.kotlin", "punctuation.definition.comment.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 0,
+      "text": "data",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 10, "character": 4, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 10,
+      "character": 5,
+      "text": "class",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 10, "character": 10, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 10,
+      "character": 11,
+      "text": "Note",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "entity.name.class.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 15,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 16,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 19,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 20,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 22,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 23,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 24,
+      "text": "Long",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 28,
+      "text": ",",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.seperator.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 29,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 30,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 33,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 34,
+      "text": "title",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 39,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 40,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 41,
+      "text": "String",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 47,
+      "text": ",",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.seperator.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 48,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 49,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 52,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 53,
+      "text": "tags",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 57,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 58,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 59,
+      "text": "List",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 63,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 64,
+      "text": "String",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 70,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 71,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 72,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 73,
+      "text": " emptyList",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 10,
+      "character": 83,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 84,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 10,
+      "character": 85,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 12,
+      "character": 0,
+      "text": "sealed",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 12, "character": 6, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 12,
+      "character": 7,
+      "text": "interface",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 12, "character": 16, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 12,
+      "character": 17,
+      "text": "Result",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "entity.name.class.kotlin"]
+    },
+    {
+      "line": 12,
+      "character": 23,
+      "text": "<",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "keyword.operator.comparison.kotlin"]
+    },
+    {
+      "line": 12,
+      "character": 24,
+      "text": "out",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 12, "character": 27, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 12,
+      "character": 28,
+      "text": "T",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "entity.name.type.class.kotlin"]
+    },
+    {
+      "line": 12,
+      "character": 29,
+      "text": ">",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "keyword.operator.comparison.kotlin"]
+    },
+    { "line": 12, "character": 30, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 12,
+      "character": 31,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 4,
+      "text": "data",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 8,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 9,
+      "text": "class",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "storage.modifier.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 14,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.class.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 15,
+      "text": "Ok",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "entity.name.class.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 17,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 18,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 19,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 20,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 21,
+      "text": "val",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "storage.type.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 24,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 25,
+      "text": "value",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 30,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 31,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 32,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 33,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 34,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.class.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 35,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 36,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.class.kotlin"]
+    },
+    {
+      "line": 13,
+      "character": 37,
+      "text": "Result",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "entity.other.inherited-class.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 43,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 44,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 13,
+      "character": 45,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 14,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 4,
+      "text": "data",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 8,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 9,
+      "text": "object",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "storage.type.kotlin"
+      ]
+    },
+    {
+      "line": 14,
+      "character": 15,
+      "text": " Missing ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.class.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 24,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 14,
+      "character": 25,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.class.kotlin"]
+    },
+    {
+      "line": 14,
+      "character": 26,
+      "text": "Result",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "entity.other.inherited-class.kotlin"
+      ]
+    },
+    {
+      "line": 14,
+      "character": 32,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 14,
+      "character": 33,
+      "text": "Nothing",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "support.class.kotlin"
+      ]
+    },
+    {
+      "line": 14,
+      "character": 40,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.class.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 15,
+      "character": 0,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 0,
+      "text": "enum",
+      "scopes": ["source.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 17, "character": 4, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 17,
+      "character": 5,
+      "text": "class",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 17, "character": 10, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 17,
+      "character": 11,
+      "text": "Priority",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "entity.name.class.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 19,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 20,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 23,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 24,
+      "text": "weight",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 30,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 31,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 32,
+      "text": "Int",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 35,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    { "line": 17, "character": 36, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 17,
+      "character": 37,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 38,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 39,
+      "text": "LOW",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 42,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 43,
+      "text": "1",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 44,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 45,
+      "text": ",",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.seperator.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 46,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 47,
+      "text": "HIGH",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 51,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 52,
+      "text": "10",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 54,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 17,
+      "character": 55,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 17,
+      "character": 56,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 19,
+      "character": 0,
+      "text": "typealias",
+      "scopes": ["source.kotlin", "storage.type.kotlin"]
+    },
+    { "line": 19, "character": 9, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 10,
+      "text": "Notes",
+      "scopes": ["source.kotlin", "entity.name.type.class.kotlin"]
+    },
+    { "line": 19, "character": 15, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 16,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    { "line": 19, "character": 17, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 18,
+      "text": "MutableMap",
+      "scopes": ["source.kotlin", "entity.name.type.class.kotlin"]
+    },
+    {
+      "line": 19,
+      "character": 28,
+      "text": "<",
+      "scopes": ["source.kotlin", "keyword.operator.comparison.kotlin"]
+    },
+    {
+      "line": 19,
+      "character": 29,
+      "text": "Long",
+      "scopes": ["source.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 19,
+      "character": 33,
+      "text": ",",
+      "scopes": ["source.kotlin", "punctuation.seperator.kotlin"]
+    },
+    { "line": 19, "character": 34, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 19,
+      "character": 35,
+      "text": "Note",
+      "scopes": ["source.kotlin", "entity.name.type.class.kotlin"]
+    },
+    {
+      "line": 19,
+      "character": 39,
+      "text": ">",
+      "scopes": ["source.kotlin", "keyword.operator.comparison.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 0,
+      "text": "class",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "storage.modifier.kotlin"]
+    },
+    { "line": 21, "character": 5, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 21,
+      "character": 6,
+      "text": "NoteRepository",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "entity.name.class.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 20,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 21,
+      "text": "private",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "storage.modifier.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 28,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 29,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 32,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 33,
+      "text": "notes",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 38,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 39,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 40,
+      "text": "Notes",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 45,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 46,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 47,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 21,
+      "character": 48,
+      "text": "mutableMapOf",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "support.function.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 60,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 61,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 21,
+      "character": 62,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    { "line": 21, "character": 63, "text": " ", "scopes": ["source.kotlin", "meta.class.kotlin"] },
+    {
+      "line": 21,
+      "character": 64,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 22,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 22,
+      "character": 4,
+      "text": "companion",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 22,
+      "character": 13,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 22,
+      "character": 14,
+      "text": "object",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 22,
+      "character": 20,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 22,
+      "character": 21,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 23,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 23,
+      "character": 8,
+      "text": "const",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "storage.modifier.kotlin"
+      ]
+    },
+    {
+      "line": 23,
+      "character": 13,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 23,
+      "character": 14,
+      "text": "val",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "storage.type.kotlin"
+      ]
+    },
+    {
+      "line": 23,
+      "character": 17,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 23,
+      "character": 18,
+      "text": "LIMIT",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 23,
+      "character": 23,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 23,
+      "character": 24,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 23,
+      "character": 25,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 23,
+      "character": 26,
+      "text": "100",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 8,
+      "text": "private",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "storage.modifier.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 15,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 16,
+      "text": "val",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "storage.type.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 19,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 20,
+      "text": "EMPTY_TITLE",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 31,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 32,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 33,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 24,
+      "character": 34,
+      "text": "Regex",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 39,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 40,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 41,
+      "text": "^",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 42,
+      "text": "\\\\",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "constant.character.escape.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 44,
+      "text": "s*$",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 47,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 24,
+      "character": 48,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 25,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 25,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 27,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 4,
+      "text": "var",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 7,
+      "text": " version",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 15,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 27,
+      "character": 16,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 17,
+      "text": "Int",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 20,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 21,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 27,
+      "character": 22,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 27,
+      "character": 23,
+      "text": "0",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 28,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 28,
+      "character": 8,
+      "text": "private",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "storage.modifier.kotlin"
+      ]
+    },
+    {
+      "line": 28,
+      "character": 15,
+      "text": " set",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 4,
+      "text": "suspend",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "storage.modifier.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 11,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 12,
+      "text": "fun",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "keyword.other.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 15,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 16,
+      "text": "find",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 20,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 21,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 23,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 24,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 25,
+      "text": "Long",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "support.class.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 29,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 30,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 31,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 32,
+      "text": "Result",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 38,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 39,
+      "text": "Note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 43,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 30,
+      "character": 44,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 30,
+      "character": 45,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 31,
+      "character": 0,
+      "text": "        delay",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 31,
+      "character": 13,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 31,
+      "character": 14,
+      "text": "10L",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 31,
+      "character": 17,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 8,
+      "text": "return",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.control.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 14,
+      "text": " notes",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 20,
+      "text": "[",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.begin.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 21,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 23,
+      "text": "]",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.end.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 24,
+      "text": "?.",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.safe.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 26,
+      "text": "let",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "support.function.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 29,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 30,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 31,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 32,
+      "text": "Result",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 38,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 39,
+      "text": "Ok",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 41,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 42,
+      "text": "it",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 44,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 45,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 46,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 47,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 48,
+      "text": "?:",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.elvis.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 50,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 32,
+      "character": 51,
+      "text": "Result",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 57,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 32,
+      "character": 58,
+      "text": "Missing",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 33,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 33,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 4,
+      "text": "fun",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "keyword.other.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 7,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 8,
+      "text": "add",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 11,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 12,
+      "text": "note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 16,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 17,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 18,
+      "text": "Note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 22,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 23,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 24,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 25,
+      "text": "Boolean",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 32,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 33,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 34,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 35,
+      "text": "when",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.control.conditional.kotlin"
+      ]
+    },
+    {
+      "line": 35,
+      "character": 39,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 35,
+      "character": 40,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 36,
+      "character": 0,
+      "text": "        notes",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 36,
+      "character": 13,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 36,
+      "character": 14,
+      "text": "size ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 36,
+      "character": 19,
+      "text": ">=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 36,
+      "character": 21,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 36,
+      "character": 22,
+      "text": "LIMIT",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 36,
+      "character": 27,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 36,
+      "character": 28,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 36,
+      "character": 29,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 36,
+      "character": 30,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 36,
+      "character": 31,
+      "text": "false",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "constant.language.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 37,
+      "character": 8,
+      "text": "EMPTY_TITLE",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 19,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 20,
+      "text": "matches",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 37,
+      "character": 27,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 28,
+      "text": "note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 32,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 33,
+      "text": "title",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 38,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 39,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 37,
+      "character": 40,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 41,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 37,
+      "character": 42,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 37,
+      "character": 43,
+      "text": "false",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "constant.language.kotlin"
+      ]
+    },
+    {
+      "line": 38,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 38,
+      "character": 8,
+      "text": "else",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.control.conditional.kotlin"
+      ]
+    },
+    {
+      "line": 38,
+      "character": 12,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 38,
+      "character": 13,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 38,
+      "character": 14,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 38,
+      "character": 15,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 38,
+      "character": 16,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 0,
+      "text": "            notes",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 17,
+      "text": "[",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.begin.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 18,
+      "text": "note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 22,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 23,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 25,
+      "text": "]",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.end.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 26,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 27,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 39,
+      "character": 28,
+      "text": " note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 0,
+      "text": "            ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 12,
+      "text": "this",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "variable.language.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 16,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 17,
+      "text": "version ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 25,
+      "text": "+",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 26,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 27,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 40,
+      "character": 28,
+      "text": "1",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 41,
+      "character": 0,
+      "text": "            ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 41,
+      "character": 12,
+      "text": "true",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "constant.language.kotlin"
+      ]
+    },
+    {
+      "line": 42,
+      "character": 0,
+      "text": "        ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin"
+      ]
+    },
+    {
+      "line": 42,
+      "character": 8,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 43,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 43,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 4,
+      "text": "fun",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "keyword.other.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 7,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 8,
+      "text": "titles",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 14,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 15,
+      "text": "priority",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 23,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 24,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 25,
+      "text": "Priority?",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 34,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 35,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 36,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 37,
+      "text": "null",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.language.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 41,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 42,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 43,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 44,
+      "text": "List",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 48,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 49,
+      "text": "String",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 55,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 45,
+      "character": 56,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 45,
+      "character": 57,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 46,
+      "character": 0,
+      "text": "        notes",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 46,
+      "character": 13,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 46,
+      "character": 14,
+      "text": "values",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 0,
+      "text": "            ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 12,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 13,
+      "text": "filter ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 20,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 21,
+      "text": " it",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 24,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 25,
+      "text": "tags",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 29,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 30,
+      "text": "isNotEmpty",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 40,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 41,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 42,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 43,
+      "text": "&&",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.logical.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 45,
+      "text": " priority ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 55,
+      "text": "!=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 57,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 58,
+      "text": "Priority",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 66,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 67,
+      "text": "LOW",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 47,
+      "character": 70,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 47,
+      "character": 71,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 48,
+      "character": 0,
+      "text": "            ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 48,
+      "character": 12,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 48,
+      "character": 13,
+      "text": "sortedBy",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 48,
+      "character": 21,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 48,
+      "character": 22,
+      "text": "Note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 48,
+      "character": 26,
+      "text": "::",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.accessor.reference.kotlin"
+      ]
+    },
+    {
+      "line": 48,
+      "character": 28,
+      "text": "id",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 48,
+      "character": 30,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 0,
+      "text": "            ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 12,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 13,
+      "text": "map ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 17,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 18,
+      "text": " note ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 24,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 25,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 26,
+      "text": " note",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 31,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 32,
+      "text": "title",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 37,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 38,
+      "text": "uppercase",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 47,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 48,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 49,
+      "character": 49,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 49,
+      "character": 50,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 4,
+      "text": "inline",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 10,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 11,
+      "text": "fun",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "keyword.other.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 14,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 15,
+      "text": "<",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 16,
+      "text": "reified",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 23,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 24,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 25,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 26,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 27,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 28,
+      "text": "Any",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 31,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 32,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 33,
+      "text": "describe",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 41,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 42,
+      "text": "value",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 47,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 48,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 49,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 50,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 51,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 52,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 53,
+      "text": "String",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 59,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 60,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 61,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 62,
+      "text": "when",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.control.conditional.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 66,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 67,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 68,
+      "text": "value",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 73,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 51,
+      "character": 74,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 51,
+      "character": 75,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 52,
+      "character": 8,
+      "text": "is",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 10,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 52,
+      "character": 11,
+      "text": "Note",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 15,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 52,
+      "character": 16,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 17,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 18,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 52,
+      "character": 19,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 20,
+      "text": "note ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 25,
+      "text": "$",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.definition.keyword.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 26,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.section.block.begin.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 27,
+      "text": "value",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 32,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 33,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 35,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.section.block.end.kotlin"
+      ]
+    },
+    {
+      "line": 52,
+      "character": 36,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 53,
+      "character": 8,
+      "text": "!is",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 11,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 53,
+      "character": 12,
+      "text": "String",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "support.class.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 18,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 53,
+      "character": 19,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 20,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 21,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 53,
+      "character": 22,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 23,
+      "text": "other ",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 29,
+      "text": "$",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.definition.keyword.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 30,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.section.block.begin.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 31,
+      "text": "T",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 32,
+      "text": "::",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.accessor.reference.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 34,
+      "text": "class",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "constant.language.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 39,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 40,
+      "text": "simpleName",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 50,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.section.block.end.kotlin"
+      ]
+    },
+    {
+      "line": 53,
+      "character": 51,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 54,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 54,
+      "character": 8,
+      "text": "else",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.control.conditional.kotlin"
+      ]
+    },
+    {
+      "line": 54,
+      "character": 12,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 54,
+      "character": 13,
+      "text": "-",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.arithmetic.kotlin"
+      ]
+    },
+    {
+      "line": 54,
+      "character": 14,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 54,
+      "character": 15,
+      "text": " value",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 55,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 55,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 4,
+      "text": "operator",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 12,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 13,
+      "text": "fun",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "keyword.other.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 16,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 17,
+      "text": "get",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.function.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 20,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 21,
+      "text": "id",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 23,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 24,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 25,
+      "text": "Long",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "support.class.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 29,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 30,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 31,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 32,
+      "text": "Note?",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 37,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 38,
+      "text": "=",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "keyword.operator.assignment.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 39,
+      "text": " notes",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 45,
+      "text": "[",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.begin.kotlin"
+      ]
+    },
+    {
+      "line": 57,
+      "character": 46,
+      "text": "id",
+      "scopes": ["source.kotlin", "meta.class.kotlin", "meta.block.kotlin", "meta.brackets.kotlin"]
+    },
+    {
+      "line": 57,
+      "character": 48,
+      "text": "]",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.end.kotlin"
+      ]
+    },
+    {
+      "line": 58,
+      "character": 0,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.class.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 60,
+      "character": 0,
+      "text": "fun",
+      "scopes": ["source.kotlin", "keyword.other.kotlin"]
+    },
+    { "line": 60, "character": 3, "text": " ", "scopes": ["source.kotlin"] },
+    { "line": 60, "character": 4, "text": "Note.", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 9,
+      "text": "isTagged",
+      "scopes": ["source.kotlin", "entity.name.function.kotlin"]
+    },
+    {
+      "line": 60,
+      "character": 17,
+      "text": "(",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "punctuation.section.group.begin.kotlin"]
+    },
+    {
+      "line": 60,
+      "character": 18,
+      "text": "tag",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "variable.parameter.function.kotlin"]
+    },
+    {
+      "line": 60,
+      "character": 21,
+      "text": ":",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "keyword.operator.declaration.kotlin"]
+    },
+    { "line": 60, "character": 22, "text": " ", "scopes": ["source.kotlin", "meta.group.kotlin"] },
+    {
+      "line": 60,
+      "character": 23,
+      "text": "String",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "support.class.kotlin"]
+    },
+    {
+      "line": 60,
+      "character": 29,
+      "text": ")",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "punctuation.section.group.end.kotlin"]
+    },
+    { "line": 60, "character": 30, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 31,
+      "text": "=",
+      "scopes": ["source.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    { "line": 60, "character": 32, "text": " tag ", "scopes": ["source.kotlin"] },
+    {
+      "line": 60,
+      "character": 37,
+      "text": "in",
+      "scopes": ["source.kotlin", "keyword.operator.kotlin"]
+    },
+    { "line": 60, "character": 39, "text": " tags", "scopes": ["source.kotlin"] },
+    {
+      "line": 62,
+      "character": 0,
+      "text": "@Suppress",
+      "scopes": [
+        "source.kotlin",
+        "meta.declaration.annotation.kotlin",
+        "storage.type.annotation.kotlin"
+      ]
+    },
+    {
+      "line": 62,
+      "character": 9,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.declaration.annotation.kotlin",
+        "punctuation.definition.annotation-arguments.begin.kotlin"
+      ]
+    },
+    {
+      "line": 62,
+      "character": 10,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.declaration.annotation.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 62,
+      "character": 11,
+      "text": "MagicNumber",
+      "scopes": [
+        "source.kotlin",
+        "meta.declaration.annotation.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 62,
+      "character": 22,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.declaration.annotation.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 62,
+      "character": 23,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.declaration.annotation.kotlin",
+        "punctuation.definition.annotation-arguments.end.kotlin"
+      ]
+    },
+    {
+      "line": 63,
+      "character": 0,
+      "text": "fun",
+      "scopes": ["source.kotlin", "keyword.other.kotlin"]
+    },
+    { "line": 63, "character": 3, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 63,
+      "character": 4,
+      "text": "main",
+      "scopes": ["source.kotlin", "entity.name.function.kotlin"]
+    },
+    {
+      "line": 63,
+      "character": 8,
+      "text": "(",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "punctuation.section.group.begin.kotlin"]
+    },
+    {
+      "line": 63,
+      "character": 9,
+      "text": ")",
+      "scopes": ["source.kotlin", "meta.group.kotlin", "punctuation.section.group.end.kotlin"]
+    },
+    { "line": 63, "character": 10, "text": " ", "scopes": ["source.kotlin"] },
+    {
+      "line": 63,
+      "character": 11,
+      "text": "{",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "punctuation.section.group.begin.kotlin"]
+    },
+    {
+      "line": 64,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 64,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 64,
+      "character": 7,
+      "text": " repo ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 64,
+      "character": 13,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    { "line": 64, "character": 14, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 64,
+      "character": 15,
+      "text": "NoteRepository",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "entity.name.type.class.kotlin"]
+    },
+    {
+      "line": 64,
+      "character": 29,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 64,
+      "character": 30,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 65,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 65,
+      "character": 4,
+      "text": "var",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 65,
+      "character": 7,
+      "text": " count ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 65,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    { "line": 65, "character": 15, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 65,
+      "character": 16,
+      "text": "0",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "constant.numeric.integer.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 4,
+      "text": "for",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.control.kotlin"]
+    },
+    { "line": 66, "character": 7, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 66,
+      "character": 8,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 9,
+      "text": "i ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 11,
+      "text": "in",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 13,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 14,
+      "text": "1",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 15,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 16,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 17,
+      "text": "3",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 18,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 66,
+      "character": 19,
+      "text": " count ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 26,
+      "text": "+",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.arithmetic.kotlin"]
+    },
+    {
+      "line": 66,
+      "character": 27,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    { "line": 66, "character": 28, "text": " i", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 67,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 67,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 67,
+      "character": 7,
+      "text": " hex ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 67,
+      "character": 12,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    { "line": 67, "character": 13, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 67,
+      "character": 14,
+      "text": "0xFF",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "constant.numeric.hex.kotlin"]
+    },
+    { "line": 67, "character": 18, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 67,
+      "character": 19,
+      "text": "and",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.bitwise.kotlin"]
+    },
+    { "line": 67, "character": 22, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 67,
+      "character": 23,
+      "text": "0b1010",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "constant.numeric.binary.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 7,
+      "text": " ratio ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 15,
+      "text": " max",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 19,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 68,
+      "character": 20,
+      "text": "1.5",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.float.kotlin"
+      ]
+    },
+    {
+      "line": 68,
+      "character": 23,
+      "text": ",",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.seperator.kotlin"
+      ]
+    },
+    {
+      "line": 68,
+      "character": 24,
+      "text": " 2e3",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 68,
+      "character": 28,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 69,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 7,
+      "text": " first ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 15,
+      "text": " repo",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 20,
+      "text": "[",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.begin.kotlin"
+      ]
+    },
+    {
+      "line": 69,
+      "character": 21,
+      "text": "1L",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 69,
+      "character": 23,
+      "text": "]",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.brackets.kotlin",
+        "punctuation.section.brackets.end.kotlin"
+      ]
+    },
+    {
+      "line": 69,
+      "character": 24,
+      "text": "?.",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "punctuation.accessor.dot.safe.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 26,
+      "text": "title ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 32,
+      "text": "?:",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.elvis.kotlin"]
+    },
+    { "line": 69, "character": 34, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 69,
+      "character": 35,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 69,
+      "character": 36,
+      "text": "none",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "string.quoted.double.kotlin"]
+    },
+    {
+      "line": 69,
+      "character": 40,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 70,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 70,
+      "character": 4,
+      "text": "val",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "storage.type.kotlin"]
+    },
+    {
+      "line": 70,
+      "character": 7,
+      "text": " quote ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 70,
+      "character": 14,
+      "text": "=",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.operator.assignment.kotlin"]
+    },
+    {
+      "line": 70,
+      "character": 15,
+      "text": " 'q'",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 71,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 71,
+      "character": 4,
+      "text": "try",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.control.catch-exception.kotlin"]
+    },
+    { "line": 71, "character": 7, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 71,
+      "character": 8,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 0,
+      "text": "        check",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 13,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 14,
+      "text": "count ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 20,
+      "text": ">",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.comparison.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 21,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 22,
+      "text": "0",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 23,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 24,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 25,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 26,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 27,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 28,
+      "text": "count must be positive",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 50,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 72,
+      "character": 51,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 72,
+      "character": 52,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 73,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 73,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    { "line": 73, "character": 5, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 73,
+      "character": 6,
+      "text": "catch",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.control.catch-exception.kotlin"]
+    },
+    { "line": 73, "character": 11, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 73,
+      "character": 12,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 73,
+      "character": 13,
+      "text": "e",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "variable.parameter.function.kotlin"
+      ]
+    },
+    {
+      "line": 73,
+      "character": 14,
+      "text": ":",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "keyword.operator.declaration.kotlin"
+      ]
+    },
+    {
+      "line": 73,
+      "character": 15,
+      "text": " ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 73,
+      "character": 16,
+      "text": "IllegalStateException",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 73,
+      "character": 37,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    { "line": 73, "character": 38, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 73,
+      "character": 39,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 74,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 74,
+      "character": 8,
+      "text": "println",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "support.function.kotlin"
+      ]
+    },
+    {
+      "line": 74,
+      "character": 15,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 74,
+      "character": 16,
+      "text": "e",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 74,
+      "character": 17,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 74,
+      "character": 18,
+      "text": "message",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin", "meta.group.kotlin"]
+    },
+    {
+      "line": 74,
+      "character": 25,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 75,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 75,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    { "line": 75, "character": 5, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 75,
+      "character": 6,
+      "text": "finally",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "keyword.control.catch-exception.kotlin"]
+    },
+    { "line": 75, "character": 13, "text": " ", "scopes": ["source.kotlin", "meta.block.kotlin"] },
+    {
+      "line": 75,
+      "character": 14,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 0,
+      "text": "        ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 76,
+      "character": 8,
+      "text": "println",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "support.function.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 15,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 16,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 17,
+      "text": "Added: ",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 24,
+      "text": "$",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.definition.keyword.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 25,
+      "text": "{",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.section.block.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 26,
+      "text": "repo",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 30,
+      "text": ".",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.accessor.dot.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 31,
+      "text": "add",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 34,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 35,
+      "text": "Note",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "entity.name.type.class.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 39,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 40,
+      "text": "1",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "constant.numeric.integer.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 41,
+      "text": ",",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.seperator.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 42,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 43,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 44,
+      "text": "Hello",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 49,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 50,
+      "text": ",",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.seperator.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 51,
+      "text": " ",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 52,
+      "text": "listOf",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "support.function.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 58,
+      "text": "(",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 59,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.begin.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 60,
+      "text": "x",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 61,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 62,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 63,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 64,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 65,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "entity.string.template.element.kotlin",
+        "punctuation.section.block.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 66,
+      "text": " $first $hex $ratio $quote",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 92,
+      "text": "\\t",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "constant.character.escape.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 94,
+      "text": "…",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 95,
+      "text": "\"",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "string.quoted.double.kotlin",
+        "punctuation.definition.string.end.kotlin"
+      ]
+    },
+    {
+      "line": 76,
+      "character": 96,
+      "text": ")",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "meta.group.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 77,
+      "character": 0,
+      "text": "    ",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "meta.block.kotlin"]
+    },
+    {
+      "line": 77,
+      "character": 4,
+      "text": "}",
+      "scopes": [
+        "source.kotlin",
+        "meta.block.kotlin",
+        "meta.block.kotlin",
+        "punctuation.section.group.end.kotlin"
+      ]
+    },
+    {
+      "line": 78,
+      "character": 0,
+      "text": "}",
+      "scopes": ["source.kotlin", "meta.block.kotlin", "punctuation.section.group.end.kotlin"]
+    }
+  ]
+}

@@ -1,0 +1,972 @@
+{
+  "source": "demo/demo.kt",
+  "sourceSha256": "ca15666a9a6b700c9a3ab881d774201e9c9ba90d6312b5e590e1db20a3581c46",
+  "extension": "JetBrains.kotlin-server 0.0.86",
+  "textMate": "kotlin-jetbrains",
+  "legend": {
+    "language": "kotlin",
+    "superTypes": {},
+    "scopes": {}
+  },
+  "tokens": [
+    {
+      "line": 0,
+      "character": 8,
+      "length": 3,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 0,
+      "character": 12,
+      "length": 7,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 0,
+      "character": 20,
+      "length": 5,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 3,
+      "character": 7,
+      "length": 6,
+      "type": "namespace",
+      "modifiers": []
+    },
+    {
+      "line": 10,
+      "character": 11,
+      "length": 4,
+      "type": "struct",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 10,
+      "character": 20,
+      "length": 2,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 10,
+      "character": 24,
+      "length": 4,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 10,
+      "character": 34,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 10,
+      "character": 41,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 10,
+      "character": 53,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 10,
+      "character": 59,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["abstract", "defaultLibrary"]
+    },
+    {
+      "line": 10,
+      "character": 64,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 12,
+      "character": 17,
+      "length": 6,
+      "type": "interface",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 12,
+      "character": 28,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 13,
+      "character": 15,
+      "length": 2,
+      "type": "struct",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 13,
+      "character": 18,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 13,
+      "character": 25,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 13,
+      "character": 32,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "character": 37,
+      "length": 6,
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 13,
+      "character": 44,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 16,
+      "length": 7,
+      "type": "type",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 14,
+      "character": 26,
+      "length": 6,
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 14,
+      "character": 33,
+      "length": 7,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 17,
+      "character": 11,
+      "length": 8,
+      "type": "enum",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 17,
+      "character": 24,
+      "length": 6,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 17,
+      "character": 32,
+      "length": 3,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 17,
+      "character": 39,
+      "length": 3,
+      "type": "enumMember",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 17,
+      "character": 42,
+      "length": 0,
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 17,
+      "character": 47,
+      "length": 4,
+      "type": "enumMember",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 17,
+      "character": 51,
+      "length": 0,
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 19,
+      "character": 10,
+      "length": 5,
+      "type": "interface",
+      "modifiers": ["declaration", "abstract", "defaultLibrary"]
+    },
+    {
+      "line": 19,
+      "character": 18,
+      "length": 10,
+      "type": "interface",
+      "modifiers": ["abstract", "defaultLibrary"]
+    },
+    {
+      "line": 19,
+      "character": 29,
+      "length": 4,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 19,
+      "character": 35,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 21,
+      "character": 6,
+      "length": 14,
+      "type": "class",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 21,
+      "character": 33,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 21,
+      "character": 40,
+      "length": 5,
+      "type": "interface",
+      "modifiers": ["abstract", "defaultLibrary"]
+    },
+    {
+      "line": 23,
+      "character": 18,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 24,
+      "character": 20,
+      "length": 11,
+      "type": "property",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 27,
+      "character": 8,
+      "length": 7,
+      "type": "property",
+      "modifiers": ["declaration", "modification"]
+    },
+    {
+      "line": 27,
+      "character": 17,
+      "length": 3,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 30,
+      "character": 16,
+      "length": 4,
+      "type": "method",
+      "modifiers": ["declaration", "async"]
+    },
+    {
+      "line": 30,
+      "character": 21,
+      "length": 2,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 30,
+      "character": 25,
+      "length": 4,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 30,
+      "character": 32,
+      "length": 6,
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 30,
+      "character": 39,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 32,
+      "character": 15,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 32,
+      "character": 21,
+      "length": 2,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 32,
+      "character": 32,
+      "length": 6,
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 32,
+      "character": 39,
+      "length": 2,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 32,
+      "character": 51,
+      "length": 6,
+      "type": "interface",
+      "modifiers": []
+    },
+    {
+      "line": 32,
+      "character": 58,
+      "length": 7,
+      "type": "type",
+      "modifiers": []
+    },
+    {
+      "line": 35,
+      "character": 8,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 35,
+      "character": 12,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 35,
+      "character": 18,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 35,
+      "character": 25,
+      "length": 7,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 36,
+      "character": 8,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 36,
+      "character": 14,
+      "length": 4,
+      "type": "property",
+      "modifiers": ["readonly", "abstract", "defaultLibrary"]
+    },
+    {
+      "line": 36,
+      "character": 19,
+      "length": 2,
+      "type": "operator",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 36,
+      "character": 22,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 37,
+      "character": 8,
+      "length": 11,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 37,
+      "character": 28,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 37,
+      "character": 33,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 39,
+      "character": 12,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 39,
+      "character": 18,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 39,
+      "character": 23,
+      "length": 2,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 39,
+      "character": 29,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 40,
+      "character": 12,
+      "length": 4,
+      "type": "class",
+      "modifiers": []
+    },
+    {
+      "line": 40,
+      "character": 17,
+      "length": 7,
+      "type": "property",
+      "modifiers": ["modification"]
+    },
+    {
+      "line": 40,
+      "character": 25,
+      "length": 2,
+      "type": "operator",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 45,
+      "character": 8,
+      "length": 6,
+      "type": "method",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 45,
+      "character": 15,
+      "length": 8,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 45,
+      "character": 25,
+      "length": 8,
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 45,
+      "character": 44,
+      "length": 4,
+      "type": "interface",
+      "modifiers": ["abstract", "defaultLibrary"]
+    },
+    {
+      "line": 45,
+      "character": 49,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 46,
+      "character": 8,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 46,
+      "character": 14,
+      "length": 6,
+      "type": "property",
+      "modifiers": ["readonly", "abstract", "defaultLibrary"]
+    },
+    {
+      "line": 47,
+      "character": 46,
+      "length": 8,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 47,
+      "character": 55,
+      "length": 2,
+      "type": "operator",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 47,
+      "character": 58,
+      "length": 8,
+      "type": "enum",
+      "modifiers": []
+    },
+    {
+      "line": 47,
+      "character": 67,
+      "length": 3,
+      "type": "enumMember",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 48,
+      "character": 22,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 48,
+      "character": 28,
+      "length": 2,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 49,
+      "character": 19,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 49,
+      "character": 27,
+      "length": 4,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 51,
+      "character": 24,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 51,
+      "character": 28,
+      "length": 3,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 51,
+      "character": 33,
+      "length": 8,
+      "type": "method",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 51,
+      "character": 42,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 51,
+      "character": 49,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 51,
+      "character": 53,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 51,
+      "character": 68,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 52,
+      "character": 11,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 52,
+      "character": 27,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 52,
+      "character": 33,
+      "length": 2,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 53,
+      "character": 12,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 53,
+      "character": 31,
+      "length": 1,
+      "type": "typeParameter",
+      "modifiers": []
+    },
+    {
+      "line": 54,
+      "character": 16,
+      "length": 5,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 57,
+      "character": 17,
+      "length": 3,
+      "type": "operator",
+      "modifiers": ["declaration"]
+    },
+    {
+      "line": 57,
+      "character": 21,
+      "length": 2,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 57,
+      "character": 25,
+      "length": 4,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 57,
+      "character": 32,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 57,
+      "character": 40,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 57,
+      "character": 46,
+      "length": 2,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 60,
+      "character": 4,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 60,
+      "character": 9,
+      "length": 8,
+      "type": "function",
+      "modifiers": ["declaration", "static"]
+    },
+    {
+      "line": 60,
+      "character": 18,
+      "length": 3,
+      "type": "parameter",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 60,
+      "character": 23,
+      "length": 6,
+      "type": "class",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 60,
+      "character": 33,
+      "length": 3,
+      "type": "parameter",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 60,
+      "character": 37,
+      "length": 2,
+      "type": "operator",
+      "modifiers": ["abstract", "defaultLibrary"]
+    },
+    {
+      "line": 60,
+      "character": 40,
+      "length": 4,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 63,
+      "character": 4,
+      "length": 4,
+      "type": "function",
+      "modifiers": ["declaration", "static"]
+    },
+    {
+      "line": 64,
+      "character": 8,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 64,
+      "character": 15,
+      "length": 14,
+      "type": "class",
+      "modifiers": []
+    },
+    {
+      "line": 65,
+      "character": 8,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["declaration", "modification"]
+    },
+    {
+      "line": 66,
+      "character": 9,
+      "length": 1,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 66,
+      "character": 15,
+      "length": 2,
+      "type": "operator",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 66,
+      "character": 20,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["modification"]
+    },
+    {
+      "line": 66,
+      "character": 29,
+      "length": 1,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 67,
+      "character": 8,
+      "length": 3,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 67,
+      "character": 19,
+      "length": 3,
+      "type": "method",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 68,
+      "character": 8,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 69,
+      "character": 8,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 69,
+      "character": 16,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 69,
+      "character": 26,
+      "length": 5,
+      "type": "property",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 70,
+      "character": 8,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 72,
+      "character": 14,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["modification"]
+    },
+    {
+      "line": 72,
+      "character": 20,
+      "length": 1,
+      "type": "operator",
+      "modifiers": ["defaultLibrary"]
+    },
+    {
+      "line": 73,
+      "character": 13,
+      "length": 1,
+      "type": "variable",
+      "modifiers": ["declaration", "readonly"]
+    },
+    {
+      "line": 74,
+      "character": 16,
+      "length": 1,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 76,
+      "character": 26,
+      "length": 4,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 76,
+      "character": 31,
+      "length": 3,
+      "type": "method",
+      "modifiers": []
+    },
+    {
+      "line": 76,
+      "character": 35,
+      "length": 4,
+      "type": "struct",
+      "modifiers": []
+    },
+    {
+      "line": 76,
+      "character": 68,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 76,
+      "character": 75,
+      "length": 3,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 76,
+      "character": 80,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    },
+    {
+      "line": 76,
+      "character": 87,
+      "length": 5,
+      "type": "variable",
+      "modifiers": ["readonly"]
+    }
+  ]
+}

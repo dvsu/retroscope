@@ -11,7 +11,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { type BundledLanguage, createHighlighter } from "shiki";
+import { type BundledLanguage, createHighlighter, type ThemeRegistrationRaw } from "shiki";
 import { LANGUAGE_NAMES } from "./coverage";
 import { generateTheme } from "./generate";
 import { DEVICON, LANGUAGES_IMAGE_LIST, LOGOS } from "./language-logos";
@@ -149,7 +149,7 @@ const escapeHtml = (s: string) =>
 
 const generated = themes.map(generateTheme);
 const highlighter = await createHighlighter({
-  themes: generated.map((g) => ({ ...g.theme, name: g.metadata.id })),
+  themes: generated.map((g) => ({ ...g.theme, name: g.metadata.id }) as ThemeRegistrationRaw),
   langs: Object.values(SAMPLES).map((s) => s.lang),
 });
 

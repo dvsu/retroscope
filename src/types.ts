@@ -27,6 +27,8 @@ export type TokenColor = {
 export type VSCodeTheme = {
   name: string;
   type: "dark" | "light";
+  semanticHighlighting?: boolean;
+  semanticTokenColors?: Record<string, string | TokenStyling>;
   colors: Record<string, string>;
   tokenColors: TokenColor[];
 };

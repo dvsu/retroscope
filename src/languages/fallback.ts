@@ -1,3 +1,4 @@
+import { textMateOnly } from "../semantic";
 import type { EditorColor } from "../themes/types";
 import type { TokenColor } from "../types";
 
@@ -8,7 +9,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
   return [
     {
       name: "[default] Comment",
-      scope: ["comment"],
+      scope: textMateOnly("comment"),
       settings: {
         foreground: colors.comment,
         fontStyle: "italic",
@@ -23,23 +24,60 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[default] Function, method, decorator",
-      scope: ["entity.name.function", "entity.name.operator"],
+      scope: [...textMateOnly("entity.name.function"), "entity.name.operator"],
       settings: {
         foreground: colors.function,
       },
     },
     {
       name: "[default] Keywords",
-      scope: ["keyword", "support.other.directive"],
+      scope: [...textMateOnly("keyword"), "support.other.directive"],
       settings: {
         foreground: colors.keyword,
       },
     },
     {
       name: "[default] Keywords: function, async, storage modifier",
-      scope: ["storage.type.function", "keyword.other.fn", "storage.modifier"],
+      scope: [
+        "storage.type.function",
+        "keyword.other.fn",
+        "storage.modifier.async",
+        "storage.type.function.arrow",
+        "storage.modifier",
+      ],
       settings: {
         foreground: colors.brightYellow,
+      },
+    },
+    {
+      name: "[default] Import paths and package names",
+      scope: [
+        "storage.modifier.import",
+        "entity.name.package",
+        "meta.import entity.name.package",
+        "entity.name.namespace",
+        "entity.name.module",
+        "entity.name.namespace-prefix",
+        "entity.other.namespace-prefix",
+        "entity.other.alias",
+        "entity.name.scope-resolution",
+        "support.other.namespace",
+        "meta.import",
+        "meta.package",
+      ],
+      settings: {
+        foreground: colors.variable,
+      },
+    },
+    {
+      name: "[default] Template expression interpolation",
+      scope: [
+        "meta.template.expression",
+        "entity.string.template.element",
+        "variable.other.interpolated.expression",
+      ],
+      settings: {
+        foreground: colors.variable,
       },
     },
     {
@@ -51,7 +89,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[default] Punctuations",
-      scope: ["punctuation"],
+      scope: textMateOnly("punctuation"),
       settings: {
         foreground: colors.punctuation,
       },
@@ -79,14 +117,14 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[default] Value: string",
-      scope: ["string"],
+      scope: textMateOnly("string"),
       settings: {
         foreground: colors.string,
       },
     },
     {
       name: "[default] Variable names",
-      scope: ["constant.other", "variable"],
+      scope: ["constant.other", ...textMateOnly("variable")],
       settings: {
         foreground: colors.variable,
       },
@@ -107,14 +145,6 @@ export const generate = (colors: EditorColor): TokenColor[] => {
         "storage.type.java",
         "storage.type.sql",
         "support.class",
-        "entity.name.namespace",
-        "entity.name.module",
-        "entity.name.namespace-prefix",
-        "entity.other.namespace-prefix",
-        "entity.other.alias",
-        "entity.name.scope-resolution",
-        "entity.name.package",
-        "support.other.namespace",
         "entity.name.class",
         "entity.other.inherited-class",
       ],
@@ -159,7 +189,7 @@ export const generate = (colors: EditorColor): TokenColor[] => {
     },
     {
       name: "[default] Variable names: declared, fields",
-      scope: ["entity.name.variable", "entity.other.attribute"],
+      scope: [...textMateOnly("entity.name.variable"), "entity.other.attribute"],
       settings: {
         foreground: colors.variable,
       },

@@ -100,9 +100,15 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
+      name: "[yaml] Merge key",
+      scope: ["constant.language.merge.yaml", "keyword.operator.yaml"],
+      settings: {
+        foreground: colors.keyword,
+      },
+    },
+    {
       name: "[yaml] Value: number",
       scope: [
-        "constant.language.merge.yaml",
         "constant.language.value.yaml",
         "constant.numeric.float.yaml",
         "constant.numeric.indentation-indicator.yaml",
@@ -134,12 +140,20 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
-      name: "[yaml] Version and tags",
+      name: "[yaml] Tag handle / punctuation",
       scope: [
-        "constant.numeric.yaml-version.yaml",
-        "support.type.tag-prefix.yaml",
         "storage.type.tag-handle.yaml",
+        "punctuation.definition.tag.begin.yaml",
+        "punctuation.definition.tag.end.yaml",
+        "punctuation.definition.tag.yaml",
       ],
+      settings: {
+        foreground: colors.punctuation,
+      },
+    },
+    {
+      name: "[yaml] Version and tags",
+      scope: ["constant.numeric.yaml-version.yaml", "support.type.tag-prefix.yaml"],
       settings: {
         foreground: colors.type,
       },
