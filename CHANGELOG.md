@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0
+
+- Add **Retroscope Paper**: a warm parchment light theme inspired by vintage library books
+- Add **Retroscope Dawn**: a blush terracotta light theme reminiscent of early morning desk light
+- Add **Retroscope Ledger**: a pale celadon light theme inspired by vintage accounting ledger paper
+- Add **Retroscope Amber**: a deep umber dark theme inspired by 1980s amber CRT terminals
+- Add **Retroscope Cassette**: a velvety mahogany-plum dark theme with synth accents
+- Add **Retroscope Phosphor**: an oscilloscope-inspired smoky green dark theme
+- Fix the theme picker hint in 320px dropdowns by shortening the High Contrast settings ID
+- Serve extension page screenshots and assets directly from GitHub's raw CDN pinned to each release
+
 ## 0.4.1
 
 - Refresh the extension page with screenshots of every theme, the supported languages and install steps for VS Code, Cursor and Antigravity
