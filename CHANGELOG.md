@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.1
+
+- Turn on semantic highlighting for functions, methods and constructors
+- Colour C#, Java and Kotlin keywords, operators and punctuation like TypeScript, in VS Code, Cursor and Antigravity
+- Make the active tab stand out from the other tabs
+- Frame the editor, side bar and panel with a deeper title bar and status bar
+- Highlight the selected file more clearly in lists such as Open Editors
+- Make search matches easier to read and consistent in VS Code, Cursor and Antigravity
+
 ## 0.5.0
 
 - Add **Retroscope Paper**: a warm parchment light theme inspired by vintage library books
