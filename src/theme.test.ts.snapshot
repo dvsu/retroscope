@@ -44,9 +44,9 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "dropdown.foreground": "#C9B19F",
     "editor.background": "#1D1B19",
     "editor.findMatchBackground": "#FFCB93",
-    "editor.findMatchForeground": "#1D1B19",
-    "editor.findMatchHighlightBackground": "#B58156",
-    "editor.findMatchHighlightForeground": "#1D1B19",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#79563A",
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": "#C9B19F",
     "editor.inactiveSelectionBackground": "#1D1B1960",
     "editorLightBulb.foreground": "#C67640",
@@ -1625,6 +1625,46 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#9C7F60"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#C67640"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#C67640"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#FFCB93"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -2802,9 +2842,9 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "dropdown.foreground": "#CAB294",
     "editor.background": "#221507",
     "editor.findMatchBackground": "#FFDCA5",
-    "editor.findMatchForeground": "#221507",
-    "editor.findMatchHighlightBackground": "#B97F4B",
-    "editor.findMatchHighlightForeground": "#221507",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#7C5532",
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": "#CAB294",
     "editor.inactiveSelectionBackground": "#22150760",
     "editorLightBulb.foreground": "#C77940",
@@ -4383,6 +4423,46 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#9D8261"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#C77940"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#C77940"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#FFDCA5"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -5560,9 +5640,9 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "dropdown.foreground": "#C9AAA5",
     "editor.background": "#241720",
     "editor.findMatchBackground": "#FFD3BD",
-    "editor.findMatchForeground": "#241720",
-    "editor.findMatchHighlightBackground": "#C3786C",
-    "editor.findMatchHighlightForeground": "#241720",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#814F47",
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": "#C9AAA5",
     "editor.inactiveSelectionBackground": "#24172060",
     "editorLightBulb.foreground": "#C97B42",
@@ -7141,6 +7221,46 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#A37D70"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#C97B42"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#C97B42"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#FFD3BD"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -8318,9 +8438,9 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "dropdown.foreground": "#47282E",
     "editor.background": "#FBECEB",
     "editor.findMatchBackground": "#47282E",
-    "editor.findMatchForeground": "#FBECEB",
-    "editor.findMatchHighlightBackground": "#896252",
-    "editor.findMatchHighlightForeground": "#FBECEB",
+    "editor.findMatchForeground": "#FFFFFF",
+    "editor.findMatchHighlightBackground": "#9F8163",
+    "editor.findMatchHighlightForeground": "#FFFFFF",
     "editor.foreground": "#47282E",
     "editor.inactiveSelectionBackground": "#98775720",
     "editorLightBulb.foreground": "#AA4300",
@@ -9915,6 +10035,46 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#47282E"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -11092,9 +11252,9 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "dropdown.foreground": "#C8B7A8",
     "editor.background": "#12100E",
     "editor.findMatchBackground": "#FFCC9E",
-    "editor.findMatchForeground": "#12100E",
-    "editor.findMatchHighlightBackground": "#CA9468",
-    "editor.findMatchHighlightForeground": "#12100E",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#79593E",
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": "#C8B7A8",
     "editor.inactiveSelectionBackground": "#12100E60",
     "editorLightBulb.foreground": "#D3915E",
@@ -12673,6 +12833,46 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#A1946E"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#D3915E"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#D3915E"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#FFCC9E"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -13850,9 +14050,9 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "dropdown.foreground": "#2E3428",
     "editor.background": "#ECF4E8",
     "editor.findMatchBackground": "#2E3428",
-    "editor.findMatchForeground": "#ECF4E8",
-    "editor.findMatchHighlightBackground": "#7B6B4E",
-    "editor.findMatchHighlightForeground": "#ECF4E8",
+    "editor.findMatchForeground": "#FFFFFF",
+    "editor.findMatchHighlightBackground": "#A08264",
+    "editor.findMatchHighlightForeground": "#FFFFFF",
     "editor.foreground": "#2E3428",
     "editor.inactiveSelectionBackground": "#98775720",
     "editorLightBulb.foreground": "#AA4300",
@@ -15447,6 +15647,46 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#2E3428"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -16624,9 +16864,9 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "dropdown.foreground": "#462B1F",
     "editor.background": "#F8EDDE",
     "editor.findMatchBackground": "#462B1F",
-    "editor.findMatchForeground": "#F8EDDE",
-    "editor.findMatchHighlightBackground": "#896347",
-    "editor.findMatchHighlightForeground": "#F8EDDE",
+    "editor.findMatchForeground": "#FFFFFF",
+    "editor.findMatchHighlightBackground": "#A08264",
+    "editor.findMatchHighlightForeground": "#FFFFFF",
     "editor.foreground": "#462B1F",
     "editor.inactiveSelectionBackground": "#98775720",
     "editorLightBulb.foreground": "#AA4300",
@@ -18221,6 +18461,46 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#CB7B2C"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#462B1F"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -19398,9 +19678,9 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "dropdown.foreground": "#BEB59D",
     "editor.background": "#141E17",
     "editor.findMatchBackground": "#EEDEA1",
-    "editor.findMatchForeground": "#141E17",
-    "editor.findMatchHighlightBackground": "#A5885D",
-    "editor.findMatchHighlightForeground": "#141E17",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#6D5A3D",
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": "#BEB59D",
     "editor.inactiveSelectionBackground": "#141E1760",
     "editorLightBulb.foreground": "#C87B41",
@@ -20979,6 +21259,46 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       }
     },
     {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#8A876A"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#C87B41"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#C87B41"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#EEDEA1"
+      }
+    },
+    {
       "name": "[markdown] Punctuations: object, array",
       "scope": [
         "punctuation.separator.key-value.markdown"
@@ -22156,9 +22476,9 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "dropdown.foreground": "#CFBDB0",
     "editor.background": "#2A2622",
     "editor.findMatchBackground": "#FFCB97",
-    "editor.findMatchForeground": "#2A2622",
-    "editor.findMatchHighlightBackground": "#B58557",
-    "editor.findMatchHighlightForeground": "#2A2622",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#7B5A3B",
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": "#CFBDB0",
     "editor.inactiveSelectionBackground": "#2A262260",
     "editorLightBulb.foreground": "#CA7F48",
@@ -23734,6 +24054,46 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       ],
       "settings": {
         "foreground": "#A78B6F"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: closing tag of embedded script and style",
+      "scope": [
+        "punctuation.definition.tag source"
+      ],
+      "settings": {
+        "foreground": "#A78B6F"
+      }
+    },
+    {
+      "name": "[markdown] Punctuations: brackets in embedded script and style",
+      "scope": [
+        "text.html.markdown meta.embedded.block.html meta.brace",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.block",
+        "text.html.markdown meta.embedded.block.html punctuation.definition.parameters",
+        "text.html.markdown meta.embedded.block.html punctuation.section.function",
+        "text.html.markdown meta.embedded.block.html punctuation.section.property-list"
+      ],
+      "settings": {
+        "foreground": "#CA7F48"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS: attributes and selectors",
+      "scope": [
+        "meta.embedded.block.html source.css"
+      ],
+      "settings": {
+        "foreground": "#CA7F48"
+      }
+    },
+    {
+      "name": "[markdown] Embedded CSS rule bodies",
+      "scope": [
+        "meta.embedded.block.html source.css meta.property-list.css"
+      ],
+      "settings": {
+        "foreground": "#FFCB97"
       }
     },
     {

@@ -1,4 +1,4 @@
-import { contrastRatio, darkenHex, furthestReadable } from "./contrast";
+import { balancedFill, contrastRatio, darkenHex } from "./contrast";
 import type { EditorColor } from "./themes/types";
 
 interface UiColorGenerationParams {
@@ -54,20 +54,12 @@ const generateLight = (colors: EditorColor): Record<string, string> => {
     "dropdown.border": border,
     "dropdown.foreground": fg,
     "editor.background": bg,
-    // Search matches are drawn reversed, as in the dark themes: a solid dark
-    // fill with light text, the current match darkest. Both share the text
-    // colour, because Antigravity swaps the two. The other matches take the
-    // lightest fill the text still reads on, so they stand apart from the
-    // current one.
+    // Search matches work as in the dark themes, with the light and dark
+    // sides swapped: the current match is a dark fill with white text.
     "editor.findMatchBackground": colors.accentPrimary,
-    "editor.findMatchForeground": bg,
-    "editor.findMatchHighlightBackground": furthestReadable(
-      colors.accentSecondary,
-      colors.accentTertiary,
-      bg,
-      4.6,
-    ),
-    "editor.findMatchHighlightForeground": bg,
+    "editor.findMatchForeground": "#FFFFFF",
+    "editor.findMatchHighlightBackground": balancedFill(colors.accentTertiary, "#FFFFFF", fg),
+    "editor.findMatchHighlightForeground": "#FFFFFF",
     "editor.foreground": fg,
     "editor.inactiveSelectionBackground": `${colors.accentTertiary}20`,
     "editorLightBulb.foreground": colors.brightOrange,
@@ -428,13 +420,18 @@ const generateDark = (colors: EditorColor): Record<string, string> => {
     "dropdown.foreground": colors.foreground,
     "editor.background": colors.background,
     // The current search match is drawn reversed: a solid light fill with
-    // dark text. Antigravity (older VS Code) draws each match kind with the
-    // other kind's text colour, so the other matches get a solid, dimmer
-    // fill with the same dark text, and the swap changes nothing.
+    // black text. Antigravity (older VS Code) draws each match kind with the
+    // other kind's text colour, so the other matches use black text too. The
+    // Search view paints its results with the other matches' fill but keeps
+    // the side bar's light text, so that fill is the shade both read on best.
     "editor.findMatchBackground": colors.accentPrimary,
-    "editor.findMatchForeground": colors.black,
-    "editor.findMatchHighlightBackground": colors.accentTertiary,
-    "editor.findMatchHighlightForeground": colors.black,
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": balancedFill(
+      colors.accentTertiary,
+      "#000000",
+      colors.foreground,
+    ),
+    "editor.findMatchHighlightForeground": "#000000",
     "editor.foreground": colors.foreground,
     "editor.inactiveSelectionBackground": `${colors.background}60`,
     "editorLightBulb.foreground": colors.orange,

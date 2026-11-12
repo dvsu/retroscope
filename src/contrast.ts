@@ -78,15 +78,18 @@ export const mixHex = (from: string, to: string, t: number): string => {
 };
 
 /**
- * The colour furthest from `from` towards `to` that `text` still reads on at
- * `minContrast`; `from` itself if even that falls short.
+ * The shade of `from`, mixed towards black or white, on which both `textA`
+ * and `textB` read best: the one with the highest lower contrast of the two.
  */
-export const furthestReadable = (from: string, to: string, text: string, minContrast: number) => {
+export const balancedFill = (from: string, textA: string, textB: string) => {
   let best = from;
-  for (let step = 1; step <= 100; step++) {
-    const candidate = mixHex(from, to, step / 100);
-    if (contrastRatio(text, candidate) < minContrast) break;
-    best = candidate;
+  let bestRatio = 0;
+  for (const to of ["#000000", "#FFFFFF"]) {
+    for (let step = 0; step <= 100; step++) {
+      const candidate = mixHex(from, to, step / 100);
+      const ratio = Math.min(contrastRatio(textA, candidate), contrastRatio(textB, candidate));
+      if (ratio > bestRatio) [best, bestRatio] = [candidate, ratio];
+    }
   }
   return best;
 };

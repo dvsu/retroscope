@@ -95,6 +95,11 @@ export const LOW_CONTRAST_PAIRS: Record<string, { minContrast: number; reason: s
     minContrast: FADED_CONTRAST,
     reason: "Unselected tabs recede by design.",
   },
+  "editor.findMatchHighlightBackground": {
+    minContrast: FADED_CONTRAST,
+    reason:
+      "The Search view paints results with this fill but keeps the side bar's light text, and Antigravity puts the editor's dark match text on it, so it is a middle shade.",
+  },
   "titleBar.inactiveBackground": {
     minContrast: FADED_CONTRAST,
     reason: "The title bar of an unfocused window recedes by design.",
@@ -244,6 +249,18 @@ export const checkTheme = ({ theme }: GeneratedTheme): string[] => {
         );
       }
     }
+  }
+
+  // The Search view paints its results with the other matches' fill but
+  // keeps the side bar's text colour.
+  const sideBarText = theme.colors["sideBar.foreground"];
+  const resultFill = theme.colors["editor.findMatchHighlightBackground"];
+  if (isHexColor(sideBarText) && isHexColor(resultFill)) {
+    const ratio = contrastRatio(sideBarText, resultFill, background);
+    if (ratio < FADED_CONTRAST)
+      problems.push(
+        `contrast: sideBar.foreground on Search view results (editor.findMatchHighlightBackground) is ${ratio.toFixed(2)}:1, needs ${FADED_CONTRAST}`,
+      );
   }
 
   // The current search match must stand apart from the other matches.

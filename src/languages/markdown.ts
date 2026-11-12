@@ -191,6 +191,48 @@ export const generate = (colors: EditorColor): TokenColor[] => {
       },
     },
     {
+      // The HTML grammar ends an embedded script or style on "</" and labels
+      // that "<" with an extra source.*-ignored-vscode scope, which the
+      // catch-all source rule would colour as a variable.
+      name: "[markdown] Punctuations: closing tag of embedded script and style",
+      scope: ["punctuation.definition.tag source"],
+      settings: {
+        foreground: colors.punctuation,
+      },
+    },
+    {
+      // VS Code doesn't colour bracket pairs in script and style tags inside
+      // Markdown, which Cursor does; this gives them the first bracket colour.
+      name: "[markdown] Punctuations: brackets in embedded script and style",
+      scope: [
+        "meta.brace",
+        "punctuation.definition.block",
+        "punctuation.definition.parameters",
+        "punctuation.section.function",
+        "punctuation.section.property-list",
+      ].map((bracket) => `text.html.markdown meta.embedded.block.html ${bracket}`),
+      settings: {
+        foreground: colors.orange,
+      },
+    },
+    {
+      // VS Code's CSS grammar leaves the selector unlabelled when a style tag
+      // opens and closes on one line, so embedded CSS outside a rule body
+      // takes the selector colour; rule bodies keep the variable colour.
+      name: "[markdown] Embedded CSS: attributes and selectors",
+      scope: ["meta.embedded.block.html source.css"],
+      settings: {
+        foreground: colors.typeAnnotation,
+      },
+    },
+    {
+      name: "[markdown] Embedded CSS rule bodies",
+      scope: ["meta.embedded.block.html source.css meta.property-list.css"],
+      settings: {
+        foreground: colors.variable,
+      },
+    },
+    {
       name: "[markdown] Punctuations: object, array",
       scope: ["punctuation.separator.key-value.markdown"],
       settings: {
