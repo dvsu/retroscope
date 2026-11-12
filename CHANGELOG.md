@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.2
+
+- Make results in the Search view easier to read
+- Fix the colours of brackets, closing tags and CSS selectors in script and style tags in Markdown
+
 ## 0.5.1
 
 - Turn on semantic highlighting for functions, methods and constructors
