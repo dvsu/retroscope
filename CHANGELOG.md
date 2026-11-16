@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.3
+
+- Align C# syntax and semantic highlighting with VS Code Dark 2026 conventions using Retroscope's palette
+- Keep bracket levels 1–2 warm orange and shift nested brackets to purple, coral, bright orange and red so generic types and keywords stay distinct
+
 ## 0.5.2
 
 - Make results in the Search view easier to read
