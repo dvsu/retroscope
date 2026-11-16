@@ -20,6 +20,7 @@ export type Role =
   | "punctuation"
   | "typeAnnotation"
   | "brightYellow"
+  | "brightPurple"
   | "boolean"
   | "nullable"
   | "type";
@@ -52,7 +53,27 @@ export const ROLES: Record<string, Role> = Object.fromEntries([
 /** Per language: roles that differ from TypeScript's by design, and words used there as names. */
 export const LANGUAGE_ROLES: Record<string, { roles?: Record<string, Role>; names?: string[] }> = {
   typescript: { names: ["record", "sealed", "get", "set"], roles: {} },
-  csharp: { roles: { ":": "punctuation" }, names: ["get", "set"] },
+  // C# follows VS Code's Dark 2026 conventions rather than TypeScript's.
+  csharp: {
+    roles: {
+      ...Object.fromEntries(
+        "if else for while do switch case default when try catch finally throw return break continue await"
+          .split(" ")
+          .map((w) => [w, "brightPurple" as const]),
+      ),
+      async: "keyword",
+      void: "keyword",
+      true: "keyword",
+      false: "keyword",
+      null: "keyword",
+      ...Object.fromEntries(
+        ": = == != >= <= && || ! + - * % += -= ++ -- ?? ?: -> => ? & |"
+          .split(" ")
+          .map((w) => [w, "punctuation" as const]),
+      ),
+    },
+    names: ["get", "set", "in"],
+  },
   java: { roles: { ":": "keyword", "::": "keyword" }, names: ["function", "get"] },
   // Neither Kotlin grammar can tell fun from val or package, so fun takes the keyword colour.
   kotlin: { roles: { fun: "keyword" }, names: ["let", "get", "set"] },
@@ -88,11 +109,6 @@ export const GRAMMAR_LIMITS: { rendering: string; lexemes: string[]; why: string
     rendering: "typescript",
     lexemes: [":", "null", "undefined"],
     why: "the reference: a colon starts a type, a case or an object key, and null can be a type",
-  },
-  {
-    rendering: "csharp",
-    lexemes: [":"],
-    why: "the grammar reads the colon of a format such as {total:C} as the ?: operator",
   },
   ...["java", "java-redhat"].map((rendering) => ({
     rendering,

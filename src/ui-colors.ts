@@ -72,11 +72,11 @@ const generateLight = (colors: EditorColor): Record<string, string> => {
     "editorBracketMatch.background": `${colors.accentTertiary}15`,
     "editorBracketMatch.border": colors.accentSecondary,
     "editorBracketHighlight.foreground1": colors.orange,
-    "editorBracketHighlight.foreground2": colors.red,
-    "editorBracketHighlight.foreground3": colors.yellow,
-    "editorBracketHighlight.foreground4": colors.purple,
+    "editorBracketHighlight.foreground2": colors.orange,
+    "editorBracketHighlight.foreground3": colors.purple,
+    "editorBracketHighlight.foreground4": colors.brightRed,
     "editorBracketHighlight.foreground5": colors.brightOrange,
-    "editorBracketHighlight.foreground6": colors.green,
+    "editorBracketHighlight.foreground6": colors.red,
     "editorGroup.border": border,
     "editorGroup.dropIntoPromptBackground": `${colors.accentPrimary}E0`,
     "editorGroup.dropIntoPromptForeground": bg,
@@ -447,14 +447,14 @@ const generateDark = (colors: EditorColor): Record<string, string> => {
     "editorBracketMatch.background": `${colors.accentTertiary}08`,
     "editorBracketMatch.border": colors.accentPrimary,
     // Bracket pair colouring (on by default) draws brackets in these, over the
-    // token colours, so level 1 must stand apart from the quotes, commas and
-    // colons around it.
+    // token colours: levels 1-2 keep warm orange so class-wrapped method/generic
+    // headers stay consistent, while levels 3-4 avoid keyword red and type orange/yellow.
     "editorBracketHighlight.foreground1": colors.orange,
-    "editorBracketHighlight.foreground2": colors.red,
-    "editorBracketHighlight.foreground3": colors.yellow,
-    "editorBracketHighlight.foreground4": colors.purple,
+    "editorBracketHighlight.foreground2": colors.orange,
+    "editorBracketHighlight.foreground3": colors.purple,
+    "editorBracketHighlight.foreground4": colors.brightRed,
     "editorBracketHighlight.foreground5": colors.brightOrange,
-    "editorBracketHighlight.foreground6": colors.green,
+    "editorBracketHighlight.foreground6": colors.red,
     "editorGroup.border": colors.intermediate,
     "editorGroup.dropIntoPromptBackground": `${colors.black}90`,
     "editorGroup.dropIntoPromptForeground": colors.accentPrimary,

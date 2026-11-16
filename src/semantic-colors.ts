@@ -19,6 +19,14 @@ export const generate = (colors: EditorColor): Record<string, string> => ({
   method: colors.function,
   // C# makes a delegate a kind of method, but names it like a type.
   delegate: colors.type,
+  // C# follows Dark 2026's semantic groupings in Retroscope's palette.
+  "namespace:csharp": colors.type,
+  "controlKeyword:csharp": colors.brightPurple,
+  "parameter:csharp": colors.brightYellow,
+  "field:csharp": colors.brightBlue,
+  "constant:csharp": colors.blue,
+  "enumMember:csharp": colors.blue,
+  "operatorOverloaded:csharp": colors.function,
   // Java names a constructor after its class; the grammar colours it like a
   // method, as Red Hat's Java extension intends.
   "*.constructor": colors.function,

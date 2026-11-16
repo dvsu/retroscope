@@ -1,67 +1,93 @@
 import type { EditorColor } from "../themes/types";
 import type { TokenColor } from "../types";
 
-// C# follows the TypeScript colours: keywords and operators in the keyword
-// colour, built-in and named types in the type colour, `async` like other
-// function keywords, and punctuation (including `.` and `?.`) muted.
+// C# follows VS Code's Dark 2026 grouping in Retroscope's palette:
+// - modifiers, declaration/type keywords, built-in types, word operators,
+//   booleans, null, this and discard in the keyword colour;
+// - control-flow keywords (including `await`) in bright purple;
+// - symbolic operators muted alongside punctuation;
+// - named types and namespaces in the type colour;
+// - parameters in bright yellow, fields in bright blue, enum members in blue;
+// - XML doc comment tags, attributes and inner text in the comment colour.
 //
 // Every selector starts with `source.cs`, so these rules only touch C#, and
-// VS Code cannot borrow them when it colours the C# server's coarse semantic
-// tokens (see textMateOnly in src/semantic.ts). With semantic highlighting on
-// or off, these keywords, operators and literals keep the same colours.
+// VS Code cannot borrow them when it colours Roslyn's coarse semantic tokens
+// (see textMateOnly in src/semantic.ts).
 const cs = (...scopes: string[]) => scopes.map((s) => `source.cs ${s}`);
 
 export const generate = (colors: EditorColor): TokenColor[] => [
   {
-    name: "[csharp] Keywords, modifiers and operators",
+    name: "[csharp] Keywords, modifiers and built-in types",
     scope: cs(
       "storage.modifier",
+      "storage.modifier.async",
       "storage.type",
-      "keyword.control",
+      "keyword.type",
       "keyword.other",
-      "keyword.operator",
       "keyword.preprocessor",
-      "variable.language.this",
-      // The ? of a nullable type, like TypeScript's optional ?
-      "punctuation.separator.question-mark",
+      "keyword.operator.expression",
+      "variable.language",
+      "constant.language.boolean",
+      "constant.language.null",
     ),
     settings: {
       foreground: colors.keyword,
     },
   },
   {
-    name: "[csharp] Function keywords",
-    scope: cs("storage.modifier.async"),
+    name: "[csharp] Control keywords",
+    scope: cs("keyword.control", "keyword.operator.expression.await"),
     settings: {
-      foreground: colors.brightYellow,
+      foreground: colors.brightPurple,
     },
   },
   {
-    name: "[csharp] Built-in and named types",
-    scope: cs("keyword.type", "entity.name.type"),
+    name: "[csharp] Punctuation and symbolic operators",
+    scope: cs("keyword.operator", "punctuation.accessor", "punctuation.separator.question-mark"),
+    settings: {
+      foreground: colors.punctuation,
+    },
+  },
+  {
+    name: "[csharp] Named types and namespaces",
+    scope: cs("entity.name.type"),
     settings: {
       foreground: colors.type,
     },
   },
   {
-    name: "[csharp] Namespaces",
-    scope: cs("entity.name.type.namespace"),
+    name: "[csharp] Parameters",
+    scope: cs("entity.name.variable.parameter"),
     settings: {
-      foreground: colors.variable,
+      foreground: colors.brightYellow,
     },
   },
   {
-    name: "[csharp] Null",
-    scope: cs("constant.language.null"),
+    name: "[csharp] Fields",
+    scope: cs("entity.name.variable.field"),
     settings: {
-      foreground: colors.nullable,
+      foreground: colors.brightBlue,
     },
   },
   {
-    name: "[csharp] Punctuation: member access and null-conditional access",
-    scope: cs("keyword.operator.null-conditional", "punctuation.accessor"),
+    name: "[csharp] Enum members",
+    scope: cs("entity.name.variable.enum-member"),
     settings: {
-      foreground: colors.punctuation,
+      foreground: colors.blue,
+    },
+  },
+  {
+    name: "[csharp] XML doc comments",
+    scope: cs(
+      "comment.block.documentation.cs",
+      "comment.block.documentation.cs punctuation",
+      "comment.block.documentation.cs meta.tag.cs",
+      "comment.block.documentation.cs entity.name.tag",
+      "comment.block.documentation.cs entity.other.attribute-name",
+      "comment.block.documentation.cs string.quoted.double.cs",
+    ),
+    settings: {
+      foreground: colors.comment,
     },
   },
 ];

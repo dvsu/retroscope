@@ -7,6 +7,13 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "function": "#89AEA3",
     "method": "#89AEA3",
     "delegate": "#EF9B47",
+    "namespace:csharp": "#EF9B47",
+    "controlKeyword:csharp": "#C79DD7",
+    "parameter:csharp": "#F5BD3A",
+    "field:csharp": "#8C9CAA",
+    "constant:csharp": "#789BB9",
+    "enumMember:csharp": "#789BB9",
+    "operatorOverloaded:csharp": "#89AEA3",
     "*.constructor": "#89AEA3",
     "*.importDeclaration": "#FFCB93"
   },
@@ -59,11 +66,11 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
     "editorBracketMatch.background": "#B5815608",
     "editorBracketMatch.border": "#FFCB93",
     "editorBracketHighlight.foreground1": "#C67640",
-    "editorBracketHighlight.foreground2": "#F75123",
-    "editorBracketHighlight.foreground3": "#D29834",
-    "editorBracketHighlight.foreground4": "#AD74EE",
+    "editorBracketHighlight.foreground2": "#C67640",
+    "editorBracketHighlight.foreground3": "#AD74EE",
+    "editorBracketHighlight.foreground4": "#E87C7D",
     "editorBracketHighlight.foreground5": "#EF9B47",
-    "editorBracketHighlight.foreground6": "#ADB26B",
+    "editorBracketHighlight.foreground6": "#F75123",
     "editorGroup.border": "#756356",
     "editorGroup.dropIntoPromptBackground": "#1D1B1990",
     "editorGroup.dropIntoPromptForeground": "#FFCB93",
@@ -351,34 +358,47 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#F75123"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#F5BD3A"
+        "foreground": "#C79DD7"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#9C7F60"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -386,31 +406,44 @@ exports[`theme retroscope > matches the reviewed snapshot (update: yarn test:upd
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#FFCB93"
+        "foreground": "#F5BD3A"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#E87C7D"
+        "foreground": "#8C9CAA"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#9C7F60"
+        "foreground": "#789BB9"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#756356"
       }
     },
     {
@@ -2805,6 +2838,13 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "function": "#7EB3A0",
     "method": "#7EB3A0",
     "delegate": "#F3A046",
+    "namespace:csharp": "#F3A046",
+    "controlKeyword:csharp": "#D898CC",
+    "parameter:csharp": "#F2BC23",
+    "field:csharp": "#88A2B0",
+    "constant:csharp": "#6CA1BC",
+    "enumMember:csharp": "#6CA1BC",
+    "operatorOverloaded:csharp": "#7EB3A0",
     "*.constructor": "#7EB3A0",
     "*.importDeclaration": "#FFDCA5"
   },
@@ -2857,11 +2897,11 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
     "editorBracketMatch.background": "#B97F4B08",
     "editorBracketMatch.border": "#FFDCA5",
     "editorBracketHighlight.foreground1": "#C77940",
-    "editorBracketHighlight.foreground2": "#F64D20",
-    "editorBracketHighlight.foreground3": "#D39A2F",
-    "editorBracketHighlight.foreground4": "#C36FD3",
+    "editorBracketHighlight.foreground2": "#C77940",
+    "editorBracketHighlight.foreground3": "#C36FD3",
+    "editorBracketHighlight.foreground4": "#E7777B",
     "editorBracketHighlight.foreground5": "#F3A046",
-    "editorBracketHighlight.foreground6": "#B6BB6B",
+    "editorBracketHighlight.foreground6": "#F64D20",
     "editorGroup.border": "#7A614B",
     "editorGroup.dropIntoPromptBackground": "#22150790",
     "editorGroup.dropIntoPromptForeground": "#FFDCA5",
@@ -3149,34 +3189,47 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#F64D20"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#F2BC23"
+        "foreground": "#D898CC"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#9D8261"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -3184,31 +3237,44 @@ exports[`theme retroscope-amber > matches the reviewed snapshot (update: yarn te
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#FFDCA5"
+        "foreground": "#F2BC23"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#E7777B"
+        "foreground": "#88A2B0"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#9D8261"
+        "foreground": "#6CA1BC"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#7A614B"
       }
     },
     {
@@ -5603,6 +5669,13 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "function": "#6DB8B5",
     "method": "#6DB8B5",
     "delegate": "#F3A149",
+    "namespace:csharp": "#F3A149",
+    "controlKeyword:csharp": "#D899E0",
+    "parameter:csharp": "#F3C03A",
+    "field:csharp": "#8FA1B5",
+    "constant:csharp": "#799FC5",
+    "enumMember:csharp": "#799FC5",
+    "operatorOverloaded:csharp": "#6DB8B5",
     "*.constructor": "#6DB8B5",
     "*.importDeclaration": "#FFD3BD"
   },
@@ -5655,11 +5728,11 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
     "editorBracketMatch.background": "#C3786C08",
     "editorBracketMatch.border": "#FFD3BD",
     "editorBracketHighlight.foreground1": "#C97B42",
-    "editorBracketHighlight.foreground2": "#FA4E26",
-    "editorBracketHighlight.foreground3": "#D19B39",
-    "editorBracketHighlight.foreground4": "#B772EA",
+    "editorBracketHighlight.foreground2": "#C97B42",
+    "editorBracketHighlight.foreground3": "#B772EA",
+    "editorBracketHighlight.foreground4": "#EF7A85",
     "editorBracketHighlight.foreground5": "#F3A149",
-    "editorBracketHighlight.foreground6": "#9EC17D",
+    "editorBracketHighlight.foreground6": "#FA4E26",
     "editorGroup.border": "#7D6070",
     "editorGroup.dropIntoPromptBackground": "#24172090",
     "editorGroup.dropIntoPromptForeground": "#FFD3BD",
@@ -5947,34 +6020,47 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#FA4E26"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#F3C03A"
+        "foreground": "#D899E0"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#A37D70"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -5982,31 +6068,44 @@ exports[`theme retroscope-cassette > matches the reviewed snapshot (update: yarn
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#FFD3BD"
+        "foreground": "#F3C03A"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#EF7A85"
+        "foreground": "#8FA1B5"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#A37D70"
+        "foreground": "#799FC5"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#7D6070"
       }
     },
     {
@@ -8401,6 +8500,13 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "function": "#007388",
     "method": "#007388",
     "delegate": "#AA4300",
+    "namespace:csharp": "#AA4300",
+    "controlKeyword:csharp": "#4E2686",
+    "parameter:csharp": "#82552A",
+    "field:csharp": "#006EA8",
+    "constant:csharp": "#00689E",
+    "enumMember:csharp": "#00689E",
+    "operatorOverloaded:csharp": "#007388",
     "*.constructor": "#007388",
     "*.importDeclaration": "#47282E"
   },
@@ -8453,11 +8559,11 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
     "editorBracketMatch.background": "#98775715",
     "editorBracketMatch.border": "#724249",
     "editorBracketHighlight.foreground1": "#CB7B2C",
-    "editorBracketHighlight.foreground2": "#CB1F34",
-    "editorBracketHighlight.foreground3": "#8A5E00",
-    "editorBracketHighlight.foreground4": "#A880D2",
+    "editorBracketHighlight.foreground2": "#CB7B2C",
+    "editorBracketHighlight.foreground3": "#A880D2",
+    "editorBracketHighlight.foreground4": "#DA5F8C",
     "editorBracketHighlight.foreground5": "#AA4300",
-    "editorBracketHighlight.foreground6": "#4D8343",
+    "editorBracketHighlight.foreground6": "#CB1F34",
     "editorGroup.border": "#8C7765",
     "editorGroup.dropIntoPromptBackground": "#47282EE0",
     "editorGroup.dropIntoPromptForeground": "#FBECEB",
@@ -8761,34 +8867,47 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#CB1F34"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#82552A"
+        "foreground": "#4E2686"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -8796,31 +8915,44 @@ exports[`theme retroscope-dawn > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#47282E"
+        "foreground": "#82552A"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#DA5F8C"
+        "foreground": "#006EA8"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#A68765"
+        "foreground": "#00689E"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#9E9A9A"
       }
     },
     {
@@ -11215,6 +11347,13 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "function": "#89AEA3",
     "method": "#89AEA3",
     "delegate": "#F19F25",
+    "namespace:csharp": "#F19F25",
+    "controlKeyword:csharp": "#C79DD7",
+    "parameter:csharp": "#F1C13C",
+    "field:csharp": "#91A1AF",
+    "constant:csharp": "#80A3C1",
+    "enumMember:csharp": "#80A3C1",
+    "operatorOverloaded:csharp": "#89AEA3",
     "*.constructor": "#89AEA3",
     "*.importDeclaration": "#FFCC9E"
   },
@@ -11267,11 +11406,11 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
     "editorBracketMatch.background": "#CA946808",
     "editorBracketMatch.border": "#FFCC9E",
     "editorBracketHighlight.foreground1": "#D3915E",
-    "editorBracketHighlight.foreground2": "#FF7445",
-    "editorBracketHighlight.foreground3": "#D29834",
-    "editorBracketHighlight.foreground4": "#BD83FF",
+    "editorBracketHighlight.foreground2": "#D3915E",
+    "editorBracketHighlight.foreground3": "#BD83FF",
+    "editorBracketHighlight.foreground4": "#F58288",
     "editorBracketHighlight.foreground5": "#F19F25",
-    "editorBracketHighlight.foreground6": "#C1C673",
+    "editorBracketHighlight.foreground6": "#FF7445",
     "editorGroup.border": "#8D7A6D",
     "editorGroup.dropIntoPromptBackground": "#12100E90",
     "editorGroup.dropIntoPromptForeground": "#FFCC9E",
@@ -11559,34 +11698,47 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#FF7445"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#F1C13C"
+        "foreground": "#C79DD7"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#A1946E"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -11594,31 +11746,44 @@ exports[`theme retroscope-high-contrast > matches the reviewed snapshot (update:
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#FFCC9E"
+        "foreground": "#F1C13C"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#F58288"
+        "foreground": "#91A1AF"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#A1946E"
+        "foreground": "#80A3C1"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#8D7A6D"
       }
     },
     {
@@ -14013,6 +14178,13 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "function": "#007388",
     "method": "#007388",
     "delegate": "#AA4300",
+    "namespace:csharp": "#AA4300",
+    "controlKeyword:csharp": "#4E2686",
+    "parameter:csharp": "#82552A",
+    "field:csharp": "#006EA8",
+    "constant:csharp": "#00689E",
+    "enumMember:csharp": "#00689E",
+    "operatorOverloaded:csharp": "#007388",
     "*.constructor": "#007388",
     "*.importDeclaration": "#2E3428"
   },
@@ -14065,11 +14237,11 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
     "editorBracketMatch.background": "#98775715",
     "editorBracketMatch.border": "#47573E",
     "editorBracketHighlight.foreground1": "#CB7B2C",
-    "editorBracketHighlight.foreground2": "#CB1F34",
-    "editorBracketHighlight.foreground3": "#8A5E00",
-    "editorBracketHighlight.foreground4": "#A880D2",
+    "editorBracketHighlight.foreground2": "#CB7B2C",
+    "editorBracketHighlight.foreground3": "#A880D2",
+    "editorBracketHighlight.foreground4": "#DA5F8C",
     "editorBracketHighlight.foreground5": "#AA4300",
-    "editorBracketHighlight.foreground6": "#4D8343",
+    "editorBracketHighlight.foreground6": "#CB1F34",
     "editorGroup.border": "#8C7765",
     "editorGroup.dropIntoPromptBackground": "#2E3428E0",
     "editorGroup.dropIntoPromptForeground": "#ECF4E8",
@@ -14373,34 +14545,47 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#CB1F34"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#82552A"
+        "foreground": "#4E2686"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -14408,31 +14593,44 @@ exports[`theme retroscope-ledger > matches the reviewed snapshot (update: yarn t
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#2E3428"
+        "foreground": "#82552A"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#DA5F8C"
+        "foreground": "#006EA8"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#A68765"
+        "foreground": "#00689E"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#9E9A9A"
       }
     },
     {
@@ -16827,6 +17025,13 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "function": "#007388",
     "method": "#007388",
     "delegate": "#AA4300",
+    "namespace:csharp": "#AA4300",
+    "controlKeyword:csharp": "#4E2686",
+    "parameter:csharp": "#82552A",
+    "field:csharp": "#006EA8",
+    "constant:csharp": "#00689E",
+    "enumMember:csharp": "#00689E",
+    "operatorOverloaded:csharp": "#007388",
     "*.constructor": "#007388",
     "*.importDeclaration": "#462B1F"
   },
@@ -16879,11 +17084,11 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
     "editorBracketMatch.background": "#98775715",
     "editorBracketMatch.border": "#72452F",
     "editorBracketHighlight.foreground1": "#CB7B2C",
-    "editorBracketHighlight.foreground2": "#CB1F34",
-    "editorBracketHighlight.foreground3": "#8A5E00",
-    "editorBracketHighlight.foreground4": "#A880D2",
+    "editorBracketHighlight.foreground2": "#CB7B2C",
+    "editorBracketHighlight.foreground3": "#A880D2",
+    "editorBracketHighlight.foreground4": "#DA5F8C",
     "editorBracketHighlight.foreground5": "#AA4300",
-    "editorBracketHighlight.foreground6": "#4D8343",
+    "editorBracketHighlight.foreground6": "#CB1F34",
     "editorGroup.border": "#8C7765",
     "editorGroup.dropIntoPromptBackground": "#462B1FE0",
     "editorGroup.dropIntoPromptForeground": "#F8EDDE",
@@ -17187,34 +17392,47 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#CB1F34"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#82552A"
+        "foreground": "#4E2686"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#A68765"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -17222,31 +17440,44 @@ exports[`theme retroscope-paper > matches the reviewed snapshot (update: yarn te
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#462B1F"
+        "foreground": "#82552A"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#DA5F8C"
+        "foreground": "#006EA8"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#A68765"
+        "foreground": "#00689E"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#9E9A9A"
       }
     },
     {
@@ -19641,6 +19872,13 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "function": "#65BABE",
     "method": "#65BABE",
     "delegate": "#F0A14C",
+    "namespace:csharp": "#F0A14C",
+    "controlKeyword:csharp": "#C7A0DA",
+    "parameter:csharp": "#F4BD30",
+    "field:csharp": "#8DA2B3",
+    "constant:csharp": "#74A0C2",
+    "enumMember:csharp": "#74A0C2",
+    "operatorOverloaded:csharp": "#65BABE",
     "*.constructor": "#65BABE",
     "*.importDeclaration": "#EEDEA1"
   },
@@ -19693,11 +19931,11 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
     "editorBracketMatch.background": "#A5885D08",
     "editorBracketMatch.border": "#EEDEA1",
     "editorBracketHighlight.foreground1": "#C87B41",
-    "editorBracketHighlight.foreground2": "#F95023",
-    "editorBracketHighlight.foreground3": "#CE9C38",
-    "editorBracketHighlight.foreground4": "#A67BEA",
+    "editorBracketHighlight.foreground2": "#C87B41",
+    "editorBracketHighlight.foreground3": "#A67BEA",
+    "editorBracketHighlight.foreground4": "#E77B7F",
     "editorBracketHighlight.foreground5": "#F0A14C",
-    "editorBracketHighlight.foreground6": "#82CE86",
+    "editorBracketHighlight.foreground6": "#F95023",
     "editorGroup.border": "#596D5E",
     "editorGroup.dropIntoPromptBackground": "#141E1790",
     "editorGroup.dropIntoPromptForeground": "#EEDEA1",
@@ -19985,34 +20223,47 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#F95023"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#F4BD30"
+        "foreground": "#C7A0DA"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#8A876A"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -20020,31 +20271,44 @@ exports[`theme retroscope-phosphor > matches the reviewed snapshot (update: yarn
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#EEDEA1"
+        "foreground": "#F4BD30"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#E77B7F"
+        "foreground": "#8DA2B3"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#8A876A"
+        "foreground": "#74A0C2"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#596D5E"
       }
     },
     {
@@ -22439,6 +22703,13 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "function": "#8AAEA1",
     "method": "#8AAEA1",
     "delegate": "#E79D34",
+    "namespace:csharp": "#E79D34",
+    "controlKeyword:csharp": "#CC9CD4",
+    "parameter:csharp": "#ECBD23",
+    "field:csharp": "#8D9CAA",
+    "constant:csharp": "#7B9ABA",
+    "enumMember:csharp": "#7B9ABA",
+    "operatorOverloaded:csharp": "#8AAEA1",
     "*.constructor": "#8AAEA1",
     "*.importDeclaration": "#FFCB97"
   },
@@ -22491,11 +22762,11 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
     "editorBracketMatch.background": "#B5855708",
     "editorBracketMatch.border": "#FFCB97",
     "editorBracketHighlight.foreground1": "#CA7F48",
-    "editorBracketHighlight.foreground2": "#FA601E",
-    "editorBracketHighlight.foreground3": "#D89537",
-    "editorBracketHighlight.foreground4": "#CB75EC",
+    "editorBracketHighlight.foreground2": "#CA7F48",
+    "editorBracketHighlight.foreground3": "#CB75EC",
+    "editorBracketHighlight.foreground4": "#FC858A",
     "editorBracketHighlight.foreground5": "#E79D34",
-    "editorBracketHighlight.foreground6": "#B2B16A",
+    "editorBracketHighlight.foreground6": "#FA601E",
     "editorGroup.border": "#7F6E60",
     "editorGroup.dropIntoPromptBackground": "#2A262290",
     "editorGroup.dropIntoPromptForeground": "#FFCB97",
@@ -22783,34 +23054,47 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
   },
   "tokenColors": [
     {
-      "name": "[csharp] Keywords, modifiers and operators",
+      "name": "[csharp] Keywords, modifiers and built-in types",
       "scope": [
         "source.cs storage.modifier",
+        "source.cs storage.modifier.async",
         "source.cs storage.type",
-        "source.cs keyword.control",
+        "source.cs keyword.type",
         "source.cs keyword.other",
-        "source.cs keyword.operator",
         "source.cs keyword.preprocessor",
-        "source.cs variable.language.this",
-        "source.cs punctuation.separator.question-mark"
+        "source.cs keyword.operator.expression",
+        "source.cs variable.language",
+        "source.cs constant.language.boolean",
+        "source.cs constant.language.null"
       ],
       "settings": {
         "foreground": "#FA601E"
       }
     },
     {
-      "name": "[csharp] Function keywords",
+      "name": "[csharp] Control keywords",
       "scope": [
-        "source.cs storage.modifier.async"
+        "source.cs keyword.control",
+        "source.cs keyword.operator.expression.await"
       ],
       "settings": {
-        "foreground": "#ECBD23"
+        "foreground": "#CC9CD4"
       }
     },
     {
-      "name": "[csharp] Built-in and named types",
+      "name": "[csharp] Punctuation and symbolic operators",
       "scope": [
-        "source.cs keyword.type",
+        "source.cs keyword.operator",
+        "source.cs punctuation.accessor",
+        "source.cs punctuation.separator.question-mark"
+      ],
+      "settings": {
+        "foreground": "#A78B6F"
+      }
+    },
+    {
+      "name": "[csharp] Named types and namespaces",
+      "scope": [
         "source.cs entity.name.type"
       ],
       "settings": {
@@ -22818,31 +23102,44 @@ exports[`theme retroscope-soft > matches the reviewed snapshot (update: yarn tes
       }
     },
     {
-      "name": "[csharp] Namespaces",
+      "name": "[csharp] Parameters",
       "scope": [
-        "source.cs entity.name.type.namespace"
+        "source.cs entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#FFCB97"
+        "foreground": "#ECBD23"
       }
     },
     {
-      "name": "[csharp] Null",
+      "name": "[csharp] Fields",
       "scope": [
-        "source.cs constant.language.null"
+        "source.cs entity.name.variable.field"
       ],
       "settings": {
-        "foreground": "#FC858A"
+        "foreground": "#8D9CAA"
       }
     },
     {
-      "name": "[csharp] Punctuation: member access and null-conditional access",
+      "name": "[csharp] Enum members",
       "scope": [
-        "source.cs keyword.operator.null-conditional",
-        "source.cs punctuation.accessor"
+        "source.cs entity.name.variable.enum-member"
       ],
       "settings": {
-        "foreground": "#A78B6F"
+        "foreground": "#7B9ABA"
+      }
+    },
+    {
+      "name": "[csharp] XML doc comments",
+      "scope": [
+        "source.cs comment.block.documentation.cs",
+        "source.cs comment.block.documentation.cs punctuation",
+        "source.cs comment.block.documentation.cs meta.tag.cs",
+        "source.cs comment.block.documentation.cs entity.name.tag",
+        "source.cs comment.block.documentation.cs entity.other.attribute-name",
+        "source.cs comment.block.documentation.cs string.quoted.double.cs"
+      ],
+      "settings": {
+        "foreground": "#7F6E60"
       }
     },
     {

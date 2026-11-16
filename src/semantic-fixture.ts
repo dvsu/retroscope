@@ -42,6 +42,36 @@ export const KNOWN_MERGES: {
     why: "the grammar cannot tell an enum from a variable before a dot, as in Status.Pending",
   },
   {
+    language: "csharp",
+    type: "parameter",
+    scopes: /^(variable\.other\.(readwrite|object)|string\.quoted\.double)\.cs$/,
+    why: 'the grammar cannot tell a parameter reference or <param name="..."> from a local variable or doc string',
+  },
+  {
+    language: "csharp",
+    type: "field",
+    scopes: /^variable\.other\.(object|readwrite)\.cs$/,
+    why: "the grammar cannot tell a field reference such as _prices from a local variable",
+  },
+  {
+    language: "csharp",
+    type: "constant",
+    scopes: /^(entity\.name\.variable\.field|variable\.other\.readwrite)\.cs$/,
+    why: "the grammar gives const fields the same scope as mutable fields, and their usages the local variable scope",
+  },
+  {
+    language: "csharp",
+    type: "enumMember",
+    scopes: /^(variable\.other\.object\.property|entity\.name\.type)\.cs$/,
+    why: "the grammar cannot tell an enum member after a dot, such as Status.Pending or Status.Shipped in a property pattern, from a property or type",
+  },
+  {
+    language: "csharp",
+    type: "operatorOverloaded",
+    scopes: /^keyword\.operator\.arithmetic\.cs$/,
+    why: "the grammar cannot tell an overloaded operator such as Money + Money from a built-in operator",
+  },
+  {
     language: "java",
     type: "class",
     scopes: /^(variable\.other\.object|meta\.method-call)\.java$/,
